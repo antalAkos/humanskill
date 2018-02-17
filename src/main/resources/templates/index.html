@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.1/animate.min.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet" type="text/css"></link>
+    <link rel="stylesheet" href="http://www.humanskill.hu/wp-content/themes/humanskill/assets/styles/style_refaktor.css"></link>
+    <title>Humanskill – Munkaerőkölcsönzés, szervezetfejlesztés, tréning, coaching</title>
+    <script type="text/javascript">
+            // <![CDATA[
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.humanskill.hu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		    // ]]>
+    </script>
+    <script src="http://www.humanskill.hu/wp-includes/js/wp-emoji-release.min.js?ver=4.4.2" type="text/javascript"></script>
+    <style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+    <link rel="stylesheet" id="contact-form-7-css" href="http://www.humanskill.hu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.1" type="text/css" media="all"></link>
+    <link rel="stylesheet" id="cyclone-template-style-dark-css" href="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/templates/dark/style.css?ver=2.10.7" type="text/css" media="all"></link>
+    <link rel="stylesheet" id="cyclone-template-style-default-css" href="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/templates/default/style.css?ver=2.10.7" type="text/css" media="all"></link>
+    <link rel="stylesheet" id="cyclone-template-style-standard-css" href="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/templates/standard/style.css?ver=2.10.7" type="text/css" media="all"></link>
+    <link rel="stylesheet" id="cyclone-template-style-thumbnails-css" href="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/templates/thumbnails/style.css?ver=2.10.7" type="text/css" media="all"></link>
+    <link rel="stylesheet" id="sage/css-css" href="http://www.humanskill.hu/wp-content/themes/humanskill/dist/styles/main.css" type="text/css" media="all"></link>
+    <script type="text/javascript" src="http://www.humanskill.hu/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script>
+    <script type="text/javascript" src="http://www.humanskill.hu/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+    <link rel="https://api.w.org/" href="http://www.humanskill.hu/?rest_route=/"></link>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.humanskill.hu/xmlrpc.php?rsd"></link>
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.humanskill.hu/wp-includes/wlwmanifest.xml"></link>
+    <meta name="generator" content="WordPress 4.4.2"></meta>
+    <link rel="canonical" href="http://www.humanskill.hu/"></link>
+    <link rel="shortlink" href="http://www.humanskill.hu/"></link>
+    <link rel="alternate" href="http://www.humanskill.hu/?lang=fr" hreflang="fr-FR"></link>
+    <link rel="alternate" href="http://www.humanskill.hu/?lang=hu" hreflang="hu-HU"></link>
+    <link rel="alternate" href="http://www.humanskill.hu/" hreflang="en-GB"></link>
+    <link rel="alternate" href="http://www.humanskill.hu/?lang=ru" hreflang="ru-RU"></link>
+    <link rel="alternate" href="http://www.humanskill.hu/?lang=ro" hreflang="ro-RO"></link>
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+<body class="home page page-id-109 page-parent page-template page-template-template-home page-template-template-home-php">
+<!--[if IE]>
+<div class="alert alert-warning">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+<![endif]-->
+<header class="banner">
+    <div class="container">
+        <nav class="nav-primary">
+
+        </nav></div>
+</header>
+<div id="top"></div>
+<div class="wrap container-fluid" role="document">
+    <div class="content row">
+        <main class="main">
+            &#65279;
+
+            <div class="cssload-content" style="display: none;">
+                <div>
+                    <div class="cssload-l1"></div>
+                    <div class="cssload-l2"></div>
+                    <div class="cssload-l3"></div>
+                </div>
+            </div>
+            <div id="fedlap">
+                <div class="col-xs-6 animated fadeIn" style="display: flex;">
+                    <h1>Recruitment</h1>
+                </div>
+                <div class="col-xs-6 animated fadeIn" style="display: flex;">
+                    <h1>Training</h1>
+                    <h1>Coaching</h1>
+                    <h1>Organisational development</h1>
+                    <h1>Other psychological services</h1>
+                </div>
+                <div class="splitter animated slideInDown" style="display: block;"> </div><div class="splitter-mirror animated slideInUp" style="display: block;"></div> <!-- Splitter középen a főoldalon-->
+                <div id="logo" style="display: block;" class="animated slideInRight shine"><!--<i class="shine"></i> Ezzel, ha kell, lehet egy csillanás az animációra--></div>
+                <div id="logo-blueman" style="display: block;" class="animated fadeIn"></div>
+                <div id="logo-mirror" style="display: block;" class="animated slideInLeft"></div>
+
+                <div class="lang-select" style="display: none;">	<li class="lang-item lang-item-15 lang-item-fr"><a hreflang="fr-FR" href="http://www.humanskill.hu/?lang=fr">Français</a></li>
+                    <li class="lang-item lang-item-5 lang-item-hu"><a hreflang="hu-HU" href="http://www.humanskill.hu/?lang=hu">Magyar</a></li>
+                    <li class="lang-item lang-item-3 lang-item-en current-lang"><a hreflang="en-GB" href="http://www.humanskill.hu/">English</a></li>
+                    <!-- Következő fejlesztőnek ezért bocsi.. frontendes vagyok--><li class="lang-item lang-item-3 lang-item-ru"><a hreflang="ru-RU" href="http://www.humanskill.hu/russian">Russian</a></li>
+                </div>
+            </div>
+
+            <div id="home-splitted-selector" class="container-fluid" style="display: none;">
+                <span class="logo" style="display: none;"></span>
+                <div class="col-xs-12 first">
+                    <div tabindex="0" class="cycloneslider cycloneslider-template-standard cycloneslider-width-responsive" id="cycloneslider-home-slider-2-1" style="max-width:960px"> <div class="cycloneslider-slides cycle-slideshow" show_prev_next="true" data-cycle-allow-wrap="true" data-cycle-dynamic-height="off" data-cycle-auto-height="960:600" data-cycle-auto-height-easing="null" data-cycle-auto-height-speed="250" data-cycle-delay="0" data-cycle-easing="" data-cycle-fx="fade" data-cycle-hide-non-active="true" data-cycle-log="false" data-cycle-next="cycloneslider-home-slider-2-1 .cycloneslider-next" data-cycle-pager="#cycloneslider-home-slider-2-1 .cycloneslider-pager" data-cycle-pause-on-hover="true" data-cycle-prev="cycloneslider-home-slider-2-1 .cycloneslider-prev" data-cycle-slides="> div" data-cycle-speed="1000" data-cycle-swipe="false" data-cycle-tile-count="7" data-cycle-tile-delay="100" data-cycle-tile-vertical="true" data-cycle-timeout="4000" style="height: 0px;">  <div class="cycloneslider-slide cycloneslider-slide-image cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 99; opacity: 1;"> <a class="cycloneslider-caption-more" href="#work"> <img src="http://www.humanskill.hu/wp-content/uploads/2016/03/munkaerokozvetites_slide-2-1-960x600.jpg" alt="" title=""> </a> <div class="cycloneslider-caption"> <div class="caption-wrapper"> <div class="cycloneslider-caption-title">Recruitment</div> <div class="cycloneslider-caption-description">Using the methods of psychology we are able to efficiently select the best candidate with the highest potential and aptitude.</div> <a href="#work" class="go-to-page"></a></div> </div> </div></div> <div class="cycloneslider-pager"><span class="cycle-pager-active">•</span></div> <div show_prev_next="true"></div> </div>  </div>
+                <div class="col-xs-12 second">
+                    <div tabindex="0" class="cycloneslider cycloneslider-template-standard cycloneslider-width-responsive" id="cycloneslider-home-slider-2" style="max-width:1920px"> <div class="cycloneslider-slides cycle-slideshow" show_prev_next="true" data-cycle-allow-wrap="true" data-cycle-dynamic-height="off" data-cycle-auto-height="1920:1080" data-cycle-auto-height-easing="null" data-cycle-auto-height-speed="250" data-cycle-delay="0" data-cycle-easing="" data-cycle-fx="tileSlide" data-cycle-hide-non-active="true" data-cycle-log="false" data-cycle-next="cycloneslider-home-slider-2 .cycloneslider-next" data-cycle-pager="#cycloneslider-home-slider-2 .cycloneslider-pager" data-cycle-pause-on-hover="true" data-cycle-prev="cycloneslider-home-slider-2 .cycloneslider-prev" data-cycle-slides="> div" data-cycle-speed="1000" data-cycle-swipe="false" data-cycle-tile-count="10" data-cycle-tile-delay="100" data-cycle-tile-vertical="true" data-cycle-timeout="5000" style="height: 0px;">     <div class="cycloneslider-slide cycloneslider-slide-image cycle-slide" data-cycle-fx="fade" style="position: absolute; top: 0px; left: 0px; z-index: 100; opacity: 0; display: none;"> <a class="cycloneslider-caption-more" href="#company"> <img src="http://www.humanskill.hu/wp-content/uploads/2016/03/szervezetfejlesztes_slide-2-1920x1080.jpg" alt="" title=""> </a> <div class="cycloneslider-caption"> <div class="caption-wrapper"> <div class="cycloneslider-caption-title">Organisational development</div> <div class="cycloneslider-caption-description">Every organisation is a changing entity that needs a constant revision of their procedures. With the help of our methodology we are able to achieve a more efficient operation.</div> <a href="#company" class="go-to-page"></a></div> </div> </div><div class="cycloneslider-slide cycloneslider-slide-image cycle-slide cycle-slide-active" data-cycle-fx="fade" style="position: absolute; top: 0px; left: 0px; z-index: 99; display: block; opacity: 1;"> <a class="cycloneslider-caption-more" href="#training"> <img src="http://www.humanskill.hu/wp-content/uploads/2016/03/training_slide-1-1920x1080.jpg" alt="" title=""> </a> <div class="cycloneslider-caption"> <div class="caption-wrapper"> <div class="cycloneslider-caption-title">Training</div> <div class="cycloneslider-caption-description">You can improve your competencies during our trainings in a supportive atmosphere. We provide outstanding training tools for developing soft skills which are not only useful at the workplace, but in everyday life as well.</div> <a href="#training" class="go-to-page"></a></div> </div> </div><div class="cycloneslider-slide cycloneslider-slide-image cycle-slide" data-cycle-fx="fade" style="position: absolute; top: 0px; left: 0px; z-index: 97; display: none; opacity: 0;"> <a class="cycloneslider-caption-more" href="#coaching"> <img src="http://www.humanskill.hu/wp-content/uploads/2016/03/coaching_final-1920x1080.jpg" alt="" title=""> </a> <div class="cycloneslider-caption"> <div class="caption-wrapper"> <div class="cycloneslider-caption-title">Coaching</div> <div class="cycloneslider-caption-description">Would you like to improve your efficiency? Do you have problems with delegating tasks or just want to be more proactive? Coaching is a mentality that helps the personal growth as a leader.</div> <a href="#coaching" class="go-to-page"></a></div> </div> </div><div class="cycloneslider-slide cycloneslider-slide-image cycle-slide" data-cycle-fx="fade" style="position: absolute; top: 0px; left: 0px; z-index: 96; display: none; opacity: 0;"> <a class="cycloneslider-caption-more" href="#egyeb-pszichologiai-szolgaltatasok"> <img src="http://www.humanskill.hu/wp-content/uploads/2016/03/munkaerokozvetites_menu_opt-1-1920x1080.jpg" alt="" title=""> </a> <div class="cycloneslider-caption"> <div class="caption-wrapper"> <div class="cycloneslider-caption-title">Other psychological services</div> <div class="cycloneslider-caption-description">Egyéb pszichológiai szolgáltatásaink kiváló lehetőségnek bizonyul személyes és szervezeti fejlődése elérésében</div> <a href="#egyeb-pszichologiai-szolgaltatasok" class="go-to-page"></a></div> </div> </div></div> <div class="cycloneslider-pager"><span class="">•</span><span class="cycle-pager-active">•</span><span class="">•</span><span class="">•</span></div> <div show_prev_next="true"></div> </div>    <!--<div class = "home-titles">
+      <h1><a href = "#company">Organisational development</a></h1>
+      <h1><a href = "#traing">Training</a></h1>
+      <h1><a href = "#coaching">Coaching</a></h1>
+    </div>-->
+                </div>
+                <div class="backToStart"></div>
+            </div>
+
+
+            <section id="work" style="display: none;">
+
+                <div class="page-header">
+                    <div class="header-logo"></div>
+                    <nav class="menu">
+                        <ul class="menu-ul" style="display:flex;">
+                            <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                            <li><a class="firstpage" href="#work">Recruitment</a></li>
+                            <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                            <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                            <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                            <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                            <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                            <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                            <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                            <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="lang-select">	<li class="lang-item lang-item-15 lang-item-fr"><a hreflang="fr-FR" href="http://www.humanskill.hu/?lang=fr">Français</a></li>
+                    <li class="lang-item lang-item-5 lang-item-hu current-lang"><a hreflang="hu-HU" href="http://www.humanskill.hu/?lang=hu">Magyar</a></li>
+                    <li class="lang-item lang-item-3 lang-item-en"><a hreflang="en-GB" href="http://www.humanskill.hu/">English</a></li>
+                </div>
+                <button class="c-hamburger c-hamburger--htla">
+                    <span>toggle menu</span>
+                </button>
+                <nav class="mobile-menu">
+                    <ul class="menu-ul">
+                        <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                        <li><a class="firstpage" href="#work">Recruitment</a></li>
+                        <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                        <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                        <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                        <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                    </ul>
+
+
+
+                </nav>
+                <div class="page-image col-xs-12" style="height:80vh; background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/munkaerokozvetites_menu_opt-1.jpg)">
+                    <div class="scrolldown"></div>
+                    <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
+                        <h2 class="section-title" style="margin: 10px;"><span>Recruitment</span></h2>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="content container">
+                    <div class="backToStart"></div>
+
+                    <div class="content-block row">
+                        <div class="col-xs-12">In our globalised world the cultural and economical borders are becoming more and more transparent causing the economical migration to increase. Most of these individuals leave their connections, families, culture behind and are motivated only by the promise of financial security. This extrinsic motivation results in a decreased sociability, deprivation and apathy causing the employee to be discomforted and decreasing his/her performance at the workplace.
+
+                            The changes while working abroad, the different cultural climate and language difficulties have a counterproductive effect in the new, challanging environment. Most of the employees find it hard to adapt to this condition. All of these leads to a low self-esteem and increased demotivation which should not be neglected.
+
+                            In our Just in Time service we offer the continuous assistance and follow-up with the employees giving them a hand to overcome the upcoming obstacles and facilitating their integration at the new environment. Due to our continous support we are able to intervene immediately if needed.
+                            We also aid the development of organisational identity of each future and existing employee in order to have a long-term and smooth employment.Thanks to all these measures we ensure that you get an employee who is able to successfully adapt to any situation and fits the requirements the best.
+                            Human Skill team provides constant support and believes in preventive approach so no corrective intervention is needed allowing us to decrease your overall cost of recruitment.
+
+                            We provide flexible solutions in recruitment and staffing so you can be sure that you get the best candidate who will do everything for your company’s success.
+                            Bearing in mind both the clients and the candidates needs we provide quality service in the dynamically changing market.
+
+                            The requirements are determined together with the clients considering the specifications of the company and the scope of activity allowing us to assess the needs in a more complex way. According to the individual needs we use different competency tests and provide personality profiles so we can select the best candidate who can efficiently fit into the organisational culture and fulfill his task with a professional attitude and devotion. We aim to pliantly adapt to the individual demands and to ensure that the best candidate is selected.
+                        </div>
+                    </div>
+
+                    <div class="content-block row">
+                        <h2 class="col-md-4">For candidates</h2>
+
+                        <div class="col-md-8">We provide the whole administration and management of your employment abroad. With a supportive attitude we stand for your case any problem might arise.
+                            Our service is free of charge there are no hidden costs.
+                            It is up to you to shape your future and for this you are at the right place! Contact us and we help you to reach a better living standard. After you have sent your application we will get in touch you with detailed info pack and you will also have place to ask your questions. Are you ready?
+                        </div>
+                    </div>
+
+                    <div class="content-block row">
+                        <h2 class="col-md-4">The application process</h2>
+
+                        <div class="col-md-8">If you are determined to change, upload your CV / Resumé here and we will search for the job that meets your profile. After your application we will contact you to find a suitable position as soon as possible.
+                            Our partners provide safe environment and proper circumstances making your everyday life as comfortable as possible. Our support does not end after you travel abroad. If you face any vismaiors, feel free to contact us and we will give you a hand to manage the problem.
+                        </div>
+                    </div>
+
+                    <div class="content-block row">
+                        <h2 class="col-md-4">The whole procedure</h2>
+
+                        <div class="col-md-8">From the application to your first workday: <br>
+                            <ul>
+                                <li>You send us your cv</li>
+                                <li>We contact you</li>
+                                <li>We make an interview</li>
+                                <li>We propose you to our clients/partners</li>
+                            </ul>
+                            <ul>
+                                <li style="display:none"></li>
+                                <li style="display:none"></li>
+                                <li style="display:none"></li>
+                                <li style="display:none"></li>
+                                <li>We inform you about the results</li>
+                                <li>We organise your travel</li>
+                                <li>We make your contract</li>
+                                <li>You start your work</li>
+                            </ul>
+
+                            As soon as you apply for our job offers or you send us your CV here, we contact you on your phone number. It is very important to attach a professional CV during your application so we can determine whether you are a potential candidate for our job offers or not. In case we find an appropriate job opportunity, we will let you know by phone. </div>
+                    </div>
+
+                    <div class="content-block row">
+                        <h2 class="col-md-4">The interview</h2>
+
+                        <div class="col-md-8">Steps:
+                            <ul><div class="interjuMenete">
+                                <li>Testing your foreign language knowledge</li>
+                                <li>Assessing your work experience and competencies</li>
+                                <li>Discussing your goals and interests so we can find the most suitable job</li>
+                                <li>Reviewing our activity and the details of employment abroad</li>
+                                <li>Discussing your questions</li>
+                            </div></ul>
+                            <img src="./wp-includes/images/interju-menete-kep-menu.png" alt="Interjú menete" style="float: right;width: 150px;">After the interview we will search for a suitable job. In case you have applied for our ongoing job offer and you meet the requirements, we contact our client and contact you with the result. In case you don’t get selected for the open position, we will help you to find another offer. This means that if you have already registered and interviewed with us, we can inform you about our new job offers in the future granting you a good possibility of getting a job by us.
+
+                            Any questions? Should you need any more information, feel free to contact us!
+
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="list-block container">
+                    <h2 class="list-title">What are our advantages:</h2>
+                    <div class="list">
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">Professional psychological selection methods </p>
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">Fast and flexible work </p>
+                        <div class="clearfix"></div>                <p class="col-xs-12 col-md-offset-2 col-md-4">Extendsive candidate database </p>
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">Follow-up and psychological support to the workers </p>
+                        <div class="clearfix"></div>                <p class="col-xs-12 col-md-offset-2 col-md-4">Fair price policy </p>
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">Client-oriented approach </p>
+                        <div class="clearfix"></div>         </div>
+                </div>
+            </section>        <section id="about-us" style="display: none;">
+
+            <div class="page-header">
+                <div class="header-logo"></div>
+                <nav class="menu">
+                    <ul class="menu-ul" style="display:flex;">
+                        <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                        <li><a class="firstpage" href="#work">Recruitment</a></li>
+                        <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                        <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                        <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                        <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="lang-select">	<li class="lang-item lang-item-15 lang-item-fr"><a hreflang="fr-FR" href="http://www.humanskill.hu/?lang=fr">Français</a></li>
+                <li class="lang-item lang-item-5 lang-item-hu current-lang"><a hreflang="hu-HU" href="http://www.humanskill.hu/?lang=hu">Magyar</a></li>
+                <li class="lang-item lang-item-3 lang-item-en"><a hreflang="en-GB" href="http://www.humanskill.hu/">English</a></li>
+            </div>
+            <button class="c-hamburger c-hamburger--htla">
+                <span>toggle menu</span>
+            </button>
+            <nav class="mobile-menu">
+                <ul class="menu-ul">
+                    <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                    <li><a class="firstpage" href="#work">Recruitment</a></li>
+                    <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                    <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                    <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                    <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                </ul>
+
+
+
+            </nav>
+            <div class="page-image col-xs-12 parallax-window" data-parallax="scroll" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/munkaerokozvetites_slide-1920x1080-2.jpg)">
+                <div class="scrolldown"></div>
+                <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
+                    <h2 class="section-title" style="margin: 10px;">About us</h2>
+                    <!--<p class = "section-description">Növelné személyes hatékonyságát vagy talán delegálási problémái vannak alkalmazottai irányába? Esetleg proaktivitását, asszertivitását fejlesztené? A coaching egy olyan gondolkodásmód és eszköz, mely mindezekre megoldást nyújt és elősegíti a vezetői és személyes fejlődését. </p>-->
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="content container">
+                <div class="content-image hand"></div>
+                <div class="content-block row">
+                    <h2 class="col-md-4">Who we are</h2>
+
+                    <div class="col-md-8">
+                        Nowadays it is simply not enough to recruit, then select the best skilled candidate, but it is also crucial to make them devoted to the company in order to be more competitive on the market, while raising the overall satisfaction results in a way better performance than the average.
+
+                        Our mission is not only to select the best candidate, but to provide follow up measures and feedback too, on the other hand to manage your current workforce from the beginning. With our HR methods we can lead your business department to more productive functioning, moreover providing solutions to your workforce problems (if there are any) starting with recruitment to the competency development of your key employees. After identifying the problematic field, we provide flexible solutions focused onto your organisation by analyzing its variables.
+
+                        Besides the professional skills, it is essential to consider the individual competences and personal attributes as well. We provide not only professionally competent workforce, but also that personality who can fit the best into the organisational expectations and atmosphere for long term.
+                        During our work we firstly identify then evaluate the common factors of your organisation and provide the most effective solution to help the personal growth of your employees and implement your ideas or missions to make them come true.
+                        <!--</div>'-->
+                    </div>
+                </div>
+                <div class="content-image blueman"></div>      <div class="content-block row">
+                <h2 class="col-md-4">Why us?</h2>
+
+                <div class="col-md-8">
+                    During our selection process we are able to identify the required professional and personal competences with the help of psychological methods and HR professionals thus providing a high probability of finding the suitable workforce. If needed, we can also make follow up on the candidates and improve the competency and skills of your workforce lowering the costs of replacement.            <!--</div>'-->
+                </div>
+            </div>
+            </div>
+        </section>        <section id="company" style="display: none;">
+
+            <div class="page-header">
+                <div class="header-logo"></div>
+                <nav class="menu">
+                    <ul class="menu-ul" style="display:flex;">
+                        <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                        <li><a class="firstpage" href="#work">Recruitment</a></li>
+                        <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                        <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                        <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                        <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="lang-select">	<li class="lang-item lang-item-15 lang-item-fr"><a hreflang="fr-FR" href="http://www.humanskill.hu/?lang=fr">Français</a></li>
+                <li class="lang-item lang-item-5 lang-item-hu current-lang"><a hreflang="hu-HU" href="http://www.humanskill.hu/?lang=hu">Magyar</a></li>
+                <li class="lang-item lang-item-3 lang-item-en"><a hreflang="en-GB" href="http://www.humanskill.hu/">English</a></li>
+            </div>
+            <button class="c-hamburger c-hamburger--htla">
+                <span>toggle menu</span>
+            </button>
+            <nav class="mobile-menu">
+                <ul class="menu-ul">
+                    <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                    <li><a class="firstpage" href="#work">Recruitment</a></li>
+                    <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                    <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                    <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                    <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                </ul>
+
+
+
+            </nav>
+            <div class="page-image col-xs-12" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/szervezetfejlesztes_menu_opt-1.jpg)">
+                <div class="scrolldown"></div>
+                <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
+                    <h2 class="section-title" style="margin: 10px;">Organisational development</h2>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="content container">
+                <div class="content-block row">
+                    <h2 class="col-md-4">Organisational development</h2>
+
+                    <div class="col-md-8">Our scope of activity also includes the improvement your organisational procedures. Using a diverse range of psycholgical methods we are able to integrate your future employee into your organisation with an optimal motivational and satisfactional level. We believe that the development of organisational procedures and culture has great impact on the efficiency of your business performance and resource management, moreover it influences employee satisfaction in a positive way and reduces fluctuation. </div>
+                </div>
+                <div class="content-block row">
+                    <div class="content-image piramyd"></div>                  <h2 class="col-md-4">Steps of the process</h2>
+
+                    <div class="col-md-8">The first step of the development process is to identify the main goals, strategy and problematic factors of the company. First of all we have to clarify the everyday operations, the organisational structure, the working relations, people and organisational culture so we can examine what the exact problem is and how all these can be fit into the main goals. As a second step we are able to intervene and implement new methods in order to reach the established goal.
+                        The result of our collaboration is a competitive, potent organisation that is able to operate at a high level of productivity, has an efficient communication and stable vision about the future, last but not least a devoted workforce.
+                    </div>
+                </div>
+            </div>
+            <div class="content container">
+                <div class="content-block row">
+                    <div class="col-xs-12"></div>
+                </div>
+                <div class="list-block container">
+                    <h2 class="list-title">Results of our methods</h2>
+                    <div class="list">
+
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">improvement in organisational culture </p>
+
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">improvement in organisational communication </p>
+                        <div class="clearfix"></div>
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">efficient HR strategy and an attainable vision </p>
+
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">creation and improvement of HR procedures </p>
+                        <div class="clearfix"></div>
+                        <p class="col-xs-12 col-md-offset-2 col-md-4">team building, creation of group cohesion </p>
+                    </div>
+                </div>
+            </div>
+        </section>        <section id="training" style="display: none;">
+
+            <div class="page-header">
+                <div class="header-logo"></div>
+                <nav class="menu">
+                    <ul class="menu-ul" style="display:flex;">
+                        <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                        <li><a class="firstpage" href="#work">Recruitment</a></li>
+                        <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                        <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                        <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                        <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="lang-select">	<li class="lang-item lang-item-15 lang-item-fr"><a hreflang="fr-FR" href="http://www.humanskill.hu/?lang=fr">Français</a></li>
+                <li class="lang-item lang-item-5 lang-item-hu current-lang"><a hreflang="hu-HU" href="http://www.humanskill.hu/?lang=hu">Magyar</a></li>
+                <li class="lang-item lang-item-3 lang-item-en"><a hreflang="en-GB" href="http://www.humanskill.hu/">English</a></li>
+            </div>
+            <button class="c-hamburger c-hamburger--htla">
+                <span>toggle menu</span>
+            </button>
+            <nav class="mobile-menu">
+                <ul class="menu-ul">
+                    <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                    <li><a class="firstpage" href="#work">Recruitment</a></li>
+                    <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                    <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                    <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                    <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                </ul>
+
+
+
+            </nav>
+            <div class="page-image col-xs-12" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/trening_menu_opt-1.jpg)">
+                <div class="scrolldown"></div>
+                <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
+                    <h2 class="section-title" style="margin: 10px;">Training</h2>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="content container">
+                <div class="content-block row">
+
+                    <div class="col-xs-12">Trainings are popular development tools focusing on group dynamic processes and the improvement of individual competences. We provide outstanding training tools for developing soft skills which are not only useful at the workplace, but in everyday life as well. We offer individual counselings and group trainings during which you can acquire new skills in situational exercises.  All of our trainings are conducted in a friendly manner and supportive atmosphere so you can be sure you will leave with a successful experience.</div>
+                </div>
+                <div class="content-block row">
+                    <h2 class="col-md-6">Autogenic training</h2>
+
+                    <div class="col-md-6"><span class="iniciale">A</span>utogen training is a desensitation-relaxation technique that is easily attainable and helps you to reach a relaxed state between sleeping and wakefulness. It affects the connection of muscle-motion-mood through the so called biofeedback mechanism which is useful in improving creativity, self-acceptance and self-control.</div>
+                </div>
+                <div class="content-block row">
+                    <h2 class="col-md-6">Stress management training</h2>
+
+                    <div class="col-md-6"><span class="iniciale">T</span>o be able to manage stress efficiently is the most important for our physical and psychological health. It is essential to improve the stress coping skills and broaden our coping techniques. In order to avoid any health damage caused by chronic stress good self-efficiency should be developed together with the everyday use of coping techniques.</div>
+                </div>
+                <div class="content-block row">
+                    <h2 class="col-md-6">Conflict management training</h2>
+
+                    <div class="col-md-6"><span class="iniciale">C</span>onflicts happen everyday and many time they are necessary too. So do not try to avoid your conflicts, learn to handle them. For an efficient solution, you have to recognise your conflicts and create an efficient management style and strategy.</div>
+                </div>
+                <div class="content-block row">
+                    <h2 class="col-md-6">Emotional intelligence development</h2>
+
+                    <div class="col-md-6"><span class="iniciale">E</span>motional intelligence makes us able to recognise and express each others’ feelings. This helps to create good functioning relationships, high self-satisfaction and authentic communication. It is a key factor to our psychological well-being and the ability to motivate others.</div>
+                </div>
+                <div class="content-block row">
+                    <h2 class="col-md-6">Burnout prevention</h2>
+
+                    <div class="col-md-6"><span class="iniciale">I</span>n our rushing world even the most devoted workers may lose their interest in their job due to the heavy burdens. This may cause him/her to shove off the reality and pay less attention to the details. Moreover, it can cause physical symptoms as well, so everyone should be aware that taking a rest and paying more attention to ourselves is more important than chasing success at the workplace.</div>
+                </div>
+            </div>
+        </section>        <section id="coaching" style="display: none;">
+
+            <div class="page-header">
+                <div class="header-logo"></div>
+                <nav class="menu">
+                    <ul class="menu-ul" style="display:flex;">
+                        <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                        <li><a class="firstpage" href="#work">Recruitment</a></li>
+                        <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                        <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                        <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                        <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                        <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="lang-select">	<li class="lang-item lang-item-15 lang-item-fr"><a hreflang="fr-FR" href="http://www.humanskill.hu/?lang=fr">Français</a></li>
+                <li class="lang-item lang-item-5 lang-item-hu current-lang"><a hreflang="hu-HU" href="http://www.humanskill.hu/?lang=hu">Magyar</a></li>
+                <li class="lang-item lang-item-3 lang-item-en"><a hreflang="en-GB" href="http://www.humanskill.hu/">English</a></li>
+            </div>
+            <button class="c-hamburger c-hamburger--htla">
+                <span>toggle menu</span>
+            </button>
+            <nav class="mobile-menu">
+                <ul class="menu-ul">
+                    <li><a class="firstpage secondpage" href="#top">Main</a></li>
+                    <li><a class="firstpage" href="#work">Recruitment</a></li>
+                    <li><a class="firstpage secondpage" href="#about-us">About us</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#company">Organisational development</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#training">Training</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#coaching">Coaching</a></li>
+                    <li class="in-slider"><a class="secondpage" href="#services">Other psychological services</a></li>
+
+                    <li><a class="firstpage secondpage" href="#referenciak">References</a></li>
+                    <li><a class="firstpage secondpage" href="#contact-cont">Contact</a></li>
+                    <li><a class="firstpage" href="#cv-upload">CV Upload</a></li>
+
+                </ul>
+
+
+
+            </nav>
+            <div class="page-image col-xs-12" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/coaching_menu_opt-1.jpg)">
+                <div class="scrolldown"></div>
+                <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
+                    <h2 class="section-title" style="margin: 10px;">Coaching</h2>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="list-block container">
+                <div class="content-block row">
+                    <div class="col-xs-12"><b>„Semmi nem állandó, csak a változás.”   (Hérakleitosz ie. 500) </b><br><br>
+                        Talán nem meglepő, hogy már az ókori görögök is így gondolták, napjaink felgyorsult világában, a mindennapok teremtette kihívások közepette pedig kiemelt szerepe van a környezeti változások megfelelő adaptációjának és az ahhoz való hatékony alkalmazkodásnak. Sokszor tapasztalható, hogy az egyén ugyan képes meghatározni a cél, a változás eléréséhez vezető utat, de segítséget igényel abban, hogy végig tudjon menni rajta. A coaching kiváló eszköznek bizonyulhat elakadásai feltérképezésében, változásai véghezvitelében és belső erőforrásai optimális kiaknázásában.
+                    </div>
+
+                    <div class="content-block row">
+                        <h2 class="list-title">Mit csinál a coach?</h2>
+                        <div class="col-xs-12">A coach nem tanácsadó, hanem egy segítő, aki rávezeti kliensét saját válaszainak megtalálására. Megfelelő kérdezéstechnikájának segítségével pedig tudatosít, tükröt tart, a coaching eszközeit alkalmazva segíti kibontakoztatni az ügyfelét miközben támogató attitűddel, pozitív megerősítéssel ösztönzi kliensét belső erőforrásai kiaknázásában, mozgósításában. A kliens a folyamat közbeni tapasztalatainak, élményeinek, felismeréseinek köszönhetően, egy új szemléletmód elsajátításával képessé válik problémáinak önálló megoldására is.
+                        </div>
+
+                    </div>
+
+                    <h2 class="list-title">What does "coaching" stand for?</h2>
+
+                </div>
+                <div class="list">
+                    <p class="col-xs-12 col-md-offset-2 col-md-4">self-knowledge </p>
+                    <p class="col-xs-12 col-md-offset-2 col-md-4">self-confidence </p>
+                    <div class="clearfix"></div>                <p class="col-xs-12 col-md-offset-2 col-md-4">proactivity </p>
+                    <p class="col-xs-12 col-md-offset-2 col-md-4">self-efficiency </p>
+                    <div class="clearfix"></div>                <p class="col-xs-12 col-md-offset-2 col-md-4">motivation </p>
+                    <p class="col-xs-12 col-md-offset-2 col-md-4">assertivity </p>
+                    <div class="clearfix"></div>                <p class="col-xs-12 col-md-offset-2 col-md-4">decision making </p>
+                    <p class="col-xs-12 col-md-offset-2 col-md-4">delegation </p>
+                    <div class="clearfix"></div>                <p class="col-xs-12 col-md-offset-2 col-md-4">coping with stress and conflicts </p>
+                    <p class="col-xs-12 col-md-offset-2 col-md-4">efficiency of resource distribution </p>
+                    <div class="clearfix"></div>                <p class="col-xs-12 col-md-offset-2 col-md-4">leadership style and charisma </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="content-image cloudgirl"></div>
+            <div class="content container">
+                <h2 style="color: #ff0; text-align: center; margin-bottom: 50px; font-size: 32px;">Melyek a főbb coaching irányzataink?</h2>
+                <div class="content-block row">
+                    <div class="col-xs-12">Coaching is a method that can improve personal efficiency by raising awareness of the steps leading to the defined goals and enhancing the focus on tasks. Besides this it has a good impact on the personality as it provides full view of the strength and weakness which results in a more balanced lifestyle thus enhancing personal development. </div>
+                </div>
+                <div class="content-block row">
+                    <div class="col-xs-12">Coaching can be used in many fields, during the individual sessions your employee will learn the proper attitude and behaviour that fits into your organisational goals and development plans.
+
+                        Feel free to contact us and our professional counselors will help you to enreach your proposed goals.
+                    </div>
+                </div>
+            </div>
+
+
+        </section>    <div class="upload">
+            [wordpress_file_upload uploadtitle="Önéletrajz feltöltése"]</div>
+
+            <script>
+
+jQuery(function( $ ) {
+  $("#fedlap .col-xs-6:nth-child(1)").click(function(){
+    $("#cv-upload-container").css('display','block');
+  });
+
+  $("#fedlap .col-xs-6:nth-child(2)").click(function(){
+    $("#cv-upload-container").css('display','none');
+  });
+
+});
+
+</script>        </main><!-- /.main -->
+    </div><!-- /.content -->
+</div><!-- /.wrap -->
+<div id="referenciak">
+    <h2>References</h2>
+    <div id="ref-blocks">
+        <div class="ref-block">
+            <img src="http://www.humanskill.hu/wp-content/themes/humanskill/assets/images/Casada-Logo1.jpg">
+        </div>
+        <div class="ref-block">
+            <img src="http://www.humanskill.hu/wp-content/themes/humanskill/assets/images/duna.png">
+        </div>
+        <div class="ref-block">
+            <img src="http://www.humanskill.hu/wp-content/themes/humanskill/assets/images/OTPbanka_logo.jpg">
+        </div>
+        <div class="ref-block">
+            <img src="http://www.humanskill.hu/wp-content/themes/humanskill/assets/images/peugeot-logo.jpg">
+        </div>
+    </div>
+</div>
+<footer class="content-info">
+    <div class="container-fluid">
+        <div id="contact-cont" class="col-xs-12 col-md-4">
+            <h3>Contact</h3>
+            <div class="contact">
+                <div class="tel"> <span class="icon-phone"> </span>+36 20 382 7224 </div>
+                <div class="email"><span class="icon-mail"></span> info@humanskill.org</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <h3>Firm details</h3>
+            <div class="social">
+                <a class="facebook" href="https://www.facebook.com"></a>
+                <p>Bercoop Bt. </p>
+                <p>Headquarter: 1124 Budapest, Sasfiók u. 4. </p>
+                <p>Company registration number: 01 06 113050 </p>
+                <p>Tax number: 28208448343 </p>
+                <p>© Copyright 2014. All rights reserved. </p>
+                <p><a href="http://www.humanskill.hu/wp-content/uploads/files/adatvedelmi_nyilatkozat.PDF" download="">Adatvédelmi nyilatkozat</a></p>
+            </div>
+        </div>
+        <div id="cv-upload-container" class="col-xs-12 col-md-4">
+            <h3>Upload CV</h3>
+            <div id="cv-upload"><div role="form" class="wpcf7" id="wpcf7-f241-o1" lang="hu-HU" dir="ltr">
+                <div class="screen-reader-response"></div>
+                <form action="/#wpcf7-f241-o1" method="post" class="wpcf7-form" enctype="multipart/form-data" novalidate="novalidate">
+                    <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="241">
+                        <input type="hidden" name="_wpcf7_version" value="4.4.1">
+                        <input type="hidden" name="_wpcf7_locale" value="hu_HU">
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f241-o1">
+                        <input type="hidden" name="_wpnonce" value="95055b1585">
+                    </div>
+                    <div style="color:grey;">
+                        <p>Name (required)<br>
+                            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </p>
+                        <div style="display:none"><span class="wpcf7-form-control-wrap text-953"><input type="text" name="text-953" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Send your CV"></span></div>
+                        <p>Email address (required)<br>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </p>
+                        <p>Message <br><br>
+                            <span class="wpcf7-form-control-wrap text-78"><input type="text" name="text-78" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span>
+                        </p>
+                        <p>CV:<br>
+                            <span class="wpcf7-form-control-wrap file-706"><input type="file" name="file-706" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></p>
+                        <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><img class="ajax-loader" src="http://www.humanskill.hu/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></p>
+                    </div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>      </div>
+        </div>
+    </div>
+</footer><script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.humanskill.hu\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.4.1"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/libs/cycle2/jquery.cycle2.min.js?ver=2.10.7"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/libs/cycle2/jquery.cycle2.carousel.min.js?ver=2.10.7"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/libs/cycle2/jquery.cycle2.swipe.min.js?ver=2.10.7"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/libs/cycle2/jquery.cycle2.tile.min.js?ver=2.10.7"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/libs/cycle2/jquery.cycle2.video.min.js?ver=2.10.7"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/templates/dark/script.js?ver=2.10.7"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/templates/thumbnails/script.js?ver=2.10.7"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/plugins/cyclone-slider-2/js/client.js?ver=2.10.7"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-content/themes/humanskill/dist/scripts/main.js"></script>
+<script type="text/javascript" src="http://www.humanskill.hu/wp-includes/js/wp-embed.min.js?ver=4.4.2"></script>
+
+
+</body></html>
