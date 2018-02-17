@@ -11,6 +11,6 @@ public class RenderController {
 
     public static ModelAndView renderIndexPage(Request req, Response res) {
         Map params = new HashMap<>();
-        return new ModelAndView(params, "index");
+        return new ModelAndView(params, "index2");
     }
 }
