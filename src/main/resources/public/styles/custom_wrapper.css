@@ -1,0 +1,5 @@
+#wrapper {
+height: auto;
+width: 1200px;
+margin: 0 auto; /*this will centralize the div, horizontal. so that it is nice looking in the middle on different computer screens. */
+}
