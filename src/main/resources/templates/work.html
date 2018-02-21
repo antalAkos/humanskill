@@ -36,18 +36,18 @@
                 <h2 class="col-md-4" th:text="${procedure}">The whole procedure</h2>
 
                 <div class="col-md-8" ><p th:text="${procedureSub}">From the application to your first workday:</p> <br></br>
-                    <ul>
-                        <li>You send us your cv</li>
-                        <li>We contact you</li>
-                        <li>We make an interview</li>
-                        <li>We propose you to our clients/partners</li>
+                    <ul >
+                        <li th:text="${procedure1}">You send us your cv</li>
+                        <li th:text="${procedure2}">We contact you</li>
+                        <li th:text="${procedure3}" >We make an interview</li>
+                        <li th:text="${procedure4}">We propose you to our clients/partners</li>
                     </ul>
-                    <ul>
+                    <ul >
 
-                        <li>We inform you about the results</li>
-                        <li>We organise your travel</li>
-                        <li>We make your contract</li>
-                        <li>You start your work</li>
+                        <li th:text="${procedure5}">We inform you about the results</li>
+                        <li th:text="${procedure6}">We organise your travel</li>
+                        <li th:text="${procedure7}">We make your contract</li>
+                        <li th:text="${procedure8}">You start your work</li>
                     </ul>
 
                     <p th:text="${procedureLast}">As soon as you apply for our job offers or you send us your CV here, we contact you on your phone number. It is very important to attach a professional CV during your application so we can determine whether you are a potential candidate for our job offers or not. In case we find an appropriate job opportunity, we will let you know by phone. </p></div>

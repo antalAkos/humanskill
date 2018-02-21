@@ -9,7 +9,7 @@
             <div class="page-image col-xs-12 parallax-window" data-parallax="scroll" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/munkaerokozvetites_slide-1920x1080-2.jpg)">
                 <div class="scrolldown"></div>
                 <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
-                    <h2 class="section-title" style="margin: 10px;">About us</h2>
+                    <h2 class="section-title" style="margin: 10px;" th:text="${aboutus}">About us</h2>
                     <!--<p class = "section-description">Növelné személyes hatékonyságát vagy talán delegálási problémái vannak alkalmazottai irányába? Esetleg proaktivitását, asszertivitását fejlesztené? A coaching egy olyan gondolkodásmód és eszköz, mely mindezekre megoldást nyújt és elősegíti a vezetői és személyes fejlődését. </p>-->
                 </div>
             </div>
@@ -17,25 +17,19 @@
             <div class="content container">
                 <div class="content-image hand"></div>
                 <div class="content-block row">
-                    <h2 class="col-md-4">Who we are</h2>
+                    <h2 class="col-md-4" th:text="${weare}">Who we are</h2>
 
-                    <div class="col-md-8">
-                        Nowadays it is simply not enough to recruit, then select the best skilled candidate, but it is also crucial to make them devoted to the company in order to be more competitive on the market, while raising the overall satisfaction results in a way better performance than the average.
+                    <div class="col-md-8" th:text="${weareSection}">
 
-                        Our mission is not only to select the best candidate, but to provide follow up measures and feedback too, on the other hand to manage your current workforce from the beginning. With our HR methods we can lead your business department to more productive functioning, moreover providing solutions to your workforce problems (if there are any) starting with recruitment to the competency development of your key employees. After identifying the problematic field, we provide flexible solutions focused onto your organisation by analyzing its variables.
-
-                        Besides the professional skills, it is essential to consider the individual competences and personal attributes as well. We provide not only professionally competent workforce, but also that personality who can fit the best into the organisational expectations and atmosphere for long term.
-                        During our work we firstly identify then evaluate the common factors of your organisation and provide the most effective solution to help the personal growth of your employees and implement your ideas or missions to make them come true.
-                        <!--</div>'-->
                     </div>
                 </div>
                 <div class="content-image blueman"></div>
                 <div class="content-block row">
-                <h2 class="col-md-4">Why us?</h2>
+                <h2 class="col-md-4" th:text="${whyus}">Why us?</h2>
 
-                <div class="col-md-8">
-                    During our selection process we are able to identify the required professional and personal competences with the help of psychological methods and HR professionals thus providing a high probability of finding the suitable workforce. If needed, we can also make follow up on the candidates and improve the competency and skills of your workforce lowering the costs of replacement.            <!--</div>'-->
+                <div class="col-md-8" th:text="${whyusSection}">
                 </div>
+                    <p th:text="${test}"></p>
             </div>
             </div>
         </section>
