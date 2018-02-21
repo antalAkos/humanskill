@@ -16,42 +16,26 @@
             <div class="backToStart"></div>
 
             <div class="content-block row">
-                <div class="col-xs-12">In our globalised world the cultural and economical borders are becoming more and more transparent causing the economical migration to increase. Most of these individuals leave their connections, families, culture behind and are motivated only by the promise of financial security. This extrinsic motivation results in a decreased sociability, deprivation and apathy causing the employee to be discomforted and decreasing his/her performance at the workplace.
-
-                    The changes while working abroad, the different cultural climate and language difficulties have a counterproductive effect in the new, challanging environment. Most of the employees find it hard to adapt to this condition. All of these leads to a low self-esteem and increased demotivation which should not be neglected.
-
-                    In our Just in Time service we offer the continuous assistance and follow-up with the employees giving them a hand to overcome the upcoming obstacles and facilitating their integration at the new environment. Due to our continous support we are able to intervene immediately if needed.
-                    We also aid the development of organisational identity of each future and existing employee in order to have a long-term and smooth employment.Thanks to all these measures we ensure that you get an employee who is able to successfully adapt to any situation and fits the requirements the best.
-                    Human Skill team provides constant support and believes in preventive approach so no corrective intervention is needed allowing us to decrease your overall cost of recruitment.
-
-                    We provide flexible solutions in recruitment and staffing so you can be sure that you get the best candidate who will do everything for your company’s success.
-                    Bearing in mind both the clients and the candidates needs we provide quality service in the dynamically changing market.
-
-                    The requirements are determined together with the clients considering the specifications of the company and the scope of activity allowing us to assess the needs in a more complex way. According to the individual needs we use different competency tests and provide personality profiles so we can select the best candidate who can efficiently fit into the organisational culture and fulfill his task with a professional attitude and devotion. We aim to pliantly adapt to the individual demands and to ensure that the best candidate is selected.
+                <div class="col-xs-12" th:text="${recruitmentSection1}">
                 </div>
             </div>
 
             <div class="content-block row">
-                <h2 class="col-md-4">For candidates</h2>
+                <h2 class="col-md-4" th:text="${forcandidates}">For candidates</h2>
 
-                <div class="col-md-8">We provide the whole administration and management of your employment abroad. With a supportive attitude we stand for your case any problem might arise.
-                    Our service is free of charge there are no hidden costs.
-                    It is up to you to shape your future and for this you are at the right place! Contact us and we help you to reach a better living standard. After you have sent your application we will get in touch you with detailed info pack and you will also have place to ask your questions. Are you ready?
-                </div>
+                <div class="col-md-8" th:text="${forcandidatesSection}"></div>
             </div>
 
             <div class="content-block row">
-                <h2 class="col-md-4">The application process</h2>
+                <h2 class="col-md-4" th:text="${applicationProcess}">The application process</h2>
 
-                <div class="col-md-8">If you are determined to change, upload your CV / Resumé here and we will search for the job that meets your profile. After your application we will contact you to find a suitable position as soon as possible.
-                    Our partners provide safe environment and proper circumstances making your everyday life as comfortable as possible. Our support does not end after you travel abroad. If you face any vismaiors, feel free to contact us and we will give you a hand to manage the problem.
-                </div>
+                <div class="col-md-8" th:text="${applicationProcessSection}"></div>
             </div>
 
             <div class="content-block row">
-                <h2 class="col-md-4">The whole procedure</h2>
+                <h2 class="col-md-4" th:text="${procedure}">The whole procedure</h2>
 
-                <div class="col-md-8">From the application to your first workday: <br></br>
+                <div class="col-md-8" ><p th:text="${procedureSub}">From the application to your first workday:</p> <br></br>
                     <ul>
                         <li>You send us your cv</li>
                         <li>We contact you</li>
@@ -59,51 +43,38 @@
                         <li>We propose you to our clients/partners</li>
                     </ul>
                     <ul>
-                        <li style="display:none"></li>
-                        <li style="display:none"></li>
-                        <li style="display:none"></li>
-                        <li style="display:none"></li>
+
                         <li>We inform you about the results</li>
                         <li>We organise your travel</li>
                         <li>We make your contract</li>
                         <li>You start your work</li>
                     </ul>
 
-                    As soon as you apply for our job offers or you send us your CV here, we contact you on your phone number. It is very important to attach a professional CV during your application so we can determine whether you are a potential candidate for our job offers or not. In case we find an appropriate job opportunity, we will let you know by phone. </div>
+                    <p th:text="${procedureLast}">As soon as you apply for our job offers or you send us your CV here, we contact you on your phone number. It is very important to attach a professional CV during your application so we can determine whether you are a potential candidate for our job offers or not. In case we find an appropriate job opportunity, we will let you know by phone. </p></div>
             </div>
 
             <div class="content-block row">
-                <h2 class="col-md-4">The interview</h2>
+                <h2 class="col-md-4" th:text="${interview}">The interview</h2>
 
-                <div class="col-md-8">Steps:
-                    <ul><div class="interjuMenete">
-                        <li>Testing your foreign language knowledge</li>
-                        <li>Assessing your work experience and competencies</li>
-                        <li>Discussing your goals and interests so we can find the most suitable job</li>
-                        <li>Reviewing our activity and the details of employment abroad</li>
-                        <li>Discussing your questions</li>
+                <div class="col-md-8" ><p th:text="${steps}"></p>
+                    <ul th:each="step :${stepsList}"><div  class="interjuMenete">
+                        <li th:text="${step}"></li>
+
                     </div></ul>
 
-                    <img src="/assets/images/interju-menete-kep-menu.png" alt="Interjú menete" style="float: right;width: 150px;"></img> After the interview we will search for a suitable job. In case you have applied for our ongoing job offer and you meet the requirements, we contact our client and contact you with the result. In case you don’t get selected for the open position, we will help you to find another offer. This means that if you have already registered and interviewed with us, we can inform you about our new job offers in the future granting you a good possibility of getting a job by us.
+                    <img src="/assets/images/interju-menete-kep-menu.png" alt="Interjú menete" style="float: right;width: 150px;"></img>
+                    <p th:text="${stepLast}">After the interview we will search for a suitable job. In case you have applied for our ongoing job offer and you meet the requirements, we contact our client and contact you with the result. In case you don’t get selected for the open position, we will help you to find another offer. This means that if you have already registered and interviewed with us, we can inform you about our new job offers in the future granting you a good possibility of getting a job by us.
 
-                    Any questions? Should you need any more information, feel free to contact us!
+                        Any questions? Should you need any more information, feel free to contact us!</p>
 
                 </div>
             </div>
         </div>
         <div class="clearfix"></div>
         <div class="list-block container">
-            <h2 class="list-title">What are our advantages:</h2>
-            <div class="list">
-                <p class="col-xs-12 col-md-offset-2 col-md-4">Professional psychological selection methods </p>
-                <p class="col-xs-12 col-md-offset-2 col-md-4">Fast and flexible work </p>
-                <div class="clearfix"></div>
-                <p class="col-xs-12 col-md-offset-2 col-md-4">Extendsive candidate database </p>
-                <p class="col-xs-12 col-md-offset-2 col-md-4">Follow-up and psychological support to the workers </p>
-                <div class="clearfix"></div>
-                <p class="col-xs-12 col-md-offset-2 col-md-4">Fair price policy </p>
-                <p class="col-xs-12 col-md-offset-2 col-md-4">Client-oriented approach </p>
-                <div class="clearfix"></div>
+            <h2 class="list-title" th:text="${advantages}" >What are our advantages:</h2>
+            <div th:each="advantage :${advantagesList}" class="list">
+                <p th:text="${advantage}" class="col-xs-12 col-md-offset-2 col-md-4">Professional psychological selection methods </p>
             </div>
         </div>
     </section>

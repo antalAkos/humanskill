@@ -9,7 +9,7 @@ import static spark.Spark.*;
 public class Server {
 
     private static final Logger logger = LoggerFactory.getLogger(Server.class);
-
+    private static RenderController renderController = new RenderController();
     public static void main(String[] args) throws IllegalArgumentException {
 
         // default server settings
@@ -19,7 +19,10 @@ public class Server {
         port(7000);
 
 
-        get("/", RenderController::renderIndexPage, new ThymeleafTemplateEngine());
+        get("/", renderController::renderIndexPage, new ThymeleafTemplateEngine());
+        get("/:lang", renderController::renderIndexHu, new ThymeleafTemplateEngine());
+
+
 
     }
 }
