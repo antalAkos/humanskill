@@ -296,3 +296,185 @@ section#services .content-block:nth-child(6) h2:after{
     font-weight: bold;
     color: #ffff00;
 }
+@media only screen and (max-width:320px) {
+    .cycloneslider-template-standard .cycloneslider-caption .caption-wrapper .cycloneslider-caption-title {
+    font-size: 15px;
+}
+}div.cssload-content {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #353145;
+    position: fixed;
+    z-index: 10001;
+    margin-top: -20px;
+    display: box;
+    display: -o-box;
+    display: -ms-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-direction: normal;
+    -o-box-direction: normal;
+    -ms-box-direction: normal;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    box-align: center;
+    -o-box-align: center;
+    -ms-box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    box-pack: center;
+    -o-box-pack: center;
+    -ms-box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+}
+div.cssload-content.loaded {
+    -webkit-animation: infrontAnimation 1s ease-in-out;
+    animation: infrontAnimation 1s ease-in-out;
+}
+.cssload-l1, .cssload-l2, .cssload-l3 {
+    background: #ff0;
+    height: 5px;
+    width: 29px;
+    margin: 5px;
+    animation: cssload-loading1 1.15s 0s infinite ease-in-out;
+    -o-animation: cssload-loading1 1.15s 0s infinite ease-in-out;
+    -ms-animation: cssload-loading1 1.15s 0s infinite ease-in-out;
+    -webkit-animation: cssload-loading1 1.15s 0s infinite ease-in-out;
+    -moz-animation: cssload-loading1 1.15s 0s infinite ease-in-out;
+}
+.cssload-l2 {
+    animation: cssload-loading2 .58s 0s infinite ease-in-out alternate;
+    -o-animation: cssload-loading2 .58s 0s infinite ease-in-out alternate;
+    -ms-animation: cssload-loading2 .58s 0s infinite ease-in-out alternate;
+    -webkit-animation: cssload-loading2 .58s 0s infinite ease-in-out alternate;
+    -moz-animation: cssload-loading2 .58s 0s infinite ease-in-out alternate;
+}
+.cssload-l3 {
+    animation: cssload-loading1 1.15s 0s infinite ease-in-out reverse;
+    -o-animation: cssload-loading1 1.15s 0s infinite ease-in-out reverse;
+    -ms-animation: cssload-loading1 1.15s 0s infinite ease-in-out reverse;
+    -webkit-animation: cssload-loading1 1.15s 0s infinite ease-in-out reverse;
+    -moz-animation: cssload-loading1 1.15s 0s infinite ease-in-out reverse;
+}
+@keyframes cssload-loading1 {
+    0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+}
+}@-webkit-keyframes cssload-loading1 {
+    0% {
+    -webkit-transform: rotate(0deg);
+}
+50% {
+    -webkit-transform: rotate(180deg);
+}
+to {
+    -webkit-transform: rotate(1turn);
+}
+}@keyframes cssload-loading2 {
+    0% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+}
+to {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+}@-webkit-keyframes cssload-loading2 {
+    0% {
+    -webkit-transform: translateX(10px);
+}
+to {
+    -webkit-transform: translateX(-10px);
+}
+}@-webkit-keyframes animatedButton {
+    0% {
+    background-position-y: 5px;
+}
+to {
+    background-position-y: 105px;
+}
+}@keyframes animatedButton {
+    0% {
+    background-position-y: 5px;
+}
+to {
+    background-position-y: 105px;
+}
+}@-webkit-keyframes logo-in {
+    0% {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}@keyframes logo-in {
+    0% {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}@-webkit-keyframes infrontAnimation {
+    0% {
+    opacity: 1;
+}
+50% {
+    height: 200px;
+}
+50%, to {
+    opacity: 0;
+}
+to {
+    height: 0;
+}
+}@keyframes infrontAnimation {
+    0% {
+    opacity: 1;
+}
+50% {
+    height: 200px;
+}
+50%, to {
+    opacity: 0;
+}
+to {
+    height: 0;
+}
+}body#tinymce {
+    margin: 12px!important;
+}
+/*# sourceMappingURL=main.css.map */

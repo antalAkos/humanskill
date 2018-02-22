@@ -28,6 +28,9 @@ public class RenderController {
         params.put("advantagesList",
                 new ArrayList<>(Arrays.asList(lang.getString("advantagesList").split(",")))
         );
+        params.put("resultList",
+                new ArrayList<>(Arrays.asList(lang.getString("resultList").split(",")))
+        );
 
         return new ModelAndView(params, "index");
 

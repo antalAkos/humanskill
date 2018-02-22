@@ -7,22 +7,22 @@
             <div class="page-image col-xs-12" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/szervezetfejlesztes_menu_opt-1.jpg)">
                 <div class="scrolldown"></div>
                 <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
-                    <h2 class="section-title" style="margin: 10px;">Organisational development</h2>
+                    <h2 class="section-title" style="margin: 10px;" th:text="${orgdev}">Organisational development</h2>
                 </div>
             </div>
             <div class="clearfix"></div>
 
             <div class="content container">
                 <div class="content-block row">
-                    <h2 class="col-md-4">Organisational development</h2>
+                    <h2 class="col-md-4" th:text="${orgdev}">Organisational development</h2>
 
-                    <div class="col-md-8"><p>Our scope of activity also includes the improvement your organisational procedures. Using a diverse range of psycholgical methods we are able to integrate your future employee into your organisation with an optimal motivational and satisfactional level. We believe that the development of organisational procedures and culture has great impact on the efficiency of your business performance and resource management, moreover it influences employee satisfaction in a positive way and reduces fluctuation. </p></div>
+                    <div class="col-md-8"><p th:text="${orgdevSection}">Our scope of activity also includes the improvement your organisational procedures. Using a diverse range of psycholgical methods we are able to integrate your future employee into your organisation with an optimal motivational and satisfactional level. We believe that the development of organisational procedures and culture has great impact on the efficiency of your business performance and resource management, moreover it influences employee satisfaction in a positive way and reduces fluctuation. </p></div>
                 </div>
                 <div class="content-block row">
                     <div class="content-image piramyd"></div>
-                    <h2 class="col-md-4">Steps of the process</h2>
+                    <h2 class="col-md-4" th:text="${orgdevsteps}">Steps of the process</h2>
 
-                    <div class="col-md-8">The first step of the development process is to identify the main goals, strategy and problematic factors of the company. First of all we have to clarify the everyday operations, the organisational structure, the working relations, people and organisational culture so we can examine what the exact problem is and how all these can be fit into the main goals. As a second step we are able to intervene and implement new methods in order to reach the established goal.
+                    <div class="col-md-8" th:text="${orgdevstepsSection}">The first step of the development process is to identify the main goals, strategy and problematic factors of the company. First of all we have to clarify the everyday operations, the organisational structure, the working relations, people and organisational culture so we can examine what the exact problem is and how all these can be fit into the main goals. As a second step we are able to intervene and implement new methods in order to reach the established goal.
                         The result of our collaboration is a competitive, potent organisation that is able to operate at a high level of productivity, has an efficient communication and stable vision about the future, last but not least a devoted workforce.
                     </div>
                 </div>
@@ -32,18 +32,11 @@
                     <div class="col-xs-12"></div>
                 </div>
                 <div class="list-block container">
-                    <h2 class="list-title">Results of our methods</h2>
-                    <div class="list">
+                    <h2 class="list-title" th:text="${results}">Results of our methods</h2>
+                    <div class="list" th:each="result : ${resultList}">
 
-                        <p class="col-xs-12 col-md-offset-2 col-md-4">improvement in organisational culture </p>
+                        <p class="col-xs-12 col-md-offset-2 col-md-4" th:text="${result}">improvement in organisational culture </p>
 
-                        <p class="col-xs-12 col-md-offset-2 col-md-4">improvement in organisational communication </p>
-                        <div class="clearfix"></div>
-                        <p class="col-xs-12 col-md-offset-2 col-md-4">efficient HR strategy and an attainable vision </p>
-
-                        <p class="col-xs-12 col-md-offset-2 col-md-4">creation and improvement of HR procedures </p>
-                        <div class="clearfix"></div>
-                        <p class="col-xs-12 col-md-offset-2 col-md-4">team building, creation of group cohesion </p>
                     </div>
                 </div>
             </div>
