@@ -28,6 +28,9 @@ public class RenderController {
         params.put("advantagesList",
                 new ArrayList<>(Arrays.asList(lang.getString("advantagesList").split(",")))
         );
+        params.put("resultList",
+                new ArrayList<>(Arrays.asList(lang.getString("resultList").split(",")))
+        );
 
         return new ModelAndView(params, "index");
 
@@ -36,8 +39,8 @@ public class RenderController {
     public ModelAndView renderIndexHu(Request req, Response res) {
         Map<String, String> params = new HashMap<>();
 
-        Locale hun = new Locale(req.params(":lang"));
-        ResourceBundle lang = ResourceBundle.getBundle("templates/index", hun);
+        Locale locale = new Locale(req.params(":lang"));
+        ResourceBundle lang = ResourceBundle.getBundle("templates/index", locale);
         Enumeration<String> keys = lang.getKeys();
         while (keys.hasMoreElements()) {
             String key = keys.nextElement();
