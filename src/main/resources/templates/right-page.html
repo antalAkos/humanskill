@@ -48,7 +48,7 @@
             <div class="page-image col-xs-12" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/trening_menu_opt-1.jpg)">
                 <div class="scrolldown"></div>
                 <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
-                    <h2 class="section-title" style="margin: 10px;">Training</h2>
+                    <h2 class="section-title" style="margin: 10px;" th:text="${training}">Training</h2>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -56,32 +56,32 @@
             <div class="content container">
                 <div class="content-block row">
 
-                    <div class="col-xs-12">Trainings are popular development tools focusing on group dynamic processes and the improvement of individual competences. We provide outstanding training tools for developing soft skills which are not only useful at the workplace, but in everyday life as well. We offer individual counselings and group trainings during which you can acquire new skills in situational exercises.  All of our trainings are conducted in a friendly manner and supportive atmosphere so you can be sure you will leave with a successful experience.</div>
+                    <div class="col-xs-12" th:text="${trainingFirst}">Trainings are popular development tools focusing on group dynamic processes and the improvement of individual competences. We provide outstanding training tools for developing soft skills which are not only useful at the workplace, but in everyday life as well. We offer individual counselings and group trainings during which you can acquire new skills in situational exercises.  All of our trainings are conducted in a friendly manner and supportive atmosphere so you can be sure you will leave with a successful experience.</div>
                 </div>
                 <div class="content-block row">
-                    <h2 class="col-md-6">Autogenic training</h2>
+                    <h2 class="col-md-6" th:text="${autogen}">Autogenic training</h2>
 
-                    <div class="col-md-6">Autogen training is a desensitation-relaxation technique that is easily attainable and helps you to reach a relaxed state between sleeping and wakefulness. It affects the connection of muscle-motion-mood through the so called biofeedback mechanism which is useful in improving creativity, self-acceptance and self-control.</div>
+                    <div class="col-md-6" th:text="${autogenSection}">Autogen training is a desensitation-relaxation technique that is easily attainable and helps you to reach a relaxed state between sleeping and wakefulness. It affects the connection of muscle-motion-mood through the so called biofeedback mechanism which is useful in improving creativity, self-acceptance and self-control.</div>
                 </div>
                 <div class="content-block row">
-                    <h2 class="col-md-6">Stress management training</h2>
+                    <h2 class="col-md-6" th:text="${stress}">Stress management training</h2>
 
-                    <div class="col-md-6">To be able to manage stress efficiently is the most important for our physical and psychological health. It is essential to improve the stress coping skills and broaden our coping techniques. In order to avoid any health damage caused by chronic stress good self-efficiency should be developed together with the everyday use of coping techniques.</div>
+                    <div class="col-md-6" th:text="${stressSection}">To be able to manage stress efficiently is the most important for our physical and psychological health. It is essential to improve the stress coping skills and broaden our coping techniques. In order to avoid any health damage caused by chronic stress good self-efficiency should be developed together with the everyday use of coping techniques.</div>
                 </div>
                 <div class="content-block row">
-                    <h2 class="col-md-6">Conflict management training</h2>
+                    <h2 class="col-md-6" th:text="${conflict}">Conflict management training</h2>
 
-                    <div class="col-md-6">Conflicts happen everyday and many time they are necessary too. So do not try to avoid your conflicts, learn to handle them. For an efficient solution, you have to recognise your conflicts and create an efficient management style and strategy.</div>
+                    <div class="col-md-6" th:text="${conflictSection}">Conflicts happen everyday and many time they are necessary too. So do not try to avoid your conflicts, learn to handle them. For an efficient solution, you have to recognise your conflicts and create an efficient management style and strategy.</div>
                 </div>
                 <div class="content-block row">
-                    <h2 class="col-md-6">Emotional intelligence development</h2>
+                    <h2 class="col-md-6" th:text="${emo}">Emotional intelligence development</h2>
 
-                    <div class="col-md-6">Emotional intelligence makes us able to recognise and express each others’ feelings. This helps to create good functioning relationships, high self-satisfaction and authentic communication. It is a key factor to our psychological well-being and the ability to motivate others.</div>
+                    <div class="col-md-6" th:text="${emoSection}">Emotional intelligence makes us able to recognise and express each others’ feelings. This helps to create good functioning relationships, high self-satisfaction and authentic communication. It is a key factor to our psychological well-being and the ability to motivate others.</div>
                 </div>
                 <div class="content-block row">
-                    <h2 class="col-md-6">Burnout prevention</h2>
+                    <h2 class="col-md-6" th:text="${burn}">Burnout prevention</h2>
 
-                    <div class="col-md-6">In our rushing world even the most devoted workers may lose their interest in their job due to the heavy burdens. This may cause him/her to shove off the reality and pay less attention to the details. Moreover, it can cause physical symptoms as well, so everyone should be aware that taking a rest and paying more attention to ourselves is more important than chasing success at the workplace.</div>
+                    <div class="col-md-6" th:text="${burnSection}">In our rushing world even the most devoted workers may lose their interest in their job due to the heavy burdens. This may cause him/her to shove off the reality and pay less attention to the details. Moreover, it can cause physical symptoms as well, so everyone should be aware that taking a rest and paying more attention to ourselves is more important than chasing success at the workplace.</div>
                 </div>
             </div>
         </section>
@@ -91,43 +91,27 @@
             <div class="page-image col-xs-12" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/coaching_menu_opt-1.jpg)">
                 <div class="scrolldown"></div>
                 <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
-                    <h2 class="section-title" style="margin: 10px;">Coaching</h2>
+                    <h2 class="section-title" style="margin: 10px;" th:text="${coaching}">Coaching</h2>
                 </div>
             </div>
             <div class="clearfix"></div>
             <div class="list-block container">
                 <div class="content-block row">
-                    <div class="col-xs-12"><b>„Semmi nem állandó, csak a változás.”   (Hérakleitosz ie. 500) </b><br></br>
-                        Talán nem meglepő, hogy már az ókori görögök is így gondolták, napjaink felgyorsult világában, a mindennapok teremtette kihívások közepette pedig kiemelt szerepe van a környezeti változások megfelelő adaptációjának és az ahhoz való hatékony alkalmazkodásnak. Sokszor tapasztalható, hogy az egyén ugyan képes meghatározni a cél, a változás eléréséhez vezető utat, de segítséget igényel abban, hogy végig tudjon menni rajta. A coaching kiváló eszköznek bizonyulhat elakadásai feltérképezésében, változásai véghezvitelében és belső erőforrásai optimális kiaknázásában.
+                    <div class="col-xs-12" th:text="${coachingFirst}">
                     </div>
 
                     <div class="content-block row">
-                        <h2 class="list-title">Mit csinál a coach?</h2>
-                        <div class="col-xs-12">A coach nem tanácsadó, hanem egy segítő, aki rávezeti kliensét saját válaszainak megtalálására. Megfelelő kérdezéstechnikájának segítségével pedig tudatosít, tükröt tart, a coaching eszközeit alkalmazva segíti kibontakoztatni az ügyfelét miközben támogató attitűddel, pozitív megerősítéssel ösztönzi kliensét belső erőforrásai kiaknázásában, mozgósításában. A kliens a folyamat közbeni tapasztalatainak, élményeinek, felismeréseinek köszönhetően, egy új szemléletmód elsajátításával képessé válik problémáinak önálló megoldására is.
+                        <h2 class="list-title" th:text="${whatIsCoach}">Mit csinál a coach?</h2>
+                        <div class="col-xs-12" th:text="${whatIsCoachSection}">A coach nem tanácsadó, hanem egy segítő, aki rávezeti kliensét saját válaszainak megtalálására. Megfelelő kérdezéstechnikájának segítségével pedig tudatosít, tükröt tart, a coaching eszközeit alkalmazva segíti kibontakoztatni az ügyfelét miközben támogató attitűddel, pozitív megerősítéssel ösztönzi kliensét belső erőforrásai kiaknázásában, mozgósításában. A kliens a folyamat közbeni tapasztalatainak, élményeinek, felismeréseinek köszönhetően, egy új szemléletmód elsajátításával képessé válik problémáinak önálló megoldására is.
                         </div>
 
                     </div>
 
-                    <h2 class="list-title">What does "coaching" stand for?</h2>
+                    <h2 class="list-title" th:text="${whatStandFor}">What does "coaching" stand for?</h2>
 
                 </div>
                 <div class="list">
                     <p class="col-xs-12 col-md-offset-2 col-md-4">self-knowledge </p>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">self-confidence </p>
-                    <div class="clearfix"></div>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">proactivity </p>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">self-efficiency </p>
-                    <div class="clearfix"></div>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">motivation </p>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">assertivity </p>
-                    <div class="clearfix"></div>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">decision making </p>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">delegation </p>
-                    <div class="clearfix"></div>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">coping with stress and conflicts </p>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">efficiency of resource distribution </p>
-                    <div class="clearfix"></div>
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">leadership style and charisma </p>
                 </div>
             </div>
             <div class="clearfix"></div>
