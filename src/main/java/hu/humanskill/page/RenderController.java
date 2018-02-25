@@ -31,6 +31,9 @@ public class RenderController {
         params.put("resultList",
                 new ArrayList<>(Arrays.asList(lang.getString("resultList").split(",")))
         );
+        params.put("firmDetails",
+                new ArrayList<>(Arrays.asList(lang.getString("firmDetails").split(",")))
+        );
 
         return new ModelAndView(params, "index");
 
