@@ -57,10 +57,12 @@
                 <h2 class="col-md-4" th:text="${interview}">The interview</h2>
 
                 <div class="col-md-8" ><p th:text="${steps}"></p>
-                    <ul th:each="step :${stepsList}"><div  class="interjuMenete">
+                    <ul >
+                        <div th:each="step :${stepsList}" class="interjuMenete">
                         <li th:text="${step}"></li>
 
-                    </div></ul>
+                        </div>
+                    </ul>
 
                     <img src="/assets/images/interju-menete-kep-menu.png" alt="Interjú menete" style="float: right;width: 150px;"></img>
                     <p th:text="${stepLast}">After the interview we will search for a suitable job. In case you have applied for our ongoing job offer and you meet the requirements, we contact our client and contact you with the result. In case you don’t get selected for the open position, we will help you to find another offer. This means that if you have already registered and interviewed with us, we can inform you about our new job offers in the future granting you a good possibility of getting a job by us.

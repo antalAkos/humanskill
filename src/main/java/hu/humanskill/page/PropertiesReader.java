@@ -25,7 +25,7 @@ public class PropertiesReader {
                 new ArrayList<>(Arrays.asList(lang.getString("stepsList").split(",")))
         );
         params.put("advantagesList",
-                new ArrayList<>(Arrays.asList(lang.getString("advantagesList").split(",")))
+                new ArrayList<>(Arrays.asList(lang.getString("advantagesList").split("#")))
         );
         params.put("resultList",
                 new ArrayList<>(Arrays.asList(lang.getString("resultList").split(",")))
