@@ -25,18 +25,22 @@
         <footer class="content-info">
         <div class="container-fluid">
             <div id="contact-cont" class="col-xs-12 col-md-4">
-                <h3>Contact</h3>
+                <h3 th:text="${contact}">Contact</h3>
                 <div class="contact">
-                    <div class="tel" th:text="${phoneNr}"> <span class="icon-phone"> </span>+36 20 382 7224 </div>
-                    <div class="email" th:text="${email}"><span class="icon-mail"></span> info@humanskill.org</div>
+                    <div class="tel" ><p th:inline="text"><span class="icon-phone"> </span>[[${phoneNr}]]</p> </div>
+                    <div class="email" ><p th:inline="text"><span class="icon-mail"></span>[[${email}]] </p></div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4">
                 <h3 th:text="${firm}">Firm details</h3>
-                <a class="facebook" href="https://www.facebook.com"></a>
 
-                <div class="social" th:each="detail:${firmDetails}">
+                <div class="social" >
+                    <a class="facebook" href="https://www.facebook.com"></a>
+
+                    <div th:each="detail:${firmDetails}">
                     <p th:text="${detail}">Bercoop Bt. </p>
+                    </div>
+
 
                     <p><a href="/files/adatvedelmi_nyilatkozat.PDF" download="">Adatvédelmi nyilatkozat</a></p>
                 </div>
@@ -54,19 +58,23 @@
                             <input type="hidden" name="_wpnonce" value="95055b1585"></input>
                         </div>
                         <div style="color:grey;">
-                            <p th:text="${name}">Name (required)<br></br>
+                            <p th:inline="text">[[${name}]]<br></br>
                                 <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></input></span> </p>
-                            <div style="display:none"><span class="wpcf7-form-control-wrap text-953"><input type="text" name="text-953" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Send your CV"></input></span></div>
-                            <p th:text="${clientEmail}">Email address (required)<br></br>
+                            <div style="display:none"><span class="wpcf7-form-control-wrap text-953"><input type="text" name="text-953" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Send your CV"></input></span>
+                            </div>
+                            <p th:inline="text">[[${clientEmail}]]<br></br>
                                 <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></input></span> </p>
-                            <p th:text="${message}">Message <br></br>
+                            <p th:inline="text">[[${message}]] <br></br>
                                 <span class="wpcf7-form-control-wrap text-78"><input type="text" name="text-78" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></input></span>
                             </p>
-                            <p th:text="${message}">CV:<br></br>
-                                <span class="wpcf7-form-control-wrap file-706"><input type="file" name="file-706" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></input></span></p>
-                            <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"></input><img class="ajax-loader" src="http://www.humanskill.hu/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></img></p>
+
+                            <p>   <span class="wpcf7-form-control-wrap file-706"><input type="file" name="file-706" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></input></span></p>
+                            <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"></input><img class="ajax-loader" src="/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></img></p>
                         </div>
-                        <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>      </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+                </div>
             </div>
         </div>
         </footer>

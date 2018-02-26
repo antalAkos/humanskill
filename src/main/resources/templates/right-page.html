@@ -88,7 +88,7 @@
 
         <section id="coaching" style="display: none;">
 
-            <div class="page-image col-xs-12" style="background-image: url(http://www.humanskill.hu/wp-content/uploads/2016/03/coaching_menu_opt-1.jpg)">
+            <div class="page-image col-xs-12" style="background-image: url(/assets/images/munkaerokozvetites_menu_opt-1-1920x1080.jpg)">
                 <div class="scrolldown"></div>
                 <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
                     <h2 class="section-title" style="margin: 10px;" th:text="${coaching}">Coaching</h2>
@@ -97,7 +97,7 @@
             <div class="clearfix"></div>
             <div class="list-block container">
                 <div class="content-block row">
-                    <div class="col-xs-12" th:text="${coachingFirst}">
+                    <div class="col-xs-12" th:utext="${coachingFirst}">
                     </div>
 
                     <div class="content-block row">
@@ -110,14 +110,14 @@
                     <h2 class="list-title" th:text="${whatStandFor}">What does "coaching" stand for?</h2>
 
                 </div>
-                <div class="list">
-                    <p class="col-xs-12 col-md-offset-2 col-md-4">self-knowledge </p>
+                <div class="list" th:each="item:${coachingList}">
+                    <p class="col-xs-12 col-md-offset-2 col-md-4" th:text="${item}">self-knowledge </p>
                 </div>
             </div>
             <div class="clearfix"></div>
             <div class="content-image cloudgirl"></div>
             <div class="content container">
-                <h2 style="color: #ff0; text-align: center; margin-bottom: 50px; font-size: 32px;">Melyek a főbb coaching irányzataink?</h2>
+                <h2 style="color: #ff0; text-align: center; margin-bottom: 50px; font-size: 32px;" th:text="${coachingDir}">Melyek a főbb coaching irányzataink?</h2>
                 <div class="content-block row">
                     <div class="col-xs-12">Coaching is a method that can improve personal efficiency by raising awareness of the steps leading to the defined goals and enhancing the focus on tasks. Besides this it has a good impact on the personality as it provides full view of the strength and weakness which results in a more balanced lifestyle thus enhancing personal development. </div>
                 </div>
@@ -127,8 +127,34 @@
                         Feel free to contact us and our professional counselors will help you to enreach your proposed goals.
                     </div>
                 </div>
-            </div>
+                <div class="content-block row" th:each=" item: ${coachSection}">
+                    <h2 class="col-md-4 non-reached" th:text="${item.key}">„Bankár Coaching”</h2>
 
+                    <div class="col-md-8 non-reached" style="border-left: 1px solid yellow;" th:utext="${item.value}">Szolgáltatásunk speciálisan a pénzügyi, vagyonkezelési szektor munkatársainak, meghatározóan szenior befektetési tanácsadóknak, privátbankároknak, illetve ezen szegmens közép- és felsővezetőinek kínál lehetőséget a szakma folyamatos kihívásai közepette a saját személyes reziliencia és adaptív (vezetői) stratégiák kialakítására, erősítésére. Szakember team-ünk jelentős piaci tapasztalattal, hazai és regionális privát banki környezetben szerzett évtizedes gyakorlattal rendelkező privátbanki vezető, coach, illetve pszichológus kollégákból áll.</div>
+                </div>
+            </div>
+            <div class="content container">
+                <h2 class="epszhead" th:text="${psytest}">Pszichológiai tesztelés</h2>
+                <div class="content-block row" th:each=" item: ${psySection}">
+                    <h2 class="col-md-6 non-reached" th:text="${item.key}">Mik is azok a pszichológiai tesztek?</h2>
+
+                    <div class="col-md-6 non-reached" th:utext="${item.value}">Pszichometriai értelmezésben olyan standardizált eljárások, amelyek egy meghatározott
+
+                        időpontban történő viselkedés mintavételei. Ezen eredmények kvantifikálhatóak,
+
+                        kiértékelhetőek, melyek &nbsp;kiváló visszajelzői viselkedésmintázatunknak, reakcióinknak és
+
+                        mérhetőségének, reliabilitásának köszönhetően segíthetnek minket fejlődésünkben,
+
+                        változásainkban.</div>
+                </div>
+            </div>
+            <h2  class="epszhead" th:text="${rezdev}">Reziliencia fejlesztés</h2>
+            <div class="content-block row" th:each="item : ${rezSection}">
+                <h2 class="col-md-6 non-reached" th:text="${item.key}">Mi az a reziliencia?</h2>
+
+                <div class="col-md-6 non-reached"  th:utext="${item.value}"></div>
+            </div>
         </section>
     </div>
 
