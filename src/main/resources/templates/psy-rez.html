@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8"/>
 
-</head>
 <body>
 <div th:fragment="psy-rez">
     <div class="content-block row" th:each=" item: ${coachSection}">
@@ -11,7 +8,7 @@
 
         <div class="col-md-8 non-reached" style="border-left: 1px solid yellow;" th:utext="${item.value}">Szolgáltatásunk speciálisan a pénzügyi, vagyonkezelési szektor munkatársainak, meghatározóan szenior befektetési tanácsadóknak, privátbankároknak, illetve ezen szegmens közép- és felsővezetőinek kínál lehetőséget a szakma folyamatos kihívásai közepette a saját személyes reziliencia és adaptív (vezetői) stratégiák kialakítására, erősítésére. Szakember team-ünk jelentős piaci tapasztalattal, hazai és regionális privát banki környezetben szerzett évtizedes gyakorlattal rendelkező privátbanki vezető, coach, illetve pszichológus kollégákból áll.</div>
     </div>
-</div>
+
 <div class="content container">
     <h2 class="epszhead" th:text="${psytest}">Pszichológiai tesztelés</h2>
     <div class="content-block row" th:each=" item: ${psySection}">
@@ -33,6 +30,7 @@
     <h2 class="col-md-6 non-reached" th:text="${item.key}">Mi az a reziliencia?</h2>
 
     <div class="col-md-6 non-reached"  th:utext="${item.value}"></div>
+</div>
 </div>
 
 

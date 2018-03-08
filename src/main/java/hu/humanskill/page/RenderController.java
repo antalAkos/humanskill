@@ -23,7 +23,8 @@ public class RenderController {
     }
 
     public ModelAndView renderIndexHu(Request req, Response res) {
-        HashMap<String, Object> params = propertiesReader.read(req.params(":lang"));
+        String lang = req.params(":lang");
+        HashMap<String, Object> params = propertiesReader.read(lang);
 
         return new ModelAndView(params, "index");
     }
