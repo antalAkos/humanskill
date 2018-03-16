@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import spark.template.thymeleaf.ThymeleafTemplateEngine;
 
+import java.io.File;
+
 import static spark.Spark.*;
 
 public class Server {
@@ -16,11 +18,15 @@ public class Server {
         logger.info("Starting server..");
         exception(Exception.class, (e, req, res) -> e.printStackTrace());
         staticFileLocation("/public");
+        File uploadDir = new File("upload");
+        uploadDir.mkdir(); // create the upload directory if it doesn't exist
+        staticFiles.externalLocation("upload");
         port(7000);
 
 
         get("/", renderController::renderIndexPage, new ThymeleafTemplateEngine());
         get("/:lang", renderController::renderIndexHu, new ThymeleafTemplateEngine());
+        post("/save-cv", (req, res) -> renderController.saveCV(req, res, uploadDir));
 
 
 

@@ -42,14 +42,14 @@
                     </div>
 
 
-                    <p><a href="/files/adatvedelmi_nyilatkozat.PDF" download="" th:text="${rights}">Adatvédelmi nyilatkozat</a></p>
+                    <p><a href="/files/adatvedelmi_nyilatkozat.PDF" download="" th:text="${priv}">Adatvédelmi nyilatkozat</a></p>
                 </div>
             </div>
             <div id="cv-upload-container" class="col-xs-12 col-md-4">
                 <h3 th:text="${uploadCV}">Upload CV</h3>
                 <div id="cv-upload"><div role="form" class="wpcf7" id="wpcf7-f241-o1" lang="hu-HU" dir="ltr">
                     <div class="screen-reader-response"></div>
-                    <form action="/#wpcf7-f241-o1" method="post" class="wpcf7-form" enctype="multipart/form-data" novalidate="novalidate">
+                    <form action="/save-cv" method="post" class="wpcf7-form" enctype="multipart/form-data" novalidate="novalidate">
                         <div style="display: none;">
                             <input type="hidden" name="_wpcf7" value="241"></input>
                             <input type="hidden" name="_wpcf7_version" value="4.4.1"></input>

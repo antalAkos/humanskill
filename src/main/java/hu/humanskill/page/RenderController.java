@@ -7,8 +7,19 @@ import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
 import spark.template.thymeleaf.ThymeleafTemplateEngine;
+import spark.utils.IOUtils;
 
+import javax.servlet.MultipartConfigElement;
+import javax.servlet.ServletException;
+import javax.servlet.http.Part;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.*;
+
+import static spark.Spark.redirect;
 
 
 public class RenderController {
@@ -27,6 +38,29 @@ public class RenderController {
         HashMap<String, Object> params = propertiesReader.read(lang);
 
         return new ModelAndView(params, "index");
+    }
+
+     public Object saveCV(Request req, Response res, File uploadDir)  {
+        Map<String, Object> params = propertiesReader.read(null);
+        try {
+
+            Path tempFile = Files.createTempFile(uploadDir.toPath(), "", "");
+            req.raw().setAttribute("org.eclipse.jetty.multipartConfig",
+                    new MultipartConfigElement("/tmp"));
+
+            String filename = req.raw().getPart("file-706").getSubmittedFileName();
+
+            Part uploadedFile = req.raw().getPart("file-706");
+            try (final InputStream in = uploadedFile.getInputStream()) {
+                Files.copy(in, tempFile, StandardCopyOption.REPLACE_EXISTING);
+            }
+            uploadedFile.delete();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+        res.redirect("/");
+        return "";
     }
 
 
