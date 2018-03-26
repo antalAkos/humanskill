@@ -26,6 +26,7 @@ import static spark.Spark.redirect;
 public class RenderController {
 
     PropertiesReader propertiesReader = new PropertiesReader();
+    SendAttachmentEmail sendAttachmentEmail = new SendAttachmentEmail();
 
     public ModelAndView renderIndexPage(Request req, Response res) {
         Map<String, Object> params = propertiesReader.read(null);
@@ -42,7 +43,7 @@ public class RenderController {
     }
 
      public Object saveCV(Request req, Response res)  {
-        Map<String, Object> params = propertiesReader.read(null);
+        Map params = req.params();
         try {
 
             Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public", "upload"), "", "");
@@ -52,6 +53,7 @@ public class RenderController {
             String filename = req.raw().getPart("file-706").getSubmittedFileName();
 
             Part uploadedFile = req.raw().getPart("file-706");
+            //sendAttachmentEmail.sendMail(params, filename);
             try (final InputStream in = uploadedFile.getInputStream()) {
                 Files.copy(in, tempFile, StandardCopyOption.REPLACE_EXISTING);
             }
@@ -60,7 +62,7 @@ public class RenderController {
                 String redirectTo = referer;
             }
             //uploadedFile.delete();
-            //res.redirect(referer);
+            res.redirect(referer);
             return "";
         } catch (Exception e) {
             throw new RuntimeException(e);

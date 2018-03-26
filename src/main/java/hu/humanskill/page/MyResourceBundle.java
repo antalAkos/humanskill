@@ -5,7 +5,6 @@ import java.util.*;
 
 public class MyResourceBundle {
 
-    // feature variables
     private ResourceBundle bundle;
     private String fileEncoding;
 
