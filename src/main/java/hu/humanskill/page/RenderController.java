@@ -1,5 +1,6 @@
 package hu.humanskill.page;
 
+import org.eclipse.jetty.http.HttpStatus;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.messageresolver.StandardMessageResolver;
@@ -40,11 +41,11 @@ public class RenderController {
         return new ModelAndView(params, "index");
     }
 
-     public Object saveCV(Request req, Response res, File uploadDir)  {
+     public Object saveCV(Request req, Response res)  {
         Map<String, Object> params = propertiesReader.read(null);
         try {
 
-            Path tempFile = Files.createTempFile(uploadDir.toPath(), "", "");
+            Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public", "upload"), "", "");
             req.raw().setAttribute("org.eclipse.jetty.multipartConfig",
                     new MultipartConfigElement("/tmp"));
 
@@ -54,13 +55,17 @@ public class RenderController {
             try (final InputStream in = uploadedFile.getInputStream()) {
                 Files.copy(in, tempFile, StandardCopyOption.REPLACE_EXISTING);
             }
-            uploadedFile.delete();
+            String referer = req.headers("Referer");
+            if(referer != null){
+                String redirectTo = referer;
+            }
+            //uploadedFile.delete();
+            //res.redirect(referer);
+            return "";
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
-        res.redirect("/");
-        return "";
     }
 
 

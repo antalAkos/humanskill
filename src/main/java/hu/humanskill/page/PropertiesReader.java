@@ -1,6 +1,5 @@
 package hu.humanskill.page;
 
-import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 public class PropertiesReader {
