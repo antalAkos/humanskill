@@ -1,3 +1,4 @@
+
 ! function(t) {
     "function" == typeof define && define.amd ? define(["jquery"], t) : t(jQuery)
 }(function(t) {
@@ -7341,10 +7342,10 @@ function(t) {
                             i = o.map(function() {
                                 return t(this).offset().top < e ? this : void 0
                             });
-                        console.log(i), i = i[i.length - 1];
+                        i = i[i.length - 1];
                         var a = i && i.length ? i[0].id : "";
                         n.removeClass("active").filter("[href='#" + a + "']").addClass("active"), t("body").scrollTop() >= window.innerHeight ? t(".page-header").addClass("scrolled-down") : t(".page-header").removeClass("scrolled-down"), t(".content-block, .list-block").each(function() {
-                            t("body").scrollTop() >= t(this).offset().top - window.innerHeight ? (t(this).find("h2").removeClass("non-reached"), t(this).find("div").removeClass("non-reached"), t(this).find("ul").removeClass("non-reached")) : (t(this).find("h2").addClass("non-reached"), t(this).find("div").addClass("non-reached"), t(this).find("ul").addClass("non-reached"))
+                            /*t("body").scrollTop() >= t(this).offset().top - window.innerHeight ? (t(this).find("h2").removeClass("non-reached"), t(this).find("div").removeClass("non-reached"), t(this).find("ul").removeClass("non-reached")) : (t(this).find("h2").addClass("non-reached"), slide.inserAOS(t("h2.non-reached")), t(this).find("div").addClass("non-reached"), t(this).find("ul").addClass("non-reached"))*/
                         })
                     }), t("body").on("click", ".go-to-page", function(e) {
                         e.preventDefault(), $link = t(this).attr("href"), t("body,html").animate({

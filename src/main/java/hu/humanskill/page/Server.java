@@ -26,7 +26,7 @@ public class Server {
         get("/", renderController::renderIndexPage, new ThymeleafTemplateEngine());
         get("/:lang", renderController::renderIndexHu, new ThymeleafTemplateEngine());
         post("/save-cv", (req, res) -> renderController.saveCV(req, res));
-        get("/*",  (req, res) -> "Go back - invalid page");
+        get("*",  (req, res) -> "Go back - invalid page");
 
 
 

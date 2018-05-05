@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <script type="text/javascript" src="/js/jquery/jquery.js?ver=1.11.3"></script>
     <script type="text/javascript" src="/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.1/animate.min.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"></link>
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css"></link>
@@ -20,7 +22,7 @@
     <link rel="stylesheet" id="cyclone-template-style-standard-css" href="/cyclone-slider-2/templates/standard/style.css?ver=2.10.7" type="text/css" media="all"></link>
     <link rel="stylesheet" id="cyclone-template-style-thumbnails-css" href="/cyclone-slider-2/templates/thumbnails/style.css?ver=2.10.7" type="text/css" media="all"></link>
     <link rel="stylesheet" id="sage/css-css" href="/dist/styles/main.css" type="text/css" media="all"></link>
-
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"/>
 
     <link rel="https://api.w.org/" href="http://www.humanskill.hu/?rest_route=/"></link>
     <link rel="canonical" href="http://www.humanskill.hu/"></link>
@@ -136,11 +138,11 @@
             <div class="custom-wrapper">
                 <div th:include="page-header :: page-header"></div>
 
-                <div th:include="work :: work"></div>
+                <div th:include="work :: work" onmouseover="AOS.refresh()"></div>
 
-                <div th:include="about-us :: about-us"></div>
+                <div th:include="about-us :: about-us" onmouseover="AOS.refresh()"></div>
 
-                <div th:include="right-page :: right-page"></div>
+                <div th:include="right-page :: right-page" onmouseover="AOS.refresh()"></div>
             </div>
 
 
@@ -179,6 +181,7 @@ var _wpcf7 = {"loaderUrl":"\/contact-form-7\/images\/ajax-loader.gif","recaptcha
 /* ]]> */
 </script>-->
 <!--<script type="text/javascript" src="/contact-form-7/js/scripts.js?ver=4.4.1"></script>-->
+
 <script type="text/javascript" src="/cyclone-slider-2/libs/cycle2/jquery.cycle2.min.js?ver=2.10.7"></script>
 <script type="text/javascript" src="/cyclone-slider-2/libs/cycle2/jquery.cycle2.carousel.min.js?ver=2.10.7"></script>
 <script type="text/javascript" src="/cyclone-slider-2/libs/cycle2/jquery.cycle2.swipe.min.js?ver=2.10.7"></script>
@@ -187,8 +190,27 @@ var _wpcf7 = {"loaderUrl":"\/contact-form-7\/images\/ajax-loader.gif","recaptcha
 <script type="text/javascript" src="/cyclone-slider-2/templates/dark/script.js?ver=2.10.7"></script>
 <script type="text/javascript" src="/cyclone-slider-2/templates/thumbnails/script.js?ver=2.10.7"></script>
 <script type="text/javascript" src="/cyclone-slider-2/js/client.js?ver=2.10.7"></script>
+
+<script type="text/javascript" src="/dist/scripts/slide.js" ></script>
 <script type="text/javascript" src="/dist/scripts/main.js"></script>
+
 <script type="text/javascript" src="/js/wp-embed.min.js?ver=4.4.2"></script>
 <script type="text/javascript" src="/js/saveCV.js" ></script>
+<script>
+    AOS.init({
+        startEvent: 'load'
+    });
+    setTimeout(function () {
+        window.dispatchEvent(new Event('resize'));
+    }, 3000);
+    $(document).ready(AOS.refresh);
+    $(window).on('resize', function() {
+        AOS.refresh();
+    });
+
+
+
+
+</script>
 </body>
 </html>
