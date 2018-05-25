@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+
+
+<body>
+    <div th:fragment="footer" >
+        <div id="referenciak">
+            <h2 th:text="${references}">References</h2>
+            <div id="ref-blocks">
+                <div class="ref-block">
+                    <img src="/assets/images/Casada-Logo1.jpg"></img>
+                </div>
+                <div class="ref-block">
+                    <img src="/assets/images/duna.png"></img>
+                </div>
+                <div class="ref-block">
+                    <img src="/assets/images/OTPbanka_logo.jpg"></img>
+                </div>
+                <div class="ref-block">
+                    <img src="/assets/images/peugeot-logo.jpg"></img>
+                </div>
+            </div>
+        </div>
+        <footer class="content-info">
+        <div class="container-fluid">
+            <div id="contact-cont" class="col-xs-12 col-md-4">
+                <h3 th:text="${contact}">Contact</h3>
+                <div class="contact">
+                    <div class="tel" ><p th:inline="text"><span class="icon-phone"> </span>[[${phoneNr}]]</p> </div>
+                    <div class="email" ><p th:inline="text"><span class="icon-mail"></span>[[${email}]] </p></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <h3 th:text="${firm}">Firm details</h3>
+
+                <div class="social" >
+                    <a class="facebook" href="https://www.facebook.com"></a>
+
+                    <div th:each="detail:${firmDetails}">
+                    <p th:text="${detail}">Bercoop Bt. </p>
+                    </div>
+
+
+                    <p><a href="/files/adatvedelmi_nyilatkozat.PDF" download="" th:text="${priv}">Adatvédelmi nyilatkozat</a></p>
+                </div>
+            </div>
+            <div id="cv-upload-container" class="col-xs-12 col-md-4">
+                <h3 th:text="${uploadCV}">Upload CV</h3>
+                <div id="cv-upload"><div role="form" class="wpcf7" id="wpcf7-f241-o1" lang="hu-HU" dir="ltr">
+                    <div class="screen-reader-response"></div>
+                    <form class="wpcf7-form" enctype="multipart/form-data" method="post" action="/save-cv" novalidate="novalidate" >
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="241"></input>
+                            <input type="hidden" name="_wpcf7_version" value="4.4.1"></input>
+                            <input type="hidden" name="_wpcf7_locale" value="hu_HU"></input>
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f241-o1"></input>
+                            <input type="hidden" name="_wpnonce" value="95055b1585"></input>
+                        </div>
+                        <div style="color:grey;">
+                            <p th:inline="text">[[${name}]]<br></br>
+                                <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required="true" aria-invalid="false"></input></span> </p>
+                            <div style="display:none"><span class="wpcf7-form-control-wrap text-953"><input type="text" name="text-953" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Send your CV"></input></span>
+                            </div>
+                            <p th:inline="text">[[${clientEmail}]]<br></br>
+                                <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required="true" aria-invalid="false"></input></span> </p>
+                            <p th:inline="text">[[${message}]] <br></br>
+                                <span class="wpcf7-form-control-wrap text-78"><input type="text" name="text-78" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></input></span>
+                            </p>
+
+                            <p>   <span class="wpcf7-form-control-wrap file-706"><input type="file" name="file-706" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></input></span></p>
+                            <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"></input><img class="ajax-loader" src="/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></img></p>
+                        </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
