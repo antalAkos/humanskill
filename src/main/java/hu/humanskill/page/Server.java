@@ -1,6 +1,7 @@
 package hu.humanskill.page;
 
 import org.eclipse.jetty.http.HttpStatus;
+import static spark.Spark.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import spark.template.thymeleaf.ThymeleafTemplateEngine;
@@ -20,7 +21,9 @@ public class Server {
         logger.info("Starting server..");
         exception(Exception.class, (e, req, res) -> e.printStackTrace());
         staticFileLocation("/public");
-        port(7000);
+        port(getHerokuAssignedPort());
+
+
 
 
         get("/", renderController::renderIndexPage, new ThymeleafTemplateEngine());
@@ -30,6 +33,14 @@ public class Server {
 
 
 
+    }
+
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 7000; //return default port if heroku-port isn't set (i.e. on localhost)
     }
 }
 
