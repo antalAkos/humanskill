@@ -1,5 +1,6 @@
 package hu.humanskill.page;
 
+import com.google.gson.Gson;
 import hu.humanskill.page.model.Apply;
 import hu.humanskill.page.service.ApplyService;
 import hu.humanskill.page.service.UserService;
@@ -60,42 +61,42 @@ public class RenderController {
         return new ModelAndView(params, "index");
     }
 
-     public Object saveCV(Request req, Response res)  {
-        //Set<String> params = req.queryParams();
+     public String saveCV(Request req, Response res)  {
+        //res.type("text/json");
         try {
-
-            Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public", "upload"), "", "");
             req.raw().setAttribute("org.eclipse.jetty.multipartConfig",
                     new MultipartConfigElement("/tmp"));
-
-            //String filename = req.raw().getPart("file-706").getSubmittedFileName();
-
             Part uploadedFile = req.raw().getPart("file-706");
-            //sendAttachmentEmail.sendMail(params, filename);
+            String filename = uploadedFile.getSubmittedFileName();
+
+            Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public","files","upload"),
+                    filename.substring(0, filename.lastIndexOf(".")), filename.substring(filename.lastIndexOf(".")));
+
             try (final InputStream in = uploadedFile.getInputStream()) {
-                OutputStream outputStream = new FileOutputStream(tempFile + uploadedFile.getSubmittedFileName());
+                OutputStream outputStream = new FileOutputStream(tempFile.toFile());
                 IOUtils.copy(in, outputStream);
                 outputStream.close();
-                //Files.copy(in, tempFile, StandardCopyOption.REPLACE_EXISTING);
             }
-            Apply application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"),  uploadedFile.getSubmittedFileName());
+            Apply application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "/" + tempFile.subpath(4,7));
             applyService.save(application);
             String referer = req.headers("Referer");
             if(referer != null){
                 String redirectTo = referer;
+                res.redirect(redirectTo);
             }
-
             uploadedFile.delete();
-            res.redirect("/");
-            return "";
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            //throw new RuntimeException(e);
+            return e.getMessage();
+
         }
+         return "";
 
     }
 
     public ModelAndView renderApply(Request request, Response response) {
-            HashMap<String, Object> params = new HashMap();
+            HashMap<String, Object> params = new HashMap<>();
             params.put("apply", true);
         return new ModelAndView(params, "landing");
 
@@ -119,5 +120,35 @@ public class RenderController {
         }
 
         return new ModelAndView(params, "apply");
+    }
+
+    public Response getFile(Request request, Response response)  {
+
+        String filename = request.params(":filename");
+        if (filename.length() > 0) {
+            response.header("Content-disposition", "attachment; filename=" + filename);
+
+            File file = new File("src/main/resources/public/files/upload/" + filename);
+            try (OutputStream outputStream = response.raw().getOutputStream()) {
+                outputStream.write(Files.readAllBytes(file.toPath()));
+                outputStream.flush();
+
+            } catch (IOException | IndexOutOfBoundsException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return response;
+    }
+
+    public Object delete(Request request, Response response) {
+        HashMap<String, Object> params = new HashMap<String, Object>();
+        Long id = Long.parseLong(request.params(":id"));
+        applyService.remove(id);
+        List<Apply> applies = userService.getAll();
+        params.put("login", true);
+        params.put("applies", applies);
+        response.redirect("/login");
+        return "";
     }
 }

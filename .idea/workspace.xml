@@ -2,387 +2,50 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="humanskill_uj:war" />
+      <artifact name="humanskill_uj:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd07c714-c042-4c48-84e3-ecf629f827cf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_13_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_2_13_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/EmailSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Utility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Apply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/_functions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/mixins/_badge.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/mixins/_border-radius.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/mixins/_buttons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/mixins/_nav-divider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/mixins/_pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/bootstrap/utilities/_align.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/components/_forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/components/_header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/components/_loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/components/_mouse-scroll.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/components/_portfolio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/components/_pricing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/components/_team.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/components/_testimonial.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/owl.theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/pe-icon-7-stroke.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/cserepek.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/toppen-draaien.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/tulipan.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/uitzoeken.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/ekko-lightbox-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/jquery.sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/slideshow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/apply.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/landing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/humanskill.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/humanskill.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/humanskill_uj_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/humanskill_uj_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/humanskill_uj_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/humanskill_uj_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b03.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép8.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/images/kép9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/submitForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sparkjava_spark_template_thymeleaf_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sparkjava_spark_template_thymeleaf_2_5_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_4_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/humanskill_uj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/humanskill_uj.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/humanskill_uj_jar/humanskill_uj.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/humanskill_uj_jar/humanskill_uj.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/dist/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/dist/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/dist/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/dist/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Apply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Apply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/images/cserepek.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/page-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/page-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/work.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/work.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/humanskill/page/MyResourceBundle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/humanskill/page/MyResourceBundle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/humanskill/page/PropertiesReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/humanskill/page/PropertiesReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/landing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hu/humanskill/page/RenderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/humanskill/page/RenderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/humanskill/page/SendAttachmentEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/humanskill/page/SendAttachmentEmail.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hu/humanskill/page/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/humanskill/page/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/dist/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/dist/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/dist/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/dist/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/page-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/page-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/work.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/work.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/hu/humanskill/page/MyResourceBundle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/hu/humanskill/page/PropertiesReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/hu/humanskill/page/RenderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/hu/humanskill/page/SendAttachmentEmail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/hu/humanskill/page/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/Casada-Logo1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/OTPbanka_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/blueman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/coaching.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/coaching_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/coaching_active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/coaching_final-1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/duna.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/en.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/en.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/epsz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/epsz_active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/felsorolas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/french.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/hand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/hun.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/hun.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/interju-menete-kep-menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/interview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/logo-blueman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/logo-blueman_old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/logo-human.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/logo-skill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/munkaerokozvetites_menu_opt-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/munkaerokozvetites_slide-1920x1080-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/munkaerokozvetites_slide.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/munkaerőközvetítés.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/olvasdel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/peugeot-logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/pikto1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/pikto2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/pikto3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/pikto4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/pikto5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/piramis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/ro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/russian.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/scrolldown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/szervezetfejlesztes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/szervezetfejlesztes_active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/szervezetfejlesztes_menu_opt-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/szervezetfejlesztes_slide-2-1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/szervezetfejlesztés_slide2-1-1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/training_slide-1-1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/trening.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/trening_active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/trening_menu_opt-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/assets/images/workhand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/css/styles-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/images/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/animated-overlay.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-icons_454545_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-icons_888888_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery-ui/themes/smoothness/jquery.ui.theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery.form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/jquery.form.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/contact-form-7/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/css/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/cyclone-slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/images/loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/images/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/js/admin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/js/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/js/store-json2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-ar.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-ar.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-de_DE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-de_DE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-es_ES.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-es_ES.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-fa_IR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-fa_IR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-it_IT.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-it_IT.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-sr_RS.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider-sr_RS.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/lang/cycloneslider.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/cycle2/jquery.cycle2.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/cycle2/jquery.cycle2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/cycle2/jquery.cycle2.scrollVert.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/cycle2/jquery.cycle2.swipe.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/cycle2/jquery.cycle2.tile.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/cycle2/jquery.cycle2.video.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/css/font-awesome-ie7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/css/font-awesome-ie7.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/font/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/font/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/font/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/font/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/font-awesome/font/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/jquery-easing/jquery.easing.1.3.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/jquery-easing/jquery.easing.1.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/magnific-popup/jquery.magnific-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/magnific-popup/jquery.magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/libs/magnific-popup/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/AssetLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Crispin/RestClientInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Crispin/RestClientWp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Crispin/RestSigner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/ExportPage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/ExportPageNextgen.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Exporter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/ExporterNextgen.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Frontend.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/ImageEditor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/ImageResizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/ImportPage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Importer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/NextgenIntegration.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Plugin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/SettingsPage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Updater.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/View.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Vimeo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/WidgetSlider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Widgets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/WpAdminPage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/WpAdminSubPage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/WpSubPage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/CycloneSlider/Youtube.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/src/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/dark/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/dark/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/dark/slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/dark/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/default/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/default/images/bg-caption.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/default/images/sprite-arrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/default/images/sprite-nav.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/default/screenshot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/default/slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/default/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/standard/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/standard/slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/standard/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/thumbnails/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/thumbnails/images/bg-caption.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/thumbnails/images/sprite-arrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/thumbnails/images/sprite-nav.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/thumbnails/screenshot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/thumbnails/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/thumbnails/slider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/templates/thumbnails/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/error-message.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/export-import-tabs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/export-nextgen-step-1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/export-nextgen-step-2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/export-nextgen-step-3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/export-step-1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/export-step-2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/export-step-3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/import-step-1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/import-step-3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/ok-message.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/settings-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/slide-edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/slider-advanced-settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/slider-codes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/slider-id.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/slider-preview.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/slider-settings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/slides-skeleton.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/slides.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/cyclone-slider-2/views/template-selection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/scripts/customizer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/scripts/customizer.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/scripts/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/scripts/jquery.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/scripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/scripts/main.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/scripts/slide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/styles/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/dist/styles/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/files/adatvedelmi_nyilatkozat.PDF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/js/jquery-migrate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/js/jquery/jquery-migrate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/js/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/js/saveCV.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/js/thymeleafLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/js/wp-embed.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/public/styles/style_refaktor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/about-us.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/index.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/index_en.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/index_fr.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/index_hu.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/index_ro.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/index_ru.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/page-header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/psy-rez.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/right-page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/classes/templates/work.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.16.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/javax.el-3.0.1-b03.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/javax.mail-1.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jbcrypt-0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jetty-http-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jetty-io-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jetty-security-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jetty-server-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jetty-servlet-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jetty-util-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jetty-webapp-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/jetty-xml-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.0.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.0.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/spark-core-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/spark-debug-tools-0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/spark-template-thymeleaf-2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-2.1.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/unbescape-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/websocket-api-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/websocket-client-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/websocket-common-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/websocket-server-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/WEB-INF/lib/websocket-servlet-9.3.6.v20151106.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -394,51 +57,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2350">
-              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#main#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/page-header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="78" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landing.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="landing.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/landing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="129" column="141" selection-start-line="129" selection-start-column="141" selection-end-line="129" selection-end-column="141" />
+            <state relative-caret-position="165">
+              <caret line="149" column="57" lean-forward="true" selection-start-line="149" selection-start-column="57" selection-end-line="149" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RenderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
+      <file leaf-file-name="css-index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="80" column="115" selection-start-line="80" selection-start-column="115" selection-end-line="80" selection-end-column="115" />
+            <state relative-caret-position="298">
+              <caret line="528" column="1" lean-forward="true" selection-start-line="528" selection-start-column="1" selection-end-line="528" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="79" lean-forward="true" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#main#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -456,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>content-block h2</find>
       <find>ul.non-reached</find>
       <find>div.non-reached</find>
       <find>animation</find>
@@ -486,6 +152,7 @@
       <find>intro-pic</find>
       <find>media</find>
       <find>logo img</find>
+      <find>action h2</find>
     </findStrings>
     <replaceStrings>
       <replace>psy</replace>
@@ -502,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.properties" />
         <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/PropertiesReader.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/saveCV.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/styles/style_refaktor.css" />
@@ -532,26 +198,28 @@
         <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/DataBaseConnector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/dist/scripts/main.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/apply.html" />
         <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/EmailSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Utility.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Admin.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/form.html" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Apply.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/footer.html" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/page-header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/slodeshow.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/slideshow.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" />
+        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/UserService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Apply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/js/submitForm.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin.html" />
+        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/js/custom.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/landing.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" />
       </list>
     </option>
   </component>
@@ -707,7 +375,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
@@ -716,17 +384,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
@@ -736,13 +404,18 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -763,11 +436,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/public/files" />
       <recent name="$PROJECT_DIR$/src/main/resources/public/assets/css" />
       <recent name="$PROJECT_DIR$/src/main/resources/public/assets/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/public/js" />
       <recent name="$PROJECT_DIR$/src/main/resources/public/assets/fonts" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hu.humanskill.page" />
@@ -909,7 +582,9 @@
       <workItem from="1529653864359" duration="18823000" />
       <workItem from="1529694710453" duration="4890000" />
       <workItem from="1529700348026" duration="7734000" />
-      <workItem from="1529731254081" duration="2531000" />
+      <workItem from="1529731254081" duration="3778000" />
+      <workItem from="1529736826024" duration="10886000" />
+      <workItem from="1529751158644" duration="32983000" />
     </task>
     <task id="LOCAL-00001" summary="page restored to simpler version">
       <created>1519405277903</created>
@@ -1037,14 +712,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527275863225</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="landing page added for mezogazdasag">
+      <created>1529735753812</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1529735753812</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203061000" />
+    <option name="totallyTimeSpent" value="248177000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="-14" width="1385" height="915" extended-state="6" />
+    <frame x="57" y="-4" width="1383" height="904" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1065,17 +747,17 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35641026" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35641026" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32948717" />
       <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26845637" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2759135" />
       <window_info id="Web" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="DB Browser" order="2" />
@@ -1087,7 +769,7 @@
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Image Layers" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35641026" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35641026" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24981357" />
       <window_info id="DB Browser" order="4" />
@@ -1105,7 +787,8 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32960477" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26099926" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2759135" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="9" side_tool="true" />
@@ -1113,7 +796,6 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -1124,7 +806,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="saving before css editing" />
     <MESSAGE value="properties files added" />
     <MESSAGE value="looks fin in chrome" />
     <MESSAGE value="properties files readable, work section done" />
@@ -1149,7 +830,8 @@
     <MESSAGE value="push before creating jar" />
     <MESSAGE value="text slide and x fixed done" />
     <MESSAGE value="picture 404 error fixed, mvn heroku plugin added" />
-    <option name="LAST_COMMIT_MESSAGE" value="picture 404 error fixed, mvn heroku plugin added" />
+    <MESSAGE value="landing page added for mezogazdasag" />
+    <option name="LAST_COMMIT_MESSAGE" value="landing page added for mezogazdasag" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1161,129 +843,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="115" selection-start-line="80" selection-start-column="115" selection-end-line="80" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/landing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="87" selection-start-line="87" selection-start-column="87" selection-end-line="87" selection-end-column="87" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#main#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/page-header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="78" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/landing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15555">
-          <caret line="1037" selection-start-line="1037" selection-end-line="1037" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/slideshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="108" lean-forward="true" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/MyResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/psy-rez.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="126" selection-start-line="8" selection-start-column="126" selection-end-line="8" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/about-us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/dist/scripts/slide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/cyclone-slider-2/templates/default/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1935">
-          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/cyclone-slider-2/templates/dark/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2715">
-          <caret line="181" column="35" selection-start-line="181" selection-start-column="35" selection-end-line="181" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/heroku/app/Procfile" />
-    <entry file="file://$PROJECT_DIR$/index_forpsi.php" />
     <entry file="file://$PROJECT_DIR$/target/humanskill-1.0-SNAPSHOT/META-INF/context.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/web.xml" />
@@ -1315,13 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1374,31 +926,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/apply.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="47" column="95" selection-start-line="47" selection-start-column="95" selection-end-line="47" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Apply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -1409,27 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-70">
           <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1445,13 +959,6 @@
         <state relative-caret-position="-25345" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/slideshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/dist/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1459,31 +966,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/custom.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/files/upload/psql7837343362177572222.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="229">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/slideshow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="1037" column="19" selection-start-line="1037" selection-start-column="19" selection-end-line="1037" selection-end-column="19" />
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Apply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding>
+            <element signature="e#1415#1416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/submitForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="80" column="115" selection-start-line="80" selection-start-column="115" selection-end-line="80" selection-end-column="115" />
+        <state relative-caret-position="275">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép8.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép20.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép19.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép18.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép17.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép14.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép13.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép9.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép7.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép5.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/images/kép10.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2350">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+        <state relative-caret-position="150">
+          <caret line="10" column="79" lean-forward="true" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#main#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1492,18 +1092,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/landing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="129" column="141" selection-start-line="129" selection-start-column="141" selection-end-line="129" selection-end-column="141" />
+        <state relative-caret-position="165">
+          <caret line="149" column="57" lean-forward="true" selection-start-line="149" selection-start-column="57" selection-end-line="149" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="528" column="1" lean-forward="true" selection-start-line="528" selection-start-column="1" selection-end-line="528" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -5,7 +5,9 @@ import java.io.File;
 import java.nio.file.Path;
 @NamedQueries({
         @NamedQuery(name="getAllApplies",
-        query = "SELECT c FROM Apply c")
+        query = "SELECT c FROM Apply c"),
+        @NamedQuery(name = "findById",
+        query = "SELECT c FROM Apply c WHERE c.id = :id")
 })
 @Entity
 public class Apply {
@@ -49,11 +51,11 @@ public class Apply {
         this.email = email;
     }
 
-    public String getphone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setphone(String phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -63,5 +65,9 @@ public class Apply {
 
     public void setFilename(String filename) {
         this.filename = filename;
+    }
+
+    public Long getId() {
+        return id;
     }
 }

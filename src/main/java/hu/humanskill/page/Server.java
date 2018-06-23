@@ -40,17 +40,22 @@ public class Server  {
 
     public static void main(String[] args) {
         userService.createAdmin("admin", "pallosdani");
+        userService.createApply();
         logger.info("Starting server..");
         //exception(Exception.class, (e, req, res) -> e.printStackTrace());
-        staticFileLocation("/public");
         port(8082);
+
+        staticFileLocation("/public");
+
 
         get("/", renderController::renderIndexPage, new ThymeleafTemplateEngine());
         get("/mezogazdasag", renderController::renderApply, new ThymeleafTemplateEngine());
         get("/admin", renderController::renderAdmin, new ThymeleafTemplateEngine());
         get("/:lang", renderController::renderByLanguage, new ThymeleafTemplateEngine());
+        get("/files/upload/:filename", renderController:: getFile);
+        get("/delete/:id", renderController:: delete);
         post("/save-cv", (req, res) -> renderController.saveCV(req, res));
-        post("/login", renderController :: login, new ThymeleafTemplateEngine() );
+        post("/login", renderController :: login, new ThymeleafTemplateEngine());
 
 
         get("*",  (req, res) -> "Go back - invalid page");

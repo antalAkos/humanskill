@@ -2,8 +2,14 @@
 <html><head>
 
     <!-- /.website title -->
-    <title>Mezőgazdasági munka</title>
+    <title>Mezőgazdasági munka Hollandiában</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="description" content="Külföldi munkalehetőséget kínálunk szaktudás és nyelvtudás nélkül, betanított munkára várunk jelentkezőket.
+    A hollandiai munkavégzés alatt kulturált szállást biztosítunk, kiemelt fizetést és folyamatos, magyar nyelvű információkat, támogatást.
+    A külföldi bejelentett munka holland egészségbiztosítást nyújt. A külföldi munka pároknak is jó lehetőség, számukra privát szobát biztosítunk.
+    Folyamatos a foglalkoztatás, nyáron szabadtéri betanított munka, télen üvegházi munka.  "/>
+
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico"/>
 
     <!-- CSS Files -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
@@ -25,20 +31,10 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"/>
 
 
-    <!-- /.javascript files -->
-    <script src="/js/jquery/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
-    <script src="/js/custom.js"></script>
-    <script src="/js/jquery.sticky.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/ekko-lightbox-min.js"></script>
-    <script src="/js/slideshow.js"></script>
+
 </head>
 
-<body data-spy="scroll" data-target="#navbar-scroll" style="" cz-shortcut-listen="true">
+<body >
 
 <!-- /.preloader -->
 
@@ -58,13 +54,13 @@
 
                     <!-- /.main title -->
                     <h1 class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-                        Betanított munka, nyelvtudás nélkül Hollandiában!
+                        <b>Betanított munka, nyelvtudás nélkül Hollandiában!</b>
                     </h1>
                     <h3 class="wow fadeInLeft animated" style="visibility: visible; color: white; animation-name: fadeInLeft;">Szeretne akár havi 1200€ megtakarítani?</h3>
 
                     <!-- /.header paragraph -->
                     <div class="landing-text wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <p>
+                        <p style="font-size: 200%!important;">
                             Kiemelt fizetést, <b>kulturált szállást</b> és jó munkakörülményeket biztosító, hivatalos <b>bejelentett munkára</b> keresünk megbízható kollégákat.
                             A kiutazás és a munkavégzés alatt magyar nyelvű kapcsolattartót biztosítunk, mindig van kihez fordulnia!
                             Férfiak, nők, <b>párok jelentkezését</b> is várjuk. </p>
@@ -84,32 +80,31 @@
 
                     <div class="signup-header wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                         <h3 class="form-title text-center">JELENTKEZÉS</h3>
-                        <form class="form-header" action="/save-cv" enctype="multipart/form-data" novalidate="novalidate" role="form" method="POST" id="#">
-                            <input type="hidden" name="u" value="503bdae81fde8612ff4944435"/>
-                            <input type="hidden" name="id" value="bfdba52708"/>
+                        <form class="form-header"  id="submitCV"  >
                             <div class="form-group">
-                                <input class="form-control input-lg" name="name" id="name" type="text" placeholder="Teljes név" required=""/>
+                                <input class="form-control input-lg" name="name" id="name" type="text" placeholder="Teljes név(kötelező)" required="true"/>
                             </div>
+                           <!--<div class="form-group">
+                                <input class="form-control input-lg" name="email" id="email" type="email" placeholder="Email cím(opcionális)" />
+                            </div>-->
                             <div class="form-group">
-                                <input class="form-control input-lg" name="email" id="email" type="email" placeholder="Email cím" />
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control input-lg" name="phone" id="phone" type="email" placeholder="Telefonszám" required=""/>
+                                <input class="form-control input-lg" name="phone" id="phone" type="text" placeholder="Telefonszám(kötelező)" required="true"/>
                             </div>
 
                             <div class="form-group">
 
-                                <label>CV Feltöltés</label>
+                                <label style="color: white">Önéletrajz Feltöltés</label>
 
-                                <input type="file" name="file-707" id="BSbtninfo"/>
+                                <input type="file" name="file-706" id="BSbtninfo" value="Fájl feltöltése"/>
 
                             </div>
 
 
                             <div class="form-group last">
-                                <input type="submit" class="btn btn-warning btn-block btn-lg" value="JELENTKEZEK!"/>
+                                <input type="submit" class="btn btn-warning btn-block btn-lg" id="submitForm" name="submit" value="JELENTKEZEK!"/>
                             </div>
                             <p class="privacy text-center">Nem adjuk ki az e-mail címet! Adatvédelmi tájékoztatónk <a href="/files/adatvedelmi_nyilatkozat.PDF">itt található.</a>.</p>
+                            <h4 class="text-center" id="feedBack" style="display: none"></h4>
                         </form>
                     </div>
 
@@ -127,20 +122,31 @@
         <div class="row">
 
             <!-- /.intro image -->
-            <div class="col-md-6 intro-pic wow slideInLeft animated" style="visibility: visible; animation-name: slideInLeft; height: 1000px;">
+            <div class="col-md-6 intro-pic wow slideInLeft animated" style="visibility: visible; animation-name: slideInLeft; height: 740px;">
 
-                    <img src="/assets/images/cserepek.jpg" alt="ipad" class="img-responsive mySlides"/>
-                    <img src="/assets/images/toppen-draaien.jpg" alt="ipad" class="img-responsive mySlides"/>
-                    <img src="/assets/images/uitzoeken.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép1.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép5.jpeg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép7.jpeg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép9.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép13.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép14.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép17.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép18.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép19.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép20.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép6.jpg" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép8.JPG" alt="ipad" class="img-responsive mySlides"/>
+                <img src="/assets/images/kép10.jpg" alt="ipad" class="img-responsive mySlides"/>
+
 
 
 
             </div>
 
             <!-- /.intro content -->
-            <div class="col-md-6 wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;">
+            <div class="col-md-6 wow slideInRight animated" style="visibility: visible; animation-name: slideInRight; padding-left: 20px!important;">
                 <h2>Bővebb Információk</h2>
-                <p>Feladat:<br/>
+                <p style="font-size: 200%;">Feladat:<br/>
                     - mezőgazdasági betanított munka<br/>
                     - virágszedés<br/>
                     - csomagolás<br/>
@@ -180,9 +186,9 @@
         <div class="overlay">
             <div class="container">
                 <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
-                    <h2>Kérdéseire azonnal válaszolunk:</h2>
-                    <p class="download-text">telefon: +36305146491</p>
-                    <p class="download-text">e-mail: info@humanskill.org</p>
+                    <h1 style="margin-top: 20px">Kérdéseire azonnal válaszolunk:</h1>
+                    <h2 class="download-text">telefon: +36305146491</h2>
+                    <h2 class="download-text">e-mail: info@humanskill.org</h2>
 
 
 
@@ -192,6 +198,17 @@
     </div>
 </div>
 
+<!-- /.javascript files -->
+<script src="/js/jquery/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.sticky.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/ekko-lightbox-min.js"></script>
+<script src="/js/slideshow.js"></script>
+<script src="/js/submitForm.js"></script>
 
 
 
@@ -205,15 +222,7 @@
 <script>
     new WOW().init();
 </script>
-<script>
-    document.getElementById('Sbtninfo').filestyle({
 
-        buttonName : 'btn-info',
-
-        buttonText : ' Select a File'
-
-    });
-</script>
 </body>
 
 </html>

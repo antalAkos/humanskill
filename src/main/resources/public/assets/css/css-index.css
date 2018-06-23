@@ -257,7 +257,6 @@ a:hover {
 }
 .intro-pic {
 	margin-top: 20px;
-	min-height: 300%;
 	overflow: hidden;
 }
 .btn-section {
@@ -517,7 +516,7 @@ a:hover {
 	color: #fff;
 }
 .action h2 {
-	margin-top: 100px;
+	margin-top: 40px;
 	font-size: 40px;
 	font-weight: 300;
 }
@@ -1029,6 +1028,7 @@ and (orientation : landscape) {
 	}
 	.action h2 {
 		margin: 70px 0 20px;
+
 	}
 	.table > thead > tr > th, 
 	.table > tbody > tr > td { 

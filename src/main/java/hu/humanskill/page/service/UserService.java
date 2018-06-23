@@ -27,6 +27,14 @@ public class UserService {
         return q2.getResultList();
     }
 
+    public void createApply() {
+        Apply def = new Apply("name", "email", "666", "/files/upload/ujdomborzatterkep7684779104980445018.pdf");
+        EntityTransaction transaction = em.getTransaction();
+        transaction.begin();
+        em.persist(def);
+        transaction.commit();
+    }
+
     public Admin getUserByName(String name) {
         TypedQuery<Admin> query = em.createNamedQuery(
                 "getUserByName", Admin.class);
