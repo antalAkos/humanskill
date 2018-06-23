@@ -7354,6 +7354,7 @@ function(t) {
                     }), t(".menu, .mobile-menu").find("a").on("click", function(e) {
                         e.preventDefault(), t(".mobile-menu").hide(300), t(".c-hamburger").removeClass("c-hamburger--htla is-active").addClass("c-hamburger--htla");
                         var i = t(this).attr("href");
+
                         t("html, body").animate({
                             scrollTop: t(i).offset().top
                         }, 1e3 + Math.abs(t("body").scrollTop() - t(i).offset().top) / 2, "easeInOutQuart")

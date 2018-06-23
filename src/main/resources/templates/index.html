@@ -37,7 +37,7 @@
 <body class="home page page-id-109 page-parent page-template page-template-template-home page-template-template-home-php">
 <!--[if IE]>
 <div class="alert alert-warning">
-    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.    </div>
 <![endif]-->
 <header class="banner">
     <div class="container">
@@ -143,7 +143,7 @@
                 <div th:include="about-us :: about-us" onmouseover="AOS.refresh()"></div>
 
                 <div th:include="right-page :: right-page" onmouseover="AOS.refresh()"></div>
-            </div>
+                </div>
 
 
 
@@ -198,14 +198,17 @@ var _wpcf7 = {"loaderUrl":"\/contact-form-7\/images\/ajax-loader.gif","recaptcha
 <script type="text/javascript" src="/js/saveCV.js" ></script>
 <script>
     AOS.init({
-        startEvent: 'load'
+        startEvent: 'load',
+        delay: 200
     });
     setTimeout(function () {
         window.dispatchEvent(new Event('resize'));
-    }, 3000);
+    }, 200);
     $(document).ready(AOS.refresh);
     $(window).on('resize', function() {
-        AOS.refresh();
+        AOS.refresh({
+            delay: 200
+        });
     });
 
 

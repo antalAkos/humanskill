@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <form action="/login" method="post">
+        <p>User</p>
+        <input type="text" name="username"/>
+        <p>Password</p>
+        <input type="password" name="password"/><br/>
+        <button type="submit">Submit</button>
+    </form>
+<div th:if="${login}">
+    <table  style="width:100%" border="1">
+        <tr>
+            <th >Name</th>
+            <th >Email</th>
+            <th>Message</th>
+            <th>CV</th>
+        </tr>
+        <tr th:each="apply:${applies}">
+            <td th:text="${apply.name}">Jill</td>
+            <td th:text="${apply.email}">Smith</td>
+            <td th:text="${apply.phone}">50</td>
+            <td><a th:href="${apply.filename}" >Download CV</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
