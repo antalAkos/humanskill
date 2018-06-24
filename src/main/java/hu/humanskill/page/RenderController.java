@@ -60,22 +60,28 @@ public class RenderController {
 
      public String saveCV(Request req, Response res)  {
         //res.type("text/json");
+         Apply application;
         try {
             req.raw().setAttribute("org.eclipse.jetty.multipartConfig",
                     new MultipartConfigElement("/tmp"));
             Part uploadedFile = req.raw().getPart("file-706");
             String filename = uploadedFile.getSubmittedFileName();
+            if (filename.length() > 0) {
+                Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public","files","upload"),
+                        filename.substring(0, filename.lastIndexOf(".")), filename.substring(filename.lastIndexOf(".")));
 
-            Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public","files","upload"),
-                    filename.substring(0, filename.lastIndexOf(".")), filename.substring(filename.lastIndexOf(".")));
-
-            try (final InputStream in = uploadedFile.getInputStream()) {
-                OutputStream outputStream = new FileOutputStream(tempFile.toFile());
-                IOUtils.copy(in, outputStream);
-                outputStream.close();
+                try (final InputStream in = uploadedFile.getInputStream()) {
+                    OutputStream outputStream = new FileOutputStream(tempFile.toFile());
+                    IOUtils.copy(in, outputStream);
+                    outputStream.close();
+                }
+                 application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "/" + tempFile.subpath(4,7));
+            } else{
+                 application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "");
             }
-            Apply application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "/" + tempFile.subpath(4,7));
+
             applyService.save(application);
+
             String referer = req.headers("Referer");
             if(referer != null){
                 String redirectTo = referer;

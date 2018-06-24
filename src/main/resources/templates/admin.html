@@ -25,7 +25,7 @@
             <td th:text="${apply.name}">Jill</td>
             <td th:text="${apply.email}">Smith</td>
             <td th:text="${apply.phone}">50</td>
-            <td><a th:href="${apply.filename}" download="">Download CV</a></td>
+            <td><div th:if="${#strings.length(apply.filename) > 0}"><a th:href="${apply.filename}" download="">Download CV</a></div></td>
             <td><a th:href="'/delete/'+ ${apply.getId()}">Delete</a></td>
         </tr>
     </table>
