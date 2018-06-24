@@ -85,7 +85,7 @@ public class RenderController {
         } catch (Exception e) {
             e.printStackTrace();
             //throw new RuntimeException(e);
-            return e.getMessage();
+             res.status(500);
 
         }
          return "";
