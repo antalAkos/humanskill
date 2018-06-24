@@ -1058,3 +1058,8 @@ and (orientation : landscape) {
 .inputfile + label * {
 	pointer-events: none;
 }
+
+@media screen and (min-width: 1200px) {
+	#signupForm {width: 610px;}
+	#intro7 {margin-left: 250px}
+}
