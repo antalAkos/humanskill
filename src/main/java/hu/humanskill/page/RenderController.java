@@ -67,7 +67,7 @@ public class RenderController {
             Part uploadedFile = req.raw().getPart("file-706");
             String filename = uploadedFile.getSubmittedFileName();
             if (filename.length() > 0) {
-                Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public","files","upload"),
+                Path tempFile = Files.createTempFile(Paths.get("~","humanskill","uploads"),
                         filename.substring(0, filename.lastIndexOf(".")), filename.substring(filename.lastIndexOf(".")));
 
                 try (final InputStream in = uploadedFile.getInputStream()) {
@@ -75,7 +75,7 @@ public class RenderController {
                     IOUtils.copy(in, outputStream);
                     outputStream.close();
                 }
-                 application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "/" + tempFile.subpath(4,7));
+                 application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "/" + tempFile.subpath(3,4));
             } else{
                  application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "");
             }
@@ -131,7 +131,7 @@ public class RenderController {
         if (filename.length() > 0) {
             response.header("Content-disposition", "attachment; filename=" + filename);
 
-            File file = new File("src/main/resources/public/files/upload/" + filename);
+            File file = new File("~/humanskill/uploads/" + filename);
             try (OutputStream outputStream = response.raw().getOutputStream()) {
                 outputStream.write(Files.readAllBytes(file.toPath()));
                 outputStream.flush();
