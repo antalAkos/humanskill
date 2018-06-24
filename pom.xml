@@ -3,10 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>hu.humanskill</groupId>
     <artifactId>humanskill</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 
     <properties>
@@ -22,8 +22,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+
         <thymeleaf.version>3.0.6.RELEASE</thymeleaf.version>
-        <thymeleaf-layout-dialect.version>2.3</thymeleaf-layout-dialect.version>
+        <thymeleaf-layout-dialect.version>2.2.1</thymeleaf-layout-dialect.version>
 
     </properties>
 
@@ -35,51 +36,26 @@
         <!--<version>1.0.0.Final</version>-->
         <!--</dependency>-->
 
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.jpa</artifactId>
-            <version>${version.eclipselink}</version>
-        </dependency>
         <!--<dependency>-->
         <!--<groupId>org.eclipse.persistence</groupId>-->
         <!--<artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>-->
         <!--<version>${version.eclipselink}</version>-->
         <!--</dependency>-->
 
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>5.2.10.Final</version>
-        </dependency>
 
         <!--<dependency>-->
         <!--<groupId>org.hibernate</groupId>-->
         <!--<artifactId>hibernate-validator</artifactId>-->
         <!--<version>${version.hibernate.validator}</version>-->
         <!--</dependency>-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.glassfish</groupId>
             <artifactId>javax.el</artifactId>
             <version>${version.el}</version>
-        </dependency>
+        </dependency>-->
 
-        <!--<dependency>-->
-        <!--<groupId>mysql</groupId>-->
-        <!--<artifactId>mysql-connector-java</artifactId>-->
-        <!--<version>${version.mysql}</version>-->
-        <!--</dependency>-->
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>${version.postgres}</version>
-        </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${version.junit}</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
@@ -88,7 +64,7 @@
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-template-thymeleaf</artifactId>
-            <version>2.3</version>
+            <version>2.5.5</version>
         </dependency>
         <dependency>
             <groupId>com.sparkjava</groupId>
@@ -97,39 +73,112 @@
         </dependency>
 
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.0.13</version>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+            <scope>test</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${version.postgres}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.13.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.2.13.Final</version>
+        </dependency>
         <dependency>
             <groupId>org.mindrot</groupId>
             <artifactId>jbcrypt</artifactId>
             <version>0.4</version>
         </dependency>
 
+
+
     </dependencies>
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${version.maven.compiler.plugin}</version>
-                <inherited>true</inherited>
+                <version>2.3.2</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
-                    <compilerArgument>-Xlint:all</compilerArgument>
-                    <showWarnings>true</showWarnings>
-                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <descriptorRefs>
+                        <!-- This tells Maven to include all dependencies -->
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>hu.humanskill.page.Server</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
 
-            <!--<plugin>-->
-            <!--<groupId>org.bsc.maven</groupId>-->
-            <!--<artifactId>maven-processor-plugin</artifactId>-->
-            <!--<version>${version.maven.processor.plugin}</version>-->
+
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <compilerArguments>
+                        <endorseddirs>${endorsed.dir}</endorseddirs>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>-->
+
+
+           <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>-->
+
             <!--<executions>-->
             <!--<execution>-->
             <!--<id>process</id>-->

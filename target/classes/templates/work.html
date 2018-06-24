@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+
+<body>
+<div th:fragment="work">
+    <section id="work" style="display: none;">
+        <div class="page-image col-xs-12" style="height:80vh; background-image: url(/assets/images/munkaerokozvetites_menu_opt-1.jpg)">
+            <div class="scrolldown"></div>
+            <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
+                <h2 class="section-title" style="margin: 10px;"><span th:text="${recruitment}">Recruitment</span></h2>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="content container">
+            <div class="backToStart"></div>
+
+            <div class="content-block row">
+                <div class="col-xs-12" th:text="${recruitmentSection1}" >
+                </div>
+            </div>
+
+            <div class="content-block row">
+                <h2 class="col-md-4 " th:text="${forcandidates}" data-aos="fade-right" >For candidates</h2>
+
+                <div class="col-md-8" th:text="${forcandidatesSection}" data-aos="fade-left"></div>
+            </div>
+
+            <div class="content-block row">
+                <h2 class="col-md-4"  th:text="${applicationProcess}" data-aos="fade-right">The application process</h2>
+
+                <div class="col-md-8" th:text="${applicationProcessSection}" data-aos="fade-left"></div>
+            </div>
+
+            <div class="content-block row">
+                <h2 class="col-md-4" th:text="${procedure}" data-aos="fade-right" >The whole procedure</h2>
+
+                <div class="col-md-8" data-aos="fade-left"><p th:text="${procedureSub}">From the application to your first workday:</p> <br></br>
+                    <ul >
+                        <li th:text="${procedure1}">You send us your cv</li>
+                        <li th:text="${procedure2}">We contact you</li>
+                        <li th:text="${procedure3}" >We make an interview</li>
+                        <li th:text="${procedure4}">We propose you to our clients/partners</li>
+                    </ul>
+                    <ul >
+
+                        <li th:text="${procedure5}">We inform you about the results</li>
+                        <li th:text="${procedure6}">We organise your travel</li>
+                        <li th:text="${procedure7}">We make your contract</li>
+                        <li th:text="${procedure8}">You start your work</li>
+                    </ul>
+
+                    <p th:text="${procedureLast}" data-aos="fade-left">As soon as you apply for our job offers or you send us your CV here, we contact you on your phone number. It is very important to attach a professional CV during your application so we can determine whether you are a potential candidate for our job offers or not. In case we find an appropriate job opportunity, we will let you know by phone. </p></div>
+            </div>
+
+            <div class="content-block row">
+                <h2 class="col-md-4" th:text="${interview}" data-aos="fade-right" >The interview</h2>
+
+                <div class="col-md-8" ><p th:text="${steps}" data-aos="fade-left"></p>
+                    <ul >
+                        <div th:each="step :${stepsList}" class="interjuMenete">
+                        <li th:text="${step}" data-aos="fade-left"></li>
+
+                        </div>
+                    </ul>
+
+                    <img src="/assets/images/interju-menete-kep-menu.png" alt="Interjú menete" style="float: right;width: 150px;"></img>
+                    <p th:text="${stepLast}" data-aos="fade-left">After the interview we will search for a suitable job. In case you have applied for our ongoing job offer and you meet the requirements, we contact our client and contact you with the result. In case you don’t get selected for the open position, we will help you to find another offer. This means that if you have already registered and interviewed with us, we can inform you about our new job offers in the future granting you a good possibility of getting a job by us.
+
+                        Any questions? Should you need any more information, feel free to contact us!</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="list-block container">
+            <h2 class="list-title" th:text="${advantages}" data-aos="fade-right" >What are our advantages:</h2>
+            <div th:each="advantage :${advantagesList}" class="list">
+                <p th:text="${advantage}" class="col-xs-12 col-md-offset-2 col-md-4" data-aos="fade-left">Professional psychological selection methods </p>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

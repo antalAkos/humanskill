@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <div th:fragment="about-us">
+        <section id="about-us" style="display: none;">
+
+
+            <div class="page-image col-xs-12 parallax-window" data-parallax="scroll" style="background-image: url(assets/images/munkaerokozvetites_slide-1920x1080-2.jpg)">
+                <div class="scrolldown"></div>
+                <div class="section-preview" style="margin-left: 20%;background: rgba(53, 49, 69, 0.75);">
+                    <h2 class="section-title" style="margin: 10px;" th:text="${aboutus}">About us</h2>
+                    <!--<p class = "section-description">Növelné személyes hatékonyságát vagy talán delegálási problémái vannak alkalmazottai irányába? Esetleg proaktivitását, asszertivitását fejlesztené? A coaching egy olyan gondolkodásmód és eszköz, mely mindezekre megoldást nyújt és elősegíti a vezetői és személyes fejlődését. </p>-->
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="content container">
+                <div class="content-image hand"></div>
+                <div class="content-block row">
+                    <h2 class="col-md-4" th:text="${weare}" data-aos="fade-right" >Who we are</h2>
+
+                    <div class="col-md-8" th:text="${weareSection}" data-aos="fade-left">
+
+                    </div>
+                </div>
+                <div class="content-image blueman"></div>
+                <div class="content-block row">
+                <h2 class="col-md-4" th:text="${whyus}" data-aos="fade-right" >Why us?</h2>
+
+                <div class="col-md-8" th:text="${whyusSection}" data-aos="fade-left">
+                </div>
+                    <p th:text="${test}"></p>
+            </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
