@@ -67,7 +67,7 @@ public class RenderController {
             Part uploadedFile = req.raw().getPart("file-706");
             String filename = uploadedFile.getSubmittedFileName();
             if (filename.length() > 0) {
-                Path tempFile = Files.createTempFile(Paths.get("~","humanskill","uploads"),
+                Path tempFile = Files.createTempFile(Paths.get("root","humanskill","uploads"),
                         filename.substring(0, filename.lastIndexOf(".")), filename.substring(filename.lastIndexOf(".")));
 
                 try (final InputStream in = uploadedFile.getInputStream()) {
@@ -131,7 +131,7 @@ public class RenderController {
         if (filename.length() > 0) {
             response.header("Content-disposition", "attachment; filename=" + filename);
 
-            File file = new File("~/humanskill/uploads/" + filename);
+            File file = new File("/root/humanskill/uploads/" + filename);
             try (OutputStream outputStream = response.raw().getOutputStream()) {
                 outputStream.write(Files.readAllBytes(file.toPath()));
                 outputStream.flush();
