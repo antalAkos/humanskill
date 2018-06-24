@@ -1,6 +1,5 @@
 package hu.humanskill.page;
 
-import com.google.gson.Gson;
 import hu.humanskill.page.model.Apply;
 import hu.humanskill.page.service.ApplyService;
 import hu.humanskill.page.service.UserService;
@@ -31,7 +30,6 @@ import static spark.Spark.redirect;
 public class RenderController {
 
     private PropertiesReader propertiesReader;
-    //SendAttachmentEmail sendAttachmentEmail = new SendAttachmentEmail();
     private ApplyService applyService;
     private UserService userService;
 
@@ -43,7 +41,6 @@ public class RenderController {
 
     public ModelAndView renderIndexPage(Request req, Response res) {
         Map<String, Object> params = propertiesReader.read(null);
-        System.out.println(req.headers("Accept-Language"));
         if (req.headers("Accept-Language").contains("hu")) {
             res.redirect("/hu");
         } else if (req.headers("Accept-Language").contains("ro")) {

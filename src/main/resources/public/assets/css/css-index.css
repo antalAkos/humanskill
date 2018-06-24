@@ -31,9 +31,10 @@ h6 { font-size: 1em; line-height:1.2em; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none
 }	 
-p { 
+p {
 	padding: 0 0 1em;
 	margin:0;
+	color: black;
 }
 a {
 	color: #3eb0f7;
@@ -195,8 +196,8 @@ a:hover {
 	margin: 150px 0 100px;
 	background: rgba(255,255,255,0.2);
 	border-radius: 4px;
-	padding-left: 20px;
-	padding-right: 20px;	
+	padding-left: 30px;
+	padding-right: 20px;
 }
 .signup-header h3{
 	padding: 20px 0 10px;
@@ -1037,6 +1038,23 @@ and (orientation : landscape) {
 }
 
 .mySlides {
-	height: initial;
-	max-width: 200%!important;
+	height: 788px;
+	padding-top: 20px;
+}
+.inputfile {
+	/* visibility: hidden etc. wont work */
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile:focus + label {
+	/* keyboard navigation */
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile + label * {
+	pointer-events: none;
 }
