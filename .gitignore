@@ -8,4 +8,5 @@
 log/
 target/
 
-META-INF
+META-INF/
+src/main/java/hu/humanskill/page/RenderController

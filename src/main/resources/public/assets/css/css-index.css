@@ -250,6 +250,7 @@ a:hover {
 }
 #intro {
 	padding: 100px 0 70px;
+	background-color: grey;
 }
 #intro h2 {
 	font-size: 40px;

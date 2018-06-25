@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd07c714-c042-4c48-84e3-ecf629f827cf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/landing.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +26,8 @@
       <file leaf-file-name="RenderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="72" column="76" selection-start-line="72" selection-start-column="76" selection-end-line="72" selection-end-column="76" />
+            <state relative-caret-position="208">
+              <caret line="129" column="54" selection-start-line="129" selection-start-column="54" selection-end-line="129" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -42,17 +44,8 @@
       <file leaf-file-name="css-index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="1065" column="1" selection-start-line="1065" selection-start-column="1" selection-end-line="1065" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="15975">
+              <caret line="1066" column="1" selection-start-line="1066" selection-start-column="1" selection-end-line="1066" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -60,11 +53,12 @@
       <file leaf-file-name="landing.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/landing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+            <state relative-caret-position="300">
+              <caret line="183" column="19" selection-start-line="183" selection-start-column="19" selection-end-line="183" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,10 +193,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" />
         <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/landing.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -246,9 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -346,6 +337,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,7 +352,7 @@
     <property name="SearchEverywhereHistoryKey" value="top&#9;null&#9;null&#10;[href=#]&#9;null&#9;null&#10;href=#&#9;null&#9;null&#10;fadeIn&#9;null&#9;null&#10;cycloneslider-pager&#9;null&#9;null&#10;cycle-pager-active&#9;null&#9;null&#10;jquery.js&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/js/jquery/jquery.js&#10;szerve&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/szervezetfejlesztes_menu_opt-1.jpg" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/codecool/java-ee-jpa-example-antalAkos" />
+    <property name="last_opened_file_path" value="$USER_HOME$/codecool/node/nodetest1" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -520,7 +514,10 @@
       <workItem from="1529736826024" duration="10886000" />
       <workItem from="1529751158644" duration="36650000" />
       <workItem from="1529819266445" duration="15659000" />
-      <workItem from="1529872418075" duration="266000" />
+      <workItem from="1529872418075" duration="912000" />
+      <workItem from="1529917112390" duration="336000" />
+      <workItem from="1529928172348" duration="29000" />
+      <workItem from="1529939751372" duration="728000" />
     </task>
     <task id="LOCAL-00001" summary="page restored to simpler version">
       <created>1519405277903</created>
@@ -704,14 +701,22 @@
       <option name="project" value="LOCAL" />
       <updated>1529871976378</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="minor changes for deployment in css and renderer">
+      <created>1529872732498</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1529872732498</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274426000" />
+    <option name="totallyTimeSpent" value="276165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="-14" width="1385" height="915" extended-state="6" />
+    <frame x="57" y="-4" width="1383" height="904" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32992327" />
@@ -724,11 +729,11 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.35641026" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.35641026" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.35641026" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28411633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29679343" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -790,7 +795,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="page restored to simpler version" />
     <MESSAGE value="fuckings cssload mystery solved" />
     <MESSAGE value="hun properties file filled" />
     <MESSAGE value="rpropertiesreader, myresourcebundle classes created" />
@@ -815,7 +819,8 @@
     <MESSAGE value="gitignore updated" />
     <MESSAGE value="rendercontroller filepath ipdated" />
     <MESSAGE value="typo in css" />
-    <option name="LAST_COMMIT_MESSAGE" value="typo in css" />
+    <MESSAGE value="minor changes for deployment in css and renderer" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes for deployment in css and renderer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1038,9 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding>
-            <element signature="e#1415#1416#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1109,34 +1111,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="15975">
+          <caret line="1066" column="1" selection-start-line="1066" selection-start-column="1" selection-end-line="1066" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="72" column="76" selection-start-line="72" selection-start-column="76" selection-end-line="72" selection-end-column="76" />
+        <state relative-caret-position="208">
+          <caret line="129" column="54" selection-start-line="129" selection-start-column="54" selection-end-line="129" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="1065" column="1" selection-start-line="1065" selection-start-column="1" selection-end-line="1065" selection-end-column="1" />
+        <state relative-caret-position="165">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/landing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+        <state relative-caret-position="300">
+          <caret line="183" column="19" selection-start-line="183" selection-start-column="19" selection-end-line="183" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
