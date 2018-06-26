@@ -250,6 +250,7 @@ a:hover {
 }
 #intro {
 	padding: 100px 0 70px;
+	background-color: grey;
 }
 #intro h2 {
 	font-size: 40px;
@@ -1060,6 +1061,7 @@ and (orientation : landscape) {
 }
 
 @media screen and (min-width: 1200px) {
-	#signupForm {width: 610px;}
 	#intro7 {margin-left: 250px}
+    #signupForm {width: 610px;}
+
 }

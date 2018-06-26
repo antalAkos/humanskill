@@ -1,4 +1,12 @@
 # Created by .ignore support plugin (hsz.mobi)
-/target
-/.idea
-/resources/META-INF
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Maven
+log/
+target/
+
+META-INF/
+src/main/java/hu/humanskill/page/RenderController
