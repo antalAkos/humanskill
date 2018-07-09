@@ -39,7 +39,7 @@ public class Server  {
     }
 
     public static void main(String[] args) {
-        userService.createAdmin("admin", "pallosdani");
+        userService.createAdmin("admin", "matepapa");
         userService.createApply();
         logger.info("Starting server..");
         //exception(Exception.class, (e, req, res) -> e.printStackTrace());
@@ -52,13 +52,16 @@ public class Server  {
         get("/mezogazdasag", renderController::renderApply, new ThymeleafTemplateEngine());
         get("/admin", renderController::renderAdmin, new ThymeleafTemplateEngine());
         get("/:lang", renderController::renderByLanguage, new ThymeleafTemplateEngine());
-        get("/files/upload/:filename", renderController:: getFile);
-        get("/delete/:id", renderController:: delete);
-        post("/save-cv", (req, res) -> renderController.saveCV(req, res));
+        get("/download/:filename", renderController:: getFile);
+        get("/delete/:id", renderController:: delete, new ThymeleafTemplateEngine());
+        post("/addname", (req, res) -> renderController.addNumber(req, res));
         post("/login", renderController :: login, new ThymeleafTemplateEngine());
+        post("/save-cv", (req, res) -> renderController.saveCV(req, res));
 
 
-        get("*",  (req, res) -> "Go back - invalid page");
+
+
+        //get("*",  (req, res) -> "Go back - invalid page");
 
     }
 }

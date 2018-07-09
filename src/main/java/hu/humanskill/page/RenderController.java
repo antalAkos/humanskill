@@ -58,16 +58,16 @@ public class RenderController {
         return new ModelAndView(params, "index");
     }
 
-     public String saveCV(Request req, Response res)  {
+     public String addNumber(Request req, Response res)  {
         //res.type("text/json");
          Apply application;
         try {
-            req.raw().setAttribute("org.eclipse.jetty.multipartConfig",
+            /*req.raw().setAttribute("org.eclipse.jetty.multipartConfig",
                     new MultipartConfigElement("/tmp"));
             Part uploadedFile = req.raw().getPart("file-706");
             String filename = uploadedFile.getSubmittedFileName();
             if (filename.length() > 0) {
-                Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public", "upload"),
+                /*Path tempFile = Files.createTempFile(Paths.get("src","main", "resources", "public", "upload"),
                         filename.substring(0, filename.lastIndexOf(".")), filename.substring(filename.lastIndexOf(".")));
 
                 try (final InputStream in = uploadedFile.getInputStream()) {
@@ -77,8 +77,8 @@ public class RenderController {
                 }
                  application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "/" + tempFile.subpath(5,6));
             } else{
-                 application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "");
-            }
+            }*/
+            application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "");
 
             applyService.save(application);
 
@@ -87,7 +87,7 @@ public class RenderController {
                 String redirectTo = referer;
                 res.redirect(redirectTo);
             }
-            uploadedFile.delete();
+            //uploadedFile.delete();
         } catch (Exception e) {
             e.printStackTrace();
             //throw new RuntimeException(e);
@@ -129,9 +129,10 @@ public class RenderController {
 
         String filename = request.params(":filename");
         if (filename.length() > 0) {
-            response.header("Content-disposition", "attachment; filename=" + filename);
+            File file = new File(filename);
 
-            File file = new File("src/main/resources/public/files/upload/" + filename);
+            response.header("Content-disposition", "attachment; filename=" + file.getName());
+
             try (OutputStream outputStream = response.raw().getOutputStream()) {
                 outputStream.write(Files.readAllBytes(file.toPath()));
                 outputStream.flush();
@@ -144,14 +145,53 @@ public class RenderController {
         return response;
     }
 
-    public Object delete(Request request, Response response) {
+    public ModelAndView delete(Request request, Response response) {
         HashMap<String, Object> params = new HashMap<String, Object>();
         Long id = Long.parseLong(request.params(":id"));
         applyService.remove(id);
         List<Apply> applies = userService.getAll();
         params.put("login", true);
         params.put("applies", applies);
-        response.redirect("/login");
+        return new ModelAndView(params, "admin");
+    }
+
+    public String saveCV(Request req, Response res) {
+        Apply application;
+        try {
+            req.raw().setAttribute("org.eclipse.jetty.multipartConfig",
+                    new MultipartConfigElement("/tmp"));
+            Part uploadedFile = req.raw().getPart("file-706");
+            String filename = uploadedFile.getSubmittedFileName();
+            if (filename.length() > 0) {
+                Path tempFile = Files.createTempFile(Paths.get(new File(".").getAbsolutePath() + "/uploads"),
+                        filename.substring(0, filename.lastIndexOf(".")), filename.substring(filename.lastIndexOf(".")));
+
+                try (final InputStream in = uploadedFile.getInputStream()) {
+                    OutputStream outputStream = new FileOutputStream(tempFile.toFile());
+                    IOUtils.copy(in, outputStream);
+                    outputStream.close();
+                }
+                 application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), tempFile.toString());
+                System.out.println(tempFile.toString());
+            } else{
+                application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "");
+
+            }
+
+            applyService.save(application);
+
+            String referer = req.headers("Referer");
+            if(referer != null){
+                String redirectTo = referer;
+                res.redirect(redirectTo);
+            }
+            //uploadedFile.delete();
+        } catch (Exception e) {
+            e.printStackTrace();
+            //throw new RuntimeException(e);
+            res.status(500);
+
+        }
         return "";
     }
 }

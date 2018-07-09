@@ -28,9 +28,10 @@ public class ApplyService {
         Query query = entityManager.createNamedQuery("findById", Apply.class);
         query.setParameter("id", id);
         Apply toRemove = (Apply)query.setParameter("id", id).getSingleResult();
-        File fileToRemove = new File("src/main/resources/public/" + toRemove.getFilename());
+        File fileToRemove = new File(toRemove.getFilename());
         fileToRemove.delete();
         entityManager.remove(toRemove);
 
     }
+
 }

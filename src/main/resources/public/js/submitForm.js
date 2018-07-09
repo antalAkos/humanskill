@@ -4,7 +4,7 @@ $(document).ready(function () {
         console.log("form submitted");
         //stop submit the form, we will post it manually.
         event.preventDefault();
-        if($("#name").val().length > 1 && $("#phone").val().length > 1) {
+        if(/*$("#name").val().length > 1 &&*/ $("#phone").val().length > 1) {
             // Get form
             let form = $('#submitCV')[0];
             console.log(form);
@@ -17,7 +17,7 @@ $(document).ready(function () {
             $.ajax({
                 type: "POST",
                 enctype: 'multipart/form-data',
-                url: "/save-cv",
+                url: "/addname",
                 data: data,
                 processData: false,
                 contentType: false,
@@ -26,7 +26,7 @@ $(document).ready(function () {
                 success: function (data) {
 
                     $("#feedBack").show().text("Sikeresen jelentkezett!").css({"color" : "green"});
-                    console.log("SUCCESS : ", data);
+                    //console.log("SUCCESS : ", data);
                     //$("#submitForm").prop("disabled", false);
 
                 },
