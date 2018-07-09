@@ -127,11 +127,12 @@ public class RenderController {
 
     public Response getFile(Request request, Response response)  {
 
-        String filename = request.params(":filename");
+        String filename = applyService.getOne(Long.parseLong(request.params(":id"))).getFilename();
         if (filename.length() > 0) {
             File file = new File(filename);
-
+            response.type("application/download");
             response.header("Content-disposition", "attachment; filename=" + file.getName());
+            System.out.println(file.getAbsolutePath());
 
             try (OutputStream outputStream = response.raw().getOutputStream()) {
                 outputStream.write(Files.readAllBytes(file.toPath()));

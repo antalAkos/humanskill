@@ -52,7 +52,7 @@ public class Server  {
         get("/mezogazdasag", renderController::renderApply, new ThymeleafTemplateEngine());
         get("/admin", renderController::renderAdmin, new ThymeleafTemplateEngine());
         get("/:lang", renderController::renderByLanguage, new ThymeleafTemplateEngine());
-        get("/download/:filename", renderController:: getFile);
+        get("/download/:id", renderController:: getFile);
         get("/delete/:id", renderController:: delete, new ThymeleafTemplateEngine());
         post("/addname", (req, res) -> renderController.addNumber(req, res));
         post("/login", renderController :: login, new ThymeleafTemplateEngine());

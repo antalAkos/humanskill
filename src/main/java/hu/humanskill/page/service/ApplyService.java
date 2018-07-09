@@ -34,4 +34,10 @@ public class ApplyService {
 
     }
 
+    public Apply getOne(Long id){
+        Query query = entityManager.createNamedQuery("findById", Apply.class);
+        query.setParameter("id", id);
+        return (Apply)query.setParameter("id", id).getSingleResult();
+    }
+
 }
