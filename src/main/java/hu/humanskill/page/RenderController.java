@@ -1,9 +1,12 @@
 package hu.humanskill.page;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import hu.humanskill.page.model.Apply;
 import hu.humanskill.page.service.ApplyService;
 import hu.humanskill.page.service.UserService;
 import org.eclipse.jetty.http.HttpStatus;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.messageresolver.StandardMessageResolver;
@@ -24,11 +27,10 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.*;
 
-import static spark.Spark.redirect;
-
 
 public class RenderController {
 
+    private static final Logger logger = LoggerFactory.getLogger(RenderController.class);
     private PropertiesReader propertiesReader;
     private ApplyService applyService;
     private UserService userService;
@@ -112,18 +114,25 @@ public class RenderController {
 
 
     public ModelAndView login(Request req, Response res) {
-        HashMap<String, Object> params = new HashMap<String, Object>();
+        HashMap<String, Object> params = new HashMap<>();
         if (userService.canLogIn(req.queryParams("username"), req.queryParams("password"))) {
-            req.session().attribute("name", req.queryParams("username"));
-            List<Apply> applies = userService.getAll();
-            params.put("login", true);
-            params.put("applies", applies);
-            return new ModelAndView(params, "admin");
+                req.session().attribute("name", req.queryParams("username"));
 
         }
 
-        return new ModelAndView(params, "apply");
+        return renderLogin(req, res);
     }
+
+
+
+    public ModelAndView renderLogin(Request request, Response response) {
+        Map params = new HashMap<>();
+        params.put("isLogged", request.session().attribute("name")); // ha ez true, van session, ha nem, akkor nincs -
+        params.put("login", true);
+        params.put("applies", userService.getAll());
+        return new ModelAndView(params, "admin");
+    }
+
 
     public Response getFile(Request request, Response response)  {
 
@@ -148,12 +157,10 @@ public class RenderController {
 
     public ModelAndView delete(Request request, Response response) {
         HashMap<String, Object> params = new HashMap<String, Object>();
+
         Long id = Long.parseLong(request.params(":id"));
         applyService.remove(id);
-        List<Apply> applies = userService.getAll();
-        params.put("login", true);
-        params.put("applies", applies);
-        return new ModelAndView(params, "admin");
+        return renderLogin(request, response);
     }
 
     public String saveCV(Request req, Response res) {

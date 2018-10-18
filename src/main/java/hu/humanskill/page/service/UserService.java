@@ -46,7 +46,7 @@ public class UserService {
         try{
             TypedQuery<Admin> query = em.createNamedQuery(
                     "getUserByName", Admin.class);
-            System.out.println(query.setParameter("name", name).getSingleResult());
+            query.setParameter("name", name).getSingleResult();
         } catch (NoResultException e){
             return false;
         }

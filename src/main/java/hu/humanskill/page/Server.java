@@ -42,7 +42,7 @@ public class Server  {
         userService.createAdmin("admin", "matepapa");
         userService.createApply();
         logger.info("Starting server..");
-        //exception(Exception.class, (e, req, res) -> e.printStackTrace());
+        exception(Exception.class, (e, req, res) -> e.printStackTrace());
         port(8082);
 
         staticFileLocation("/public");
@@ -55,8 +55,9 @@ public class Server  {
         get("/download/:id", renderController:: getFile);
         get("/delete/:id", renderController:: delete, new ThymeleafTemplateEngine());
         post("/addname", (req, res) -> renderController.addNumber(req, res));
-        post("/login", renderController :: login, new ThymeleafTemplateEngine());
         post("/save-cv", (req, res) -> renderController.saveCV(req, res));
+        post("/login", renderController :: login, new ThymeleafTemplateEngine());
+
 
 
 
