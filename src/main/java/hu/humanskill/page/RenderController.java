@@ -1,30 +1,23 @@
 package hu.humanskill.page;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
+import com.google.gson.Gson;
 import hu.humanskill.page.model.Apply;
 import hu.humanskill.page.service.ApplyService;
 import hu.humanskill.page.service.UserService;
-import org.eclipse.jetty.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.context.Context;
-import org.thymeleaf.messageresolver.StandardMessageResolver;
 import spark.ModelAndView;
+import spark.QueryParamsMap;
 import spark.Request;
 import spark.Response;
-import spark.template.thymeleaf.ThymeleafTemplateEngine;
 import spark.utils.IOUtils;
 
-import javax.jws.WebParam;
 import javax.servlet.MultipartConfigElement;
-import javax.servlet.ServletException;
 import javax.servlet.http.Part;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.*;
 
 
@@ -80,8 +73,11 @@ public class RenderController {
                  application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "/" + tempFile.subpath(5,6));
             } else{
             }*/
-            application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "");
 
+            Gson g = new Gson();
+            HashMap<String, String> phoneData = g.fromJson(req.body(), HashMap.class);
+
+            application = new Apply(req.queryParams("name"), req.queryParams("email"), phoneData.get("phone"), "");
             applyService.save(application);
 
             String referer = req.headers("Referer");
@@ -130,6 +126,9 @@ public class RenderController {
         params.put("isLogged", request.session().attribute("name")); // ha ez true, van session, ha nem, akkor nincs -
         params.put("login", true);
         params.put("applies", userService.getAll());
+        for (Apply apply: userService.getAll()) {
+            System.out.println(apply.getPhone());
+        }
         return new ModelAndView(params, "admin");
     }
 

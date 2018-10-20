@@ -7,16 +7,17 @@ $(document).ready(function () {
         if(/*$("#name").val().length > 1 &&*/ $("#phone").val().length > 1) {
             // Get form
             let form = $('#submitCV')[0];
-            console.log(form);
             // Create an FormData object
-            var data = new FormData(form);
+            /*var data = new FormData(form);
+            data.append();*/
 
             // disabled the submit button
             //$("#submitForm").prop("disabled", true);
+            data = JSON.stringify({"phone":$("#phone").val()});
 
             $.ajax({
                 type: "POST",
-                enctype: 'multipart/form-data',
+                enctype: 'application/json',
                 url: "/addname",
                 data: data,
                 processData: false,

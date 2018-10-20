@@ -25,12 +25,9 @@ public class ApplyService {
     }
 
     public void remove(Long id) {
-        Query query = entityManager.createNamedQuery("findById", Apply.class);
-        query.setParameter("id", id);
-        Apply toRemove = (Apply)query.setParameter("id", id).getSingleResult();
-        File fileToRemove = new File(toRemove.getFilename());
-        fileToRemove.delete();
-        entityManager.remove(toRemove);
+        entityManager.createQuery("delete from Apply p where p.id=:id")
+                .setParameter("id", id)
+                .executeUpdate();
 
     }
 
