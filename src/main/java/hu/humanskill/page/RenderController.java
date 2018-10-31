@@ -96,10 +96,17 @@ public class RenderController {
 
     }
 
-    public ModelAndView renderApply(Request request, Response response) {
+    public ModelAndView renderAgric(Request request, Response response) {
             HashMap<String, Object> params = new HashMap<>();
             params.put("apply", true);
         return new ModelAndView(params, "landing");
+
+    }
+
+    public ModelAndView renderPainter(Request request, Response response) {
+        HashMap<String, Object> params = new HashMap<>();
+        params.put("apply", true);
+        return new ModelAndView(params, "festo");
 
     }
 
