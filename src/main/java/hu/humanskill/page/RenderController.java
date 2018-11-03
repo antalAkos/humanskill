@@ -77,7 +77,7 @@ public class RenderController {
             Gson g = new Gson();
             HashMap<String, String> phoneData = g.fromJson(req.body(), HashMap.class);
 
-            application = new Apply(req.queryParams("name"), req.queryParams("email"), phoneData.get("phone"), "");
+            application = new Apply(req.queryParams("name"), phoneData.get("job"), req.queryParams("email"), phoneData.get("phone"), "");
             applyService.save(application);
 
             String referer = req.headers("Referer");

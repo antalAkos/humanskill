@@ -280,9 +280,9 @@ section#services .content-block:nth-child(6) h2:after{
     z-index: 99999999;
 }
 
-#fedlap #logo-blueman {
+/*#fedlap #logo-blueman {
         background: url(../../assets/images/logo-blueman.png) 62.5% 20% no-repeat!important;
-}
+}*/
 
 #coaching .content-block .col-md-4{
     text-align: left;

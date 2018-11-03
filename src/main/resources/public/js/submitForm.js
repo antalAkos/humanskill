@@ -4,7 +4,7 @@ $(document).ready(function () {
         console.log("form submitted");
         //stop submit the form, we will post it manually.
         event.preventDefault();
-        if(/*$("#name").val().length > 1 &&*/ $("#phone").val().length > 1) {
+        if( $("#phone").val().length > 6) {
             // Get form
             let form = $('#submitCV')[0];
             // Create an FormData object
@@ -13,7 +13,7 @@ $(document).ready(function () {
 
             // disabled the submit button
             //$("#submitForm").prop("disabled", true);
-            data = JSON.stringify({"phone":$("#phone").val()});
+            data = JSON.stringify({"phone":$("#phone").val(), "job" : "agriculture"});
 
             $.ajax({
                 type: "POST",
@@ -25,20 +25,23 @@ $(document).ready(function () {
                 cache: false,
                 timeout: 600000,
                 success: function (data) {
-
-                    $("#feedBack").show().text("Sikeresen jelentkezett!").css({"color" : "green"});
-                    //console.log("SUCCESS : ", data);
-                    //$("#submitForm").prop("disabled", false);
+                    swal({
+                        title: "Sikeresen jelentkezett!",
+                        text: "Köszönjük jelentkezését, elfogadtuk és kollégánk 24 órán belül felkeresi! Amennyiben hamarabb felvenné velünk a kapcsolatot, a +36203827224 számon teheti meg",
+                        icon: "success"
+                    });
 
                 },
                 error: function (e) {
+                    swal("Jelentkezése nem sikerült, kérjük próbálja újra!", "", "warning");
 
-                    $("#feedBack").show().text("Jelentkezése nem sikerült, kérjük próbálja újra!").css({"color" : "red"});
-                    console.log("ERROR : ", e);
+                   console.log("ERROR : ", e);
                     // $("#submitForm").prop("disabled", false);
 
                 }
             });
+        } else {
+            swal("Jelentkezése nem sikerült, kérjük próbálja újra!", "", "warning");
         }
 
 

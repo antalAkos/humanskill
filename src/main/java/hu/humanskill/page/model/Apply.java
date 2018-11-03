@@ -18,6 +18,8 @@ public class Apply {
     @Column
     private String name;
     @Column
+    private String job;
+    @Column
     private String email;
     @Column
     private String phone;
@@ -26,6 +28,13 @@ public class Apply {
 
 
     public Apply() {
+    }
+
+    public Apply(String name,String job, String email, String phone, String filename) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.filename = filename;
     }
 
     public Apply(String name, String email, String phone, String filename) {
@@ -69,5 +78,13 @@ public class Apply {
 
     public Long getId() {
         return id;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
     }
 }

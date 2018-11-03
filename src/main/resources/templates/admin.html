@@ -18,15 +18,17 @@
     <table  style="width:100%" border="1">
         <tr>
             <th >Name</th>
+            <th>Job</th>
             <th >Email</th>
             <th>Phone</th>
             <th>CV</th>
             <th>Delete</th>
         </tr>
         <tr th:each="apply:${applies}">
-            <td th:text="${apply.name}">Jill</td>
-            <td th:text="${apply.email}">Smith</td>
-            <td th:text="${apply.phone}">50</td>
+            <td th:text="${apply.name}"></td>
+            <td th:text="${apply.job}"></td>
+            <td th:text="${apply.email}"></td>
+            <td th:text="${apply.phone}"></td>
             <td><div th:if="${#strings.length(apply.filename) > 0}"><a th:href="'/download/' + ${apply.getId()}" >Download CV</a></div></td>
             <td><a th:href="'/delete/'+ ${apply.getId()}">Delete</a></td>
         </tr>
