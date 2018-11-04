@@ -32,6 +32,7 @@ public class Apply {
 
     public Apply(String name,String job, String email, String phone, String filename) {
         this.name = name;
+        this.job = job;
         this.email = email;
         this.phone = phone;
         this.filename = filename;
