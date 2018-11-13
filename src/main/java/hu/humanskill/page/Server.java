@@ -39,8 +39,8 @@ public class Server  {
     }
 
     public static void main(String[] args) {
-        userService.createAdmin("admin", "matepapa");
-        userService.createApply();
+        //userService.createAdmin("admin", "matepapa");
+        //userService.createApply();
         logger.info("Starting server..");
         exception(Exception.class, (e, req, res) -> e.printStackTrace());
         port(8082);

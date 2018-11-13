@@ -1,8 +1,4 @@
-/**
-* Backyard
-* Landing Page Template
-* Author: MoxDesign - http://www.moxdesign.com
-**/
+
 
 html, body {
 	width: 100%;
@@ -16,7 +12,7 @@ body {
 	margin:0;
 	font-size:16px;
 	line-height: 28px;
-	color: #777; 
+	color: #777;
 	background: #fff;
 	overflow-x:hidden;
 	position: relative;
@@ -65,9 +61,8 @@ a:hover {
 .fullscreen {
     width:100%;
     min-height:100%;
-	background-repeat:no-repeat;
-    background-position:50% 50%;
-    background-position:50% 50%\9 !important;
+    background-repeat:no-repeat;
+    background-position:50% 50% !important;
 }
 .overlay {
     /* background-color: #333; */
@@ -777,6 +772,9 @@ and (orientation : portrait) {
 	.button-demo li {
 		padding-bottom: 50px;
 	}
+	.landing  {
+		background-attachment:initial !important;
+	}
 }
 
 /* iPads (landscape) ----------- */
@@ -816,6 +814,9 @@ and (orientation : landscape) {
 	}	
 	.video-header {
 		margin: 50px 0 30px;
+	}
+	.landing  {
+		background-attachment:initial !important;
 	}
 }
 
@@ -889,6 +890,10 @@ and (orientation : landscape) {
 	.feature-img {
 		margin-top: 0;
 	}
+	.landing  {
+		background-attachment:initial !important;
+	}
+
 }
 
 /* iPhone 6 (landscape) ----------- */
@@ -914,6 +919,9 @@ and (orientation : landscape) {
 	}
 	.download-cta {
 		padding: 50px 0 100px;
+	}
+	.landing  {
+		background-attachment:initial !important;
 	}
 }
 
@@ -963,7 +971,10 @@ and (orientation : landscape) {
 	}
 	.download-text p {
 		line-height: 1.5;	
-	}	
+	}
+	.landing  {
+		background-attachment:initial !important;
+	}
 }
 
 /* iPhone 4 (landscape) ----------- */
@@ -976,6 +987,9 @@ and (orientation : landscape) {
 	}
 	.button-demo li {
 		padding-bottom: 50px;
+	}
+	.landing {
+		background-attachment:initial !important;
 	}
 }
 
@@ -992,6 +1006,9 @@ and (orientation : landscape) {
 	}
 	.video-header {
 		margin: 30px 0 30px;
+	}
+	.landing {
+		background-attachment:initial !important;
 	}
 }
 
@@ -1057,6 +1074,9 @@ and (orientation : landscape) {
 }
 .inputfile + label * {
 	pointer-events: none;
+}
+.landing {
+	/* background-attachment:initial !important; */
 }
 /*
 @media screen and (min-width: 1200px) {
