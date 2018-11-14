@@ -87,7 +87,7 @@ if("ontouchstart" in window){
 }
 if(!$("html").hasClass("touch")){
     /* background fix */
-    $(".parallax").css("background-attachment", "fixed");
+    //$(".parallax").css("background-attachment", "fixed");
 }
 
 /* fix vertical when not overflow

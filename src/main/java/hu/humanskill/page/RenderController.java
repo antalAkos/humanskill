@@ -208,4 +208,11 @@ public class RenderController {
         }
         return "";
     }
+
+    public ModelAndView renderWelder(Request request, Response response) {
+        HashMap<String, Object> params = new HashMap<>();
+        params.put("apply", true);
+        return new ModelAndView(params, "hegeszto");
+    }
+
 }

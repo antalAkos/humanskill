@@ -59,10 +59,11 @@ a:hover {
 	background: #fff url(../images/loading.gif) no-repeat center center;
 }
 .fullscreen {
-    width:100%;
-    min-height:100%;
-    background-repeat:no-repeat;
-    background-position:50% 50% !important;
+     width:100%;
+     min-height:100%;
+		background-color: #1d2124;
+     background-repeat:no-repeat;
+     background-position: 0% 0%;
 }
 .overlay {
     /* background-color: #333; */
@@ -1052,6 +1053,9 @@ and (orientation : landscape) {
 	.table > tbody > tr > td { 
 		padding: 20px 10px; 
 	}
+	.landing {
+		background-attachment:initial !important;
+	}
 }
 
 .mySlides {
@@ -1075,9 +1079,7 @@ and (orientation : landscape) {
 .inputfile + label * {
 	pointer-events: none;
 }
-.landing {
-	/* background-attachment:initial !important; */
-}
+
 /*
 @media screen and (min-width: 1200px) {
 
