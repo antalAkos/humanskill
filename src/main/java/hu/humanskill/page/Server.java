@@ -46,12 +46,13 @@ public class Server  {
         port(8082);
 
         staticFileLocation("/public");
-
+        //secure();
 
         get("/", renderController::renderIndexPage, new ThymeleafTemplateEngine());
         get("/mezogazdasag", renderController::renderAgric, new ThymeleafTemplateEngine());
         get("/festo", renderController::renderPainter, new ThymeleafTemplateEngine());
         get("/hegeszto", renderController::renderWelder, new ThymeleafTemplateEngine());
+        get("/allasok", renderController::renderJobs, new ThymeleafTemplateEngine());
         get("/admin", renderController::renderAdmin, new ThymeleafTemplateEngine());
         get("/:lang", renderController::renderByLanguage, new ThymeleafTemplateEngine());
         get("/download/:id", renderController:: getFile);

@@ -775,6 +775,7 @@ and (orientation : portrait) {
 	}
 	.landing  {
 		background-attachment:initial !important;
+        background-size:cover!important;
 	}
 }
 
@@ -818,6 +819,8 @@ and (orientation : landscape) {
 	}
 	.landing  {
 		background-attachment:initial !important;
+		    background-size:cover!important;
+
 	}
 }
 
@@ -893,6 +896,7 @@ and (orientation : landscape) {
 	}
 	.landing  {
 		background-attachment:initial !important;
+		background-size:cover!important;
 	}
 
 }
@@ -923,6 +927,7 @@ and (orientation : landscape) {
 	}
 	.landing  {
 		background-attachment:initial !important;
+		background-size:cover!important;
 	}
 }
 
@@ -975,6 +980,7 @@ and (orientation : landscape) {
 	}
 	.landing  {
 		background-attachment:initial !important;
+		background-size:cover!important;
 	}
 }
 
@@ -991,6 +997,7 @@ and (orientation : landscape) {
 	}
 	.landing {
 		background-attachment:initial !important;
+		background-size:cover!important;
 	}
 }
 
@@ -1010,6 +1017,7 @@ and (orientation : landscape) {
 	}
 	.landing {
 		background-attachment:initial !important;
+		background-size:cover!important;
 	}
 }
 
@@ -1055,6 +1063,7 @@ and (orientation : landscape) {
 	}
 	.landing {
 		background-attachment:initial !important;
+        background-size:cover!important;
 	}
 }
 

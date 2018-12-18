@@ -42,6 +42,8 @@ public class RenderController {
             res.redirect("/ro");
         } else if(req.headers("Accept-Language").contains("ru")) {
             res.redirect("/ru");
+        } else{
+            res.redirect("/en");
         }
         return new ModelAndView(params, "index");
 
@@ -215,4 +217,8 @@ public class RenderController {
         return new ModelAndView(params, "hegeszto");
     }
 
+    public ModelAndView renderJobs(Request request, Response response) {
+
+        return new ModelAndView(new HashMap<>(), "microsite");
+    }
 }
