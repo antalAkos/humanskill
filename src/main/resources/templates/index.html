@@ -5,9 +5,10 @@
     <meta charset="utf-8"></meta>
     <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-    <script type="text/javascript" src="/js/jquery/jquery.js?ver=1.11.3"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.js?ver=1.11.3" ></script>
     <script type="text/javascript" src="/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
     <script src="/js/aos.js"></script>
+
 <!--
     <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
 -->
@@ -18,9 +19,9 @@
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css"></link>
     <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet" type="text/css"></link>
     <link rel="stylesheet" href="/styles/style_refaktor.css"></link>
-    <title>Humanskill – Munkaerőkölcsönzés, szervezetfejlesztés, tréning, coaching</title>
+    <title>Humanskill &ndash; Munkaer&#337;k&ouml;lcs&ouml;nz&eacute;s, szervezetfejleszt&eacute;s, tr&eacute;ning, coaching</title>
 
-    <link rel="stylesheet" id="contact-form-7-css" href="/contact-form-7/css/styles.css?ver=4.4.1" type="text/css" media="all"></link>
+    <!--<link rel="stylesheet" id="contact-form-7-css" href="/contact-form-7/css/styles.css?ver=4.4.1" type="text/css" media="all"></link>-->
     <link rel="stylesheet" id="cyclone-template-style-dark-css" href="/cyclone-slider-2/templates/dark/style.css?ver=2.10.7" type="text/css" media="all"></link>
     <link rel="stylesheet" id="cyclone-template-style-default-css" href="/cyclone-slider-2/templates/default/style.css?ver=2.10.7" type="text/css" media="all"></link>
     <link rel="stylesheet" id="cyclone-template-style-standard-css" href="/cyclone-slider-2/templates/standard/style.css?ver=2.10.7" type="text/css" media="all"></link>
@@ -142,11 +143,11 @@
             <div class="custom-wrapper">
                 <div th:include="page-header :: page-header"></div>
 
-                <div th:include="work :: work" onmouseover="AOS.refresh()"></div>
+                <div th:include="work :: work" onmouseover="AOS.refresh();"></div>
 
-                <div th:include="about-us :: about-us" onmouseover="AOS.refresh()"></div>
+                <div th:include="about-us :: about-us" onmouseover="AOS.refresh();"></div>
 
-                <div th:include="right-page :: right-page" onmouseover="AOS.refresh()"></div>
+                <div th:include="right-page :: right-page" onmouseover="AOS.refresh();"></div>
                 </div>
 
 
@@ -207,12 +208,16 @@ var _wpcf7 = {"loaderUrl":"\/contact-form-7\/images\/ajax-loader.gif","recaptcha
     setTimeout(function () {
         window.dispatchEvent(new Event('resize'));
     }, 200);
-    $(document).ready(AOS.refresh);
-    $(window).on('resize', function() {
+    jQuery.noConflict();
+    (function ($) {
+        $(document).ready(function() { AOS.refresh; });
+        $(window).on('resize', function() {
         AOS.refresh({
             delay: 200
         });
     });
+    })(jQuery);
+
 
 
 

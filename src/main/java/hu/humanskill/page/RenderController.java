@@ -98,19 +98,22 @@ public class RenderController {
 
     }
 
-    public ModelAndView renderAgric(Request request, Response response) {
-            HashMap<String, Object> params = new HashMap<>();
-            params.put("apply", true);
-        return new ModelAndView(params, "landing");
+    public Object renderAgric(Request request, Response response) {
+
+        response.redirect("/mezogazdasag.html"); return null;
+    }
+
+    public Object renderPainter(Request request, Response response) {
+
+        response.redirect("/festo.html"); return null;
 
     }
 
-    public ModelAndView renderPainter(Request request, Response response) {
-        HashMap<String, Object> params = new HashMap<>();
-        params.put("apply", true);
-        return new ModelAndView(params, "festo");
+    public Object renderWelder(Request request, Response response) {
 
+        response.redirect("/hegeszto.html"); return null;
     }
+
 
     public ModelAndView renderAdmin(Request request, Response response) {
 
@@ -211,11 +214,7 @@ public class RenderController {
         return "";
     }
 
-    public ModelAndView renderWelder(Request request, Response response) {
-        HashMap<String, Object> params = new HashMap<>();
-        params.put("apply", true);
-        return new ModelAndView(params, "hegeszto");
-    }
+
 
     public ModelAndView renderJobs(Request request, Response response) {
 
