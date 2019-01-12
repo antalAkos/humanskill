@@ -81,12 +81,13 @@ public class RenderController {
 
             application = new Apply(req.queryParams("name"), phoneData.get("job"), req.queryParams("email"), phoneData.get("phone"), "");
             applyService.save(application);
+            res.status(200);
 
-            String referer = req.headers("Referer");
+            /*String referer = req.headers("Referer");
             if(referer != null){
                 String redirectTo = referer;
                 res.redirect(redirectTo);
-            }
+            }*/
             //uploadedFile.delete();
         } catch (Exception e) {
             e.printStackTrace();

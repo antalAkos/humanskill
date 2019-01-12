@@ -23,7 +23,7 @@ $(document).ready(function () {
                 processData: false,
                 contentType: false,
                 cache: false,
-                timeout: 600000,
+                timeout: 6000,
                 success: function (data) {
                     swal({
                         title: "Sikeresen jelentkezett!",
