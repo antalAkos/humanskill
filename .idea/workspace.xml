@@ -7,18 +7,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd07c714-c042-4c48-84e3-ecf629f827cf" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/works.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/betanitottmunkak.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/gipszkartonozo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/komuves.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/ms-main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/szakmunkak.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/szellemimunkak.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/takarito.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/humanskill_uj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/humanskill_uj.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/humanskill_uj_jar/humanskill_uj.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/humanskill_uj_jar/humanskill_uj.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/festo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/festo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/hegeszto.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/hegeszto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/submitForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/submitForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/submitFormPainter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/submitFormPainter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/js/submitFormWelder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/submitFormWelder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/mezogazdasag.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/mezogazdasag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/flexslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/flexslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/icomoon.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/icomoon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/magnific-popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/owl.carousel.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/owl.theme.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/owl.theme.default.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/css/themify-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/themify-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/bootstrap/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/bootstrap/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/bootstrap/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/bootstrap/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/bootstrap/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/bootstrap/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/bootstrap/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/bootstrap/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/icomoon/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/icomoon/icomoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/icomoon/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/icomoon/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/icomoon/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/icomoon/icomoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/icomoon/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/icomoon/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/themify-icons/themify.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/themify-icons/themify.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/themify-icons/themify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/themify-icons/themify.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/themify-icons/themify.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/themify-icons/themify.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/fonts/themify-icons/themify.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/fonts/themify-icons/themify.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/google_map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/google_map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/jquery.countTo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/jquery.countTo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/jquery.easing.1.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/jquery.easing.1.3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/jquery.easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/jquery.easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/jquery.magnific-popup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/jquery.stellar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/jquery.stellar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/jquery.waypoints.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/magnific-popup-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/magnific-popup-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/modernizr-2.6.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/modernizr-2.6.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/microsite/js/respond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/respond.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/microsite.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ms-microsite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/microsite/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/microsite/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/microsite/portfolio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/microsite/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ms-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ms-index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,31 +76,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <file leaf-file-name="gipszkartonozo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/gipszkartonozo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="59" column="59" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+            <state relative-caret-position="238">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#7;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#8;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#8;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#9;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#9;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#10;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#10;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#4;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#5;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#6;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#7;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#8;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#9;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#10;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#11;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="works.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/microsite-js/works.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ms-microsite.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms-microsite.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="1957" column="17" selection-start-line="1957" selection-start-column="17" selection-end-line="1957" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icomoon.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/icomoon.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="671" column="12" selection-start-line="671" selection-start-column="6" selection-end-line="671" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="komuves.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/komuves.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="70" column="100" selection-start-line="70" selection-start-column="100" selection-end-line="70" selection-end-column="115" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,63 +173,8 @@
       <file leaf-file-name="submitForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/submitForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="submitFormPainter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/submitFormPainter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="submitFormWelder.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/submitFormWelder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="festo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/festo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1356">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hegeszto.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/hegeszto.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="116" column="89" selection-start-line="116" selection-start-column="89" selection-end-line="116" selection-end-column="89" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mezogazdasag.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/mezogazdasag.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
-              <caret line="123" column="88" selection-start-line="123" selection-start-column="88" selection-end-line="123" selection-end-column="88" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -127,8 +182,8 @@
       <file leaf-file-name="RenderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+            <state relative-caret-position="71">
+              <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -146,36 +201,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>background-attachment</find>
-      <find>over</find>
-      <find>intro</find>
-      <find>festő</find>
-      <find>landing</find>
-      <find>background-attachment:initial !important;</find>
-      <find>fixed</find>
-      <find>fullscree</find>
-      <find>nth-</find>
-      <find>child</find>
-      <find>grid-</find>
-      <find>your busine</find>
-      <find>input</find>
-      <find>header</find>
-      <find>gtco</find>
-      <find>portfolio</find>
-      <find>img</find>
-      <find>gtco-nav</find>
-      <find>pageintro</find>
-      <find>contact</find>
-      <find>aos</find>
-      <find>color-2</find>
-      <find>overlay</find>
-      <find>body</find>
-      <find>h2</find>
-      <find>.gtco-nav .gtco-contact ul li a</find>
-      <find>logo</find>
-      <find>#gtco-products</find>
       <find>#17B794</find>
       <find>gtco-logo</find>
+      <find>feature</find>
+      <find>#gtco-features-3 .feature.feature-2</find>
+      <find>gtco-counter</find>
+      <find>#15a585</find>
+      <find>.gtco-flex</find>
+      <find>microsite/</find>
+      <find>public/</find>
+      <find>../microsite/js</find>
+      <find>microsite/js/</find>
+      <find>css/microsite</find>
+      <find>#118a6f</find>
+      <find>gtco-footer</find>
+      <find>.icon</find>
+      <find>#gtco-features-3 .feature.feature-3 .icon</find>
+      <find>br</find>
+      <find>&lt;br&gt;</find>
+      <find>&lt;br/&gt;</find>
+      <find>&lt;/br&gt;</find>
+      <find>&lt;hr&gt;</find>
+      <find>jelentke</find>
+      <find>phone</find>
+      <find>gtco-flex</find>
+      <find>#gtco-portfolio .gtco-heading h2</find>
+      <find>&lt;span&gt;Illustration&lt;/span&gt;</find>
+      <find>.input-group .form-control</find>
+      <find>meet</find>
+      <find>file</find>
+      <find>upload</find>
     </findStrings>
     <replaceStrings>
       <replace>psy</replace>
@@ -184,6 +239,16 @@
       <replace>initial</replace>
       <replace>hegesztő</replace>
       <replace>#4091DC</replace>
+      <replace>public/microsite/</replace>
+      <replace>../</replace>
+      <replace>/js/microsite-js</replace>
+      <replace>/js/microsite-js/</replace>
+      <replace>css/microsite-css</replace>
+      <replace>#3F91D9</replace>
+      <replace>&lt;/br&gt;</replace>
+      <replace>&lt;br/&gt;</replace>
+      <replace>&lt;hr/&gt;</replace>
+      <replace />
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/resources/public</dir>
@@ -201,18 +266,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/public/dist/scripts/main.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/apply.html" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/EmailSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Admin.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/form.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/js/slodeshow.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/js/slideshow.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index_en.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index_ro.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Utility.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/aos.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/styles/animate.min.css" />
@@ -227,7 +280,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/dist/styles/main.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/microsite/microsite.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/microsite/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/microsite.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/example.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/public/assets/css/css-index.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/landing_comment.html" />
@@ -238,20 +290,33 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/land.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fest.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/landing.html" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/footer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/ms-index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/microsite/css/style.css" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/submitForm.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/submitFormPainter.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/submitFormWelder.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/festo.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/hegeszto.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/mezogazdasag.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/szellemimunkak.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/microsite/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/microsite.html" />
+        <option value="$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/allas.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/szakmunkak.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/betanitottmunkak.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ms-main.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ms-index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/takarito.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/footer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/komuves.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ms-microsite.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/gipszkartonozo.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/js/microsite-js/works.js" />
       </list>
     </option>
   </component>
@@ -298,23 +363,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
               <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
@@ -373,6 +430,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,34 +457,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="microsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="microsite" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -429,8 +466,48 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="microsite" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="microsite-css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanskill_uj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="microsite-js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="humanskill" type="b2602c69:ProjectViewProjectNode" />
@@ -444,9 +521,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,7 +530,7 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="humanskill" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value=".gtco-nav &#9;null&#9;null&#10;pikto1&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/pikto1.png&#10;mobile-menu&#9;null&#9;null&#10;mobile&#9;null&#9;null&#10;4.png&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/4.png&#10;backToStart&#9;null&#9;null&#10;fedlap&#9;null&#9;null&#10;lang-select&#9;null&#9;null&#10;logo.png&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/logo.png&#10;scrolldown&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/scrolldown.png&#10;stack&#9;FILE&#9;jar:///home/akos/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar!/antlr/collections/Stack.class&#10;top&#9;null&#9;null&#10;[href=#]&#9;null&#9;null&#10;href=#&#9;null&#9;null&#10;fadeIn&#9;null&#9;null&#10;cycloneslider-pager&#9;null&#9;null&#10;cycle-pager-active&#9;null&#9;null&#10;jquery.js&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/js/jquery/jquery.js&#10;szerve&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/szervezetfejlesztes_menu_opt-1.jpg" />
+    <property name="SearchEverywhereHistoryKey" value="loader&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/cyclone-slider-2/images/loader.gif&#10;saveCV&#9;PSI&#9;JAVA://hu.humanskill.page.RenderController#saveCV&#10;hibernate-configuration&#9;FILE&#9;jar:///home/akos/.m2/repository/org/hibernate/hibernate-core/5.2.13.Final/hibernate-core-5.2.13.Final.jar!/org/hibernate/hibernate-configuration-4.0.xsd&#10;.gtco-nav &#9;null&#9;null&#10;pikto1&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/pikto1.png&#10;mobile-menu&#9;null&#9;null&#10;mobile&#9;null&#9;null&#10;4.png&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/4.png&#10;backToStart&#9;null&#9;null&#10;fedlap&#9;null&#9;null&#10;lang-select&#9;null&#9;null&#10;logo.png&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/logo.png&#10;scrolldown&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/scrolldown.png&#10;stack&#9;FILE&#9;jar:///home/akos/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar!/antlr/collections/Stack.class&#10;top&#9;null&#9;null&#10;[href=#]&#9;null&#9;null&#10;href=#&#9;null&#9;null&#10;fadeIn&#9;null&#9;null&#10;cycloneslider-pager&#9;null&#9;null&#10;cycle-pager-active&#9;null&#9;null&#10;jquery.js&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/js/jquery/jquery.js&#10;szerve&#9;FILE&#9;file:///home/akos/Documents/humanskill_uj/src/main/resources/public/assets/images/szervezetfejlesztes_menu_opt-1.jpg" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../developer-rig" />
@@ -466,22 +540,22 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/public/assets/css" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public/js/microsite-js" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public/microsite" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public/js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hu.humanskill.page" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/public/assets/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/public/.well-known/acme-challenge" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/public/microsite" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/microsite" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="hu.humanskill.page" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/public/assets/images" />
-      <recent name="$PROJECT_DIR$/src/main/resources/public" />
-      <recent name="$PROJECT_DIR$/src/main/resources/public/templates" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/src/main/resources/public/files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -890,7 +964,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545261851097</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="allasok page on the way">
+      <created>1547298446574</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1547298446574</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -898,20 +979,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-17" width="1393" height="918" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32992327" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3283208" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32948717" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50036955" side_tool="true" weight="0.35588974" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.32889876" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35588974" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35588974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49963045" visible="true" weight="0.40726817" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35588974" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24464154" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20473023" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3283208" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.24907613" />
       <window_info id="UI Designer" order="3" />
@@ -924,10 +1008,8 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32948717" />
       <window_info id="Web" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3283208" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="DB Browser" order="4" />
@@ -979,142 +1061,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/microsite/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8940">
-          <caret line="745" column="16" lean-forward="true" selection-start-line="745" selection-start-column="16" selection-end-line="745" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/hegeszto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/mezogazdasag.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="65" column="43" lean-forward="true" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/festo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="64" column="91" selection-start-line="64" selection-start-column="91" selection-end-line="64" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1356">
-          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="53" column="57" lean-forward="true" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2328">
-          <caret line="194" column="100" lean-forward="true" selection-start-line="194" selection-start-column="100" selection-end-line="194" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/styles/animate.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="52592" selection-start-line="10" selection-start-column="52592" selection-end-line="10" selection-end-column="52592" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/aos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/styles/aos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/service/ApplyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/styles/style_refaktor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3585">
-          <caret line="239" column="1" selection-start-line="239" selection-start-column="1" selection-end-line="239" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/page-header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="75" selection-start-line="44" selection-start-column="75" selection-end-line="44" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/dist/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="10" column="2915" selection-start-line="10" selection-start-column="2915" selection-end-line="10" selection-end-column="2915" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1205,76 +1151,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/microsite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/model/Apply.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" column="86" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/microsite/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9468">
-          <caret line="789" column="1" selection-start-line="789" selection-start-column="1" selection-end-line="789" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="192" column="71" selection-start-line="192" selection-start-column="71" selection-end-line="192" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="59" column="59" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/submitForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1296,37 +1176,245 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1356">
           <caret line="119" selection-start-line="119" selection-end-line="119" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.13.Final/hibernate-core-5.2.13.Final.jar!/org/hibernate/hibernate-configuration-3.0.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-310" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/hegeszto.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="116" column="89" selection-start-line="116" selection-start-column="89" selection-end-line="116" selection-end-column="89" />
+        <state relative-caret-position="576">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/mezogazdasag.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-debug-tools/0.5/spark-debug-tools-0.5.jar!/org/slf4j/LoggerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="123" column="88" selection-start-line="123" selection-start-column="88" selection-end-line="123" selection-end-column="88" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="12">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state relative-caret-position="372">
+          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/microsite-js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/szellemimunkak.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/mezogazdasag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="141" column="24" lean-forward="true" selection-start-line="141" selection-start-column="24" selection-end-line="142" selection-end-column="111" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/szakmunkak.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/betanitottmunkak.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms-main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/takarito.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/slideshow.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="192" column="71" selection-start-line="192" selection-start-column="71" selection-end-line="192" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2286" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/komuves.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="70" column="100" selection-start-line="70" selection-start-column="100" selection-end-line="70" selection-end-column="115" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/icomoon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="671" column="12" selection-start-line="671" selection-start-column="6" selection-end-line="671" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hu/humanskill/page/RenderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/thymeleafLoader.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/cyclone-slider-2/images/loader.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/components/_loader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/submitForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms-microsite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/css/microsite-css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="1957" column="17" selection-start-line="1957" selection-start-column="17" selection-end-line="1957" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/gipszkartonozo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#7;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#8;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#9;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#9;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#10;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#10;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#4;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#5;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#6;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#7;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#8;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#9;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#10;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#11;n#div#11;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/microsite-js/works.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>

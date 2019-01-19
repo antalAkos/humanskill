@@ -29,7 +29,6 @@ public class Server  {
 
 
 
-
     static int getHerokuAssignedPort() {
         ProcessBuilder processBuilder = new ProcessBuilder();
         if (processBuilder.environment().get("PORT") != null) {
@@ -53,6 +52,8 @@ public class Server  {
         get("/festo", renderController::renderPainter);
         get("/hegeszto", renderController::renderWelder);
         get("/allasok", renderController::renderJobs, new ThymeleafTemplateEngine());
+        get("/allasok/:job-category", renderController::renderJobCategory, new ThymeleafTemplateEngine());
+
         get("/admin", renderController::renderAdmin, new ThymeleafTemplateEngine());
         get("/:lang", renderController::renderByLanguage, new ThymeleafTemplateEngine());
         get("/download/:id", renderController:: getFile);

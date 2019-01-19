@@ -218,7 +218,16 @@ public class RenderController {
 
 
     public ModelAndView renderJobs(Request request, Response response) {
+        HashMap params = new HashMap<>();
+        params.put("page", "ms-main");
+        return new ModelAndView(params, "ms-microsite");
+    }
 
-        return new ModelAndView(new HashMap<>(), "microsite");
+    public ModelAndView renderJobCategory(Request request, Response response) {
+        String jobCaregory = request.params(":job-category");
+        HashMap params = new HashMap<>();
+        params.put("page", jobCaregory);
+        return new ModelAndView(params, "ms-microsite");
+
     }
 }
