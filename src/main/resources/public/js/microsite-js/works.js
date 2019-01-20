@@ -58,8 +58,7 @@ $(document).ready(function(){
             error: function() {
                             console.log("error");
                             $(".loader").css('display', 'none');
-                            $(".label").append('<span class="error" style="color:red;">Hiba történt, próbálja újra!</span>');
-
+                            $(".error").css('display', 'inline-block');
                           }
         });
     });
