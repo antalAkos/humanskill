@@ -1510,7 +1510,7 @@ ul {
 display:block!important;
 }
 .input-group .form-control {
-padding-top:40px;
+margin-top:40px;
 margin-bottom: 20px!important;
 }
 .form-control {
@@ -1524,7 +1524,7 @@ margin-bottom: 20px!important;
   height: 90px;
   margin: 0 auto 10px auto;
   position: relative;
-  background: #11416b;
+  background: #C2CED5;
   top: -3em;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1561,7 +1561,7 @@ margin-bottom: 20px!important;
   }
 }
 #gtco-features-3 .feature.feature-2 .icon {
-  background: #11416b;
+  background: #C2CED5;
 }
 #gtco-features-3 .feature.feature-2 .feature-inner {
   top: -3em;
@@ -1611,7 +1611,7 @@ h3 {
   background: #3F91D9;
 }
 #gtco-features-3 .feature.feature-3 .icon {
-  background: #11416b;
+  background: #C2CED5;
 }
 
 .gtco-flex {
@@ -1965,7 +1965,7 @@ h3 {
 .loader {
   display:none;
   border: 2px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border-top: 2px solid #3498db; /* Blue */
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -1978,7 +1978,13 @@ h3 {
 }
 
 .tick {
-    display:none;
+ display: none;
+}
+.tick:before {
     color:green;
-    content:“✓”;
+ content: "✔";
+}
+a h3:hover, a p:hover {
+    text-decoration:underline;
+    color:white;
 }

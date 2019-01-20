@@ -199,12 +199,15 @@ public class RenderController {
             }
 
             applyService.save(application);
+            res.status(200);
 
-            String referer = req.headers("Referer");
+            /*String referer = req.headers("Referer");
             if(referer != null){
+                res.status(200);
+
                 String redirectTo = referer;
                 res.redirect(redirectTo);
-            }
+            }*/
             //uploadedFile.delete();
         } catch (Exception e) {
             e.printStackTrace();
