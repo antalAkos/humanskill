@@ -28,7 +28,7 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.offcanvas #page {
+/*.offcanvas #page {
   overflow: hidden;
   position: absolute;
 }
@@ -44,7 +44,7 @@ body {
   z-index: 101;
   background: rgba(0, 0, 0, 0.7);
   content: "";
-}
+}*/
 
 a {
   color: #ffffff;
@@ -346,8 +346,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 43, 83, 0.89);
-
+  background: rgba(29, 43, 83, 0.55);
 }
 .gtco-cover > .gtco-container {
   position: relative;
@@ -529,7 +528,7 @@ form label {
 #gtco-header .display-tc,
 #gtco-counter .display-tc,
 .gtco-cover .display-tc {
-  display: table-cell !important;
+  /* display: table-cell !important; */
   vertical-align: middle;
 }
 #gtco-header .display-tc h1, #gtco-header .display-tc h2,
@@ -562,7 +561,7 @@ form label {
 .gtco-cover .display-tc h2 {
   font-size: 22px;
   line-height: 1.5;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 #gtco-counter {
@@ -611,7 +610,7 @@ form label {
 #gtco-subscribe,
 #gtco-footer,
 .gtco-section {
-  padding: 7em 0;
+  padding: 5em 0;
   clear: both;
   position: relative;
 }
@@ -626,7 +625,7 @@ form label {
   #gtco-subscribe,
   #gtco-footer,
   .gtco-section {
-    padding: 3em 0;
+    padding: 5em 0;
   }
 }
 #gtco-features.border-bottom,
@@ -1019,6 +1018,7 @@ form label {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  height:100vh;
 }
 @media screen and (max-width: 768px) {
   #gtco-offcanvas {
@@ -1478,7 +1478,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   #gtco-features-3 {
-    top: -2em;
+    top: 5em;
   }
 }
 #gtco-features-3 .feature {
@@ -1664,7 +1664,7 @@ h3 {
   padding: 0;
   margin: 0 0 10px 1%;
   list-style: none;
-  min-height: 400px;
+  /* min-height: 400px; */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1678,11 +1678,15 @@ h3 {
   }
 }
 #gtco-portfolio-list li a {
-  min-height: 400px;
-  padding: 2em;
+  /* min-height: 400px; */
+  /* padding: 2em; */
   position: relative;
   width: 100%;
   display: block;
+}
+
+#gtco-portfolio-list li a img {
+    height:400px;
 }
 #gtco-portfolio-list li a:before {
   position: absolute;
@@ -1733,12 +1737,13 @@ h3 {
   background: rgba(98, 177, 215, 0);
 }
 #gtco-portfolio-list li a .case-studies-summary {
-  /* width: auto; */
-  /* bottom: 2em; */
-  /* left: 2em; */
-  /* right: 2em; */
+  width: auto;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
   position: absolute;
   z-index: 100;
+  margin-bottom:50px;
 }
 @media screen and (max-width: 768px) {
   #gtco-portfolio-list li a .case-studies-summary {
@@ -1944,7 +1949,7 @@ h3 {
 
 .downloads ul li {
     margin:10px!important;
-    font-size: 60%;
+    font-size: 160%;
 }
 
 .downloads label{
@@ -1998,3 +2003,104 @@ a h3:hover, a p:hover {
 .feature-inner i {
     color:#F0F600;
 }
+
+.img-responsive{
+    width:100%!important;
+}
+
+
+@media only screen and (max-width: 992px) {
+  #gtco-portfolio-list li a img {
+    height: 200px!important;
+  }
+  #gtco-portfolio-list li a {
+      height: 200px!important;
+  }
+  .col-xs-6 .btn {
+    width:60%;
+  }
+  #gtco-logo img {
+  width:90%;
+  }
+
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+  position: absolute;
+  display: block;
+  /* top: 2em; */
+  margin-right: auto!important;
+  margin-left: auto!important;
+  width: 60%;
+  font-size: 2em;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  border: 2px solid #4090db;
+  border-radius: 10px;
+  background: rgba(23, 34, 65, 0.31);
+  margin-top: 250px;
+  padding: 10px;
+}
+
+.item-1{
+  animation-name: anim-1;
+}
+
+.item-2{
+  animation-name: anim-2;
+}
+
+.item-3{
+  animation-name: anim-3;
+}
+
+.item-4{
+  animation-name: anim-4;
+}
+.item-5{
+  animation-name: anim-5;
+}
+@keyframes anim-1 {
+  0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+  0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+  0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+@keyframes anim-4 {
+  0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+@keyframes anim-5 {
+  0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+.display-tc h4 {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.display-tc h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
