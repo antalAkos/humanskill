@@ -53,7 +53,6 @@ public class Server  {
         get("/hegeszto", renderController::renderWelder);
         get("/allasok", renderController::renderJobs, new ThymeleafTemplateEngine());
         get("/allasok/:job-category", renderController::renderJobCategory, new ThymeleafTemplateEngine());
-
         get("/admin", renderController::renderAdmin, new ThymeleafTemplateEngine());
         get("/:lang", renderController::renderByLanguage, new ThymeleafTemplateEngine());
         get("/download/:id", renderController:: getFile);

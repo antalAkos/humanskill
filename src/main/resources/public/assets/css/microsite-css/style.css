@@ -1733,10 +1733,10 @@ h3 {
   background: rgba(98, 177, 215, 0);
 }
 #gtco-portfolio-list li a .case-studies-summary {
-  width: auto;
-  bottom: 2em;
-  left: 2em;
-  right: 2em;
+  /* width: auto; */
+  /* bottom: 2em; */
+  /* left: 2em; */
+  /* right: 2em; */
   position: absolute;
   z-index: 100;
 }
@@ -1944,6 +1944,7 @@ h3 {
 
 .downloads ul li {
     margin:10px!important;
+    font-size: 60%;
 }
 
 .downloads label{
@@ -1953,6 +1954,7 @@ h3 {
 
 .downloads label:hover{
     text-decoration: underline;
+    color:white;
 }
 .downloads input {
     display:none;
@@ -1987,4 +1989,12 @@ h3 {
 a h3:hover, a p:hover {
     text-decoration:underline;
     color:white;
+}
+
+.feature-center:hover {
+      background: #63729b!important;
+}
+
+.feature-inner i {
+    color:#F0F600;
 }

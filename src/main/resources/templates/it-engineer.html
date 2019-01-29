@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="it-engineer">
+    <div class="gtco-section" id="munkaink">
+        <div class="gtco-container">
+            <div class="clearfix" >
+                <div class="col-md-4">
+                    <div class="image-zoom img-responsive">
+                        <img class="img-responsive" src="data:image/png;base64,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"/>
+
+                        <span class="zoom-icon triangle-button"></span>
+
+                    </div><!-- /.image-zoom -->
+                    <div class="downloads">
+                        <ul>
+                            <li><i class="icon-phone"></i><a href="#"> </a><a class=" " href="/_upload/editor/dok/oneletrajz_minta.doc" target="_blank">+3620/382-7224</a></li>
+                            <li><i class="icon-mail"></i><a target="_blank" href="https://itunes.apple.com/hu/app/nemet-szakmunkak/id1119210887?mt=8"> </a><a class=" " href="https://itunes.apple.com/hu/app/nemet-szakmunkak/id1119210887?mt=8" target="_blank">info@humanskill.org</a></li>
+                            <li>
+                                <form method="post"  enctype="multipart/form-data" action="/save-cv" >
+                                    <label for="file-706"><i class="icon-file"></i> &Ouml;n&eacute;letrajz felt&ouml;lt&eacute;s<span class="loader"></span> <span class="tick"></span><span class="error" style="color:red;display:none;">Hiba t&ouml;rt&eacute;nt, pr&oacute;b&aacute;lja &uacute;jra!</span> </label>
+                                    <input type="file" id="file-706" name="file-706" />
+                                    <input type="submit"  value="submit" id="submit"/>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-8">
+                    <h1><span >Internet Bank Senior Engineer</span></h1>
+                    <p class="small">  </p>
+
+
+                    <div style="text-align: justify;"><br/><span style="font-size: 12pt;"><strong>Tasks:</strong></span><br/><span style="font-size: 12pt;"></span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><span>- System maintenance / administration</span></span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><span>- Support in vulnerability assessments, consultation and advice regarding findings, planning of properresolution togetherwith the vendor</span></span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><span>- Selection and implementation support of IT solutions most matching the business needs of the Bank</span></span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><span>- Creation of documentation for the developers</span></span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><span>- Support in resolution of ad hoc daily errors/incidents</span></span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><span>- Maintaining relationship with the vendors</span></span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><span>- Follow-up of the development lifecycle</span></span></div>
+
+
+
+
+
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><span></span></span></div><br/>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;"><strong>Requirements:</strong></span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;">- University or college degree</span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;">- at least 3-5 years of banking experience in similar business/technical activit</span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;">- AIX/Linux system knowledge, system administration experience</span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;">- high level of written and verbal English</span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;">- IT Security knowledge with special attention regarding internet banking solutions</span></div>
+                    <div style="text-align: justify;"><span style="font-size: 12pt;">-Knowledge of Electra application</span></div>
+
+
+                    <div style="text-align: justify;">
+                        <br/>
+                        <span style="font-size: 12pt;"><strong>Our offer:</strong></span><br/>
+                        <span style="font-size: 12pt;">- A challenging and multifaceted workplace in a professional, multicultural team</span><br/>
+                        <span style="font-size: 12pt;">- An opportunity to gain experience in an international environmentwith increasing visibility and responsibilities</span><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

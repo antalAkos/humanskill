@@ -4,15 +4,15 @@
 
 	var mobileMenuOutsideClick = function() {
 
-		$(document).click(function (e) {
-	    var container = $("#gtco-offcanvas, .js-gtco-nav-toggle");
+		jQuery(document).click(function (e) {
+	    var container = jQuery("#gtco-offcanvas, .js-gtco-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	    	$('.js-gtco-nav-toggle').addClass('gtco-nav-white');
+	    	jQuery('.js-gtco-nav-toggle').addClass('gtco-nav-white');
 
-	    	if ( $('body').hasClass('offcanvas') ) {
+	    	if ( jQuery('body').hasClass('offcanvas') ) {
 
-    			$('body').removeClass('offcanvas');
-    			$('.js-gtco-nav-toggle').removeClass('active');
+    			jQuery('body').removeClass('offcanvas');
+    			jQuery('.js-gtco-nav-toggle').removeClass('active');
 				
 	    	}
 	    
@@ -25,42 +25,42 @@
 
 	var offcanvasMenu = function() {
 
-		$('#page').prepend('<div id="gtco-offcanvas" />');
-		$('#page').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle gtco-nav-white"><i></i></a>');
-		var clone1 = $('.menu-1 > ul').clone();
-		$('#gtco-offcanvas').append(clone1);
-		var clone2 = $('.menu-2 > ul').clone();
-		$('#gtco-offcanvas').append(clone2);
+		jQuery('#page').prepend('<div id="gtco-offcanvas" />');
+		jQuery('#page').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle gtco-nav-white"><i></i></a>');
+		var clone1 = jQuery('.menu-1 > ul').clone();
+		jQuery('#gtco-offcanvas').append(clone1);
+		var clone2 = jQuery('.menu-2 > ul').clone();
+		jQuery('#gtco-offcanvas').append(clone2);
 
-		$('#gtco-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
-		$('#gtco-offcanvas')
+		jQuery('#gtco-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
+		jQuery('#gtco-offcanvas')
 			.find('li')
 			.removeClass('has-dropdown');
 
 		// Hover dropdown menu on mobile
-		$('.offcanvas-has-dropdown').mouseenter(function(){
-			var $this = $(this);
+		jQuery('.offcanvas-has-dropdown').mouseenter(function(){
+			var jQuerythis = jQuery(this);
 
-			$this
+			jQuerythis
 				.addClass('active')
 				.find('ul')
 				.slideDown(500, 'easeOutExpo');				
 		}).mouseleave(function(){
 
-			var $this = $(this);
-			$this
+			var jQuerythis = jQuery(this);
+			jQuerythis
 				.removeClass('active')
 				.find('ul')
 				.slideUp(500, 'easeOutExpo');				
 		});
 
 
-		$(window).resize(function(){
+		jQuery(window).resize(function(){
 
-			if ( $('body').hasClass('offcanvas') ) {
+			if ( jQuery('body').hasClass('offcanvas') ) {
 
-    			$('body').removeClass('offcanvas');
-    			$('.js-gtco-nav-toggle').removeClass('active');
+    			jQuery('body').removeClass('offcanvas');
+    			jQuery('.js-gtco-nav-toggle').removeClass('active');
 				
 	    	}
 		});
@@ -69,16 +69,16 @@
 
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-gtco-nav-toggle', function(event){
-			var $this = $(this);
+		jQuery('body').on('click', '.js-gtco-nav-toggle', function(event){
+			var jQuerythis = jQuery(this);
 
 
-			if ( $('body').hasClass('overflow offcanvas') ) {
-				$('body').removeClass('overflow offcanvas');
+			if ( jQuery('body').hasClass('overflow offcanvas') ) {
+				jQuery('body').removeClass('overflow offcanvas');
 			} else {
-				$('body').addClass('overflow offcanvas');
+				jQuery('body').addClass('overflow offcanvas');
 			}
-			$this.toggleClass('active');
+			jQuerythis.toggleClass('active');
 			event.preventDefault();
 
 		});
@@ -89,20 +89,20 @@
 	var contentWayPoint = function() {
 		var i = 0;
 
-		// $('.gtco-section').waypoint( function( direction ) {
+		// jQuery('.gtco-section').waypoint( function( direction ) {
 
 
-			$('.animate-box').waypoint( function( direction ) {
+			jQuery('.animate-box').waypoint( function( direction ) {
 
-				if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
+				if( direction === 'down' && !jQuery(this.element).hasClass('animated-fast') ) {
 					
 					i++;
 
-					$(this.element).addClass('item-animate');
+					jQuery(this.element).addClass('item-animate');
 					setTimeout(function(){
 
-						$('body .animate-box.item-animate').each(function(k){
-							var el = $(this);
+						jQuery('body .animate-box.item-animate').each(function(k){
+							var el = jQuery(this);
 							setTimeout( function () {
 								var effect = el.data('animate-effect');
 								if ( effect === 'fadeIn') {
@@ -130,18 +130,18 @@
 
 	var dropdown = function() {
 
-		$('.has-dropdown').mouseenter(function(){
+		jQuery('.has-dropdown').mouseenter(function(){
 
-			var $this = $(this);
-			$this
+			var jQuerythis = jQuery(this);
+			jQuerythis
 				.find('.dropdown')
 				.css('display', 'block')
 				.addClass('animated-fast fadeInUpMenu');
 
 		}).mouseleave(function(){
-			var $this = $(this);
+			var jQuerythis = jQuery(this);
 
-			$this
+			jQuerythis
 				.find('.dropdown')
 				.css('display', 'none')
 				.removeClass('animated-fast fadeInUpMenu');
@@ -152,7 +152,7 @@
 
 	var owlCarousel = function(){
 		
-		var owl = $('.owl-carousel-carousel');
+		var owl = jQuery('.owl-carousel-carousel');
 		owl.owlCarousel({
 			items: 3,
 			loop: true,
@@ -179,7 +179,7 @@
 		});
 
 
-		var owl = $('.owl-carousel-fullwidth');
+		var owl = jQuery('.owl-carousel-fullwidth');
 		owl.owlCarousel({
 			items: 1,
 			loop: true,
@@ -202,22 +202,22 @@
 	var tabs = function() {
 
 		// Auto adjust height
-		$('.gtco-tab-content-wrap').css('height', 0);
+		jQuery('.gtco-tab-content-wrap').css('height', 0);
 		var autoHeight = function() {
 
 			setTimeout(function(){
 
-				var tabContentWrap = $('.gtco-tab-content-wrap'),
-					tabHeight = $('.gtco-tab-nav').outerHeight(),
-					formActiveHeight = $('.tab-content.active').outerHeight(),
+				var tabContentWrap = jQuery('.gtco-tab-content-wrap'),
+					tabHeight = jQuery('.gtco-tab-nav').outerHeight(),
+					formActiveHeight = jQuery('.tab-content.active').outerHeight(),
 					totalHeight = parseInt(tabHeight + formActiveHeight + 90);
 
 					tabContentWrap.css('height', totalHeight );
 
-				$(window).resize(function(){
-					var tabContentWrap = $('.gtco-tab-content-wrap'),
-						tabHeight = $('.gtco-tab-nav').outerHeight(),
-						formActiveHeight = $('.tab-content.active').outerHeight(),
+				jQuery(window).resize(function(){
+					var tabContentWrap = jQuery('.gtco-tab-content-wrap'),
+						tabHeight = jQuery('.gtco-tab-nav').outerHeight(),
+						formActiveHeight = jQuery('.tab-content.active').outerHeight(),
 						totalHeight = parseInt(tabHeight + formActiveHeight + 90);
 
 						tabContentWrap.css('height', totalHeight );
@@ -231,24 +231,24 @@
 
 
 		// Click tab menu
-		$('.gtco-tab-nav a').on('click', function(event){
+		jQuery('.gtco-tab-nav a').on('click', function(event){
 			
-			var $this = $(this),
-				tab = $this.data('tab');
+			var jQuerythis = jQuery(this),
+				tab = jQuerythis.data('tab');
 
-			$('.tab-content')
+			jQuery('.tab-content')
 				.addClass('animated-fast fadeOutDown');
 
-			$('.tab-content')
+			jQuery('.tab-content')
 				.removeClass('active');
 
-			$('.gtco-tab-nav li').removeClass('active');
+			jQuery('.gtco-tab-nav li').removeClass('active');
 			
-			$this
+			jQuerythis
 				.closest('li')
 					.addClass('active')
 
-			$this
+			jQuerythis
 				.closest('.gtco-tabs')
 					.find('.tab-content[data-tab-content="'+tab+'"]')
 					.removeClass('animated-fast fadeOutDown')
@@ -264,24 +264,24 @@
 
 	var goToTop = function() {
 
-		$('.js-gotop').on('click', function(event){
+		jQuery('.js-gotop').on('click', function(event){
 			
 			event.preventDefault();
 
-			$('html, body').animate({
-				scrollTop: $('html').offset().top
+			jQuery('html, body').animate({
+				scrollTop: jQuery('html').offset().top
 			}, 500, 'easeInOutExpo');
 			
 			return false;
 		});
 
-		$(window).scroll(function(){
+		jQuery(window).scroll(function(){
 
-			var $win = $(window);
-			if ($win.scrollTop() > 200) {
-				$('.js-top').addClass('active');
+			var jQuerywin = jQuery(window);
+			if (jQuerywin.scrollTop() > 200) {
+				jQuery('.js-top').addClass('active');
 			} else {
-				$('.js-top').removeClass('active');
+				jQuery('.js-top').removeClass('active');
 			}
 
 		});
@@ -291,11 +291,11 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".gtco-loader").fadeOut("slow");
+		jQuery(".gtco-loader").fadeOut("slow");
 	};
 
 	var counter = function() {
-		$('.js-counter').countTo({
+		jQuery('.js-counter').countTo({
 			 formatter: function (value, options) {
 	      return value.toFixed(options.decimals);
 	    },
@@ -303,19 +303,19 @@
 	};
 
 	var counterWayPoint = function() {
-		if ($('#gtco-counter').length > 0 ) {
-			$('#gtco-counter').waypoint( function( direction ) {
+		if (jQuery('#gtco-counter').length > 0 ) {
+			jQuery('#gtco-counter').waypoint( function( direction ) {
 										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+				if( direction === 'down' && !jQuery(this.element).hasClass('animated') ) {
 					setTimeout( counter , 400);					
-					$(this.element).addClass('animated');
+					jQuery(this.element).addClass('animated');
 				}
 			} , { offset: '90%' } );
 		}
 	};
 
 	
-	$(function(){
+	jQuery(function(){
 		mobileMenuOutsideClick();
 		offcanvasMenu();
 		burgerMenu();
