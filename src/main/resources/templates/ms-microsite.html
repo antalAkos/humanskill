@@ -84,6 +84,25 @@
 <script type="text/javascript" src="/js/submitFormJobs.js"></script>
 
 <script type="text/javascript" src="/js/slideshow-ms.js"></script>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    jQuery.noConflict();
+    (function($) {
+         $(window).load(function() {
+        if ($(window).width() < 992) {
+                $(".img-desktop").remove();
+                $(".contact-desktop").remove();
+                $(".contact-mobile").show();
+                $(".img-mobile").show();
+                $(".phone-mobile").show();
+            }
+        })
+
+    })(jQuery)
+
+    /*]]>*/
+
+</script>
 <script>
  AOS.init({
         startEvent: 'load',
@@ -102,6 +121,7 @@
     });
     })(jQuery);
 </script>
+
 <script th:inline="javascript">
 
 /*<![CDATA[*/

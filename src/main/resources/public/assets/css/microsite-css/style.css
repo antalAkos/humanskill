@@ -325,7 +325,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-cover {
-  height: 900px;
+  height: 800px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .gtco-cover {
-    height: 600px;
+    height: 800px;
   }
 }
 .gtco-cover .display-t,
@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .gtco-cover.gtco-cover-sm {
-  height: 600px;
+  height: 800px;
 }
 @media screen and (max-width: 768px) {
   .gtco-cover.gtco-cover-sm {
@@ -1478,7 +1478,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   #gtco-features-3 {
-    top: 5em;
+    /* top: 5em; */
   }
 }
 #gtco-features-3 .feature {
@@ -1510,7 +1510,7 @@ ul {
 display:block!important;
 }
 .input-group .form-control {
-margin-top:40px;
+margin-top:10px;
 margin-bottom: 20px!important;
 }
 .form-control {
@@ -1700,42 +1700,7 @@ h3 {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#gtco-portfolio-list li a.color-1:before {
-  background: rgba(55, 75, 84, 0.7);
-}
-#gtco-portfolio-list li a.color-1:hover:before {
-  background: rgba(55, 75, 84, 0);
-}
-#gtco-portfolio-list li a.color-2:before {
-  background: rgba(37, 190, 213, 0.7);
-}
-#gtco-portfolio-list li a.color-2:hover:before {
-  background: rgba(37, 190, 213, 0);
-}
-#gtco-portfolio-list li a.color-3:before {
-  background: rgba(239, 172, 147, 0.7);
-}
-#gtco-portfolio-list li a.color-3:hover:before {
-  background: rgba(239, 172, 147, 0);
-}
-#gtco-portfolio-list li a.color-4:before {
-  background: rgba(249, 17, 40, 0.7);
-}
-#gtco-portfolio-list li a.color-4:hover:before {
-  background: rgba(249, 17, 40, 0);
-}
-#gtco-portfolio-list li a.color-5:before {
-  background: rgba(252, 68, 40, 0.7);
-}
-#gtco-portfolio-list li a.color-5:hover:before {
-  background: rgba(252, 68, 40, 0);
-}
-#gtco-portfolio-list li a.color-6:before {
-  background: rgba(98, 177, 215, 0.7);
-}
-#gtco-portfolio-list li a.color-6:hover:before {
-  background: rgba(98, 177, 215, 0);
-}
+
 #gtco-portfolio-list li a .case-studies-summary {
   width: auto;
   bottom: 2em;
@@ -1761,6 +1726,44 @@ h3 {
 #gtco-portfolio-list li a .case-studies-summary h2 {
   color: #fff;
   margin-bottom: 0;
+  text-shadow: 0px 2px rgba(0,0,0,0.75);
+
+}
+#gtco-portfolio-list li a.color-1:before {
+  background: rgba(55, 75, 84, 0.2);
+}
+#gtco-portfolio-list li a.color-1:hover:before {
+  background: rgba(55, 75, 84, 0);
+}
+#gtco-portfolio-list li a.color-2:before {
+  background: rgba(37, 190, 213, 0.2);
+}
+#gtco-portfolio-list li a.color-2:hover:before {
+  background: rgba(37, 190, 213, 0);
+}
+#gtco-portfolio-list li a.color-3:before {
+  background: rgba(239, 172, 147, 0.2);
+}
+#gtco-portfolio-list li a.color-3:hover:before {
+  background: rgba(239, 172, 147, 0);
+}
+#gtco-portfolio-list li a.color-4:before {
+  background: rgba(249, 17, 40, 0.2);
+}
+#gtco-portfolio-list li a.color-4:hover:before {
+  background: rgba(249, 17, 40, 0);
+}
+#gtco-portfolio-list li a.color-5:before {
+  background: rgba(252, 68, 40, 0.2);
+}
+#gtco-portfolio-list li a.color-5:hover:before {
+  background: rgba(252, 68, 40, 0);
+}
+#gtco-portfolio-list li a.color-6:before {
+  background: rgba(98, 177, 215, 0.2);
+}
+#gtco-portfolio-list li a.color-6:hover:before {
+  background: rgba(98, 177, 215, 0);
 }
 @media screen and (max-width: 768px) {
   #gtco-portfolio-list li a .case-studies-summary h2 {
@@ -1949,7 +1952,10 @@ h3 {
 
 .downloads ul li {
     margin:10px!important;
-    font-size: 160%;
+    font-size: 130%;
+}
+ul {
+    padding-left:0!important;
 }
 
 .downloads label{
@@ -2104,3 +2110,12 @@ a h3:hover, a p:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+    .work-btn {
+        text-align:center;
+    }
+}
+
+.display-tc .row .col-md-8 {
+    margin-top:30px;
+}
