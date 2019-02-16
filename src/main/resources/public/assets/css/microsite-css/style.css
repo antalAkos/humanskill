@@ -715,7 +715,7 @@ form label {
 }
 
 .gtco-heading {
-  margin-bottom: 5em;
+  /* margin-bottom: 5em; */
 }
 .gtco-heading.gtco-heading-sm {
   margin-bottom: 2em;
@@ -1474,7 +1474,7 @@ ul {
 
 #gtco-features-3 {
   position: relative;
-  top: -7em;
+  top: -3em;
 }
 @media screen and (max-width: 768px) {
   #gtco-features-3 {
@@ -2049,7 +2049,7 @@ a h3:hover, a p:hover {
   border: 2px solid #4090db;
   border-radius: 10px;
   background: rgba(23, 34, 65, 0.31);
-  margin-top: 250px;
+  margin-top: 0px;
   padding: 10px;
 }
 
