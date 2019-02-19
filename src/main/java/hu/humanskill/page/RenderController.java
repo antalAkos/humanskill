@@ -115,6 +115,21 @@ public class RenderController {
         response.redirect("/hegeszto.html"); return null;
     }
 
+    public Object renderElectrician(Request request, Response response) {
+
+        response.redirect("/villanyszerelo.html"); return null;
+    }
+
+    public Object renderWindowmaker(Request request, Response response) {
+
+        response.redirect("/asztalos.html"); return null;
+    }
+
+    public Object renderBricklayer(Request request, Response response) {
+
+        response.redirect("/komuves.html"); return null;
+    }
+
 
     public ModelAndView renderAdmin(Request request, Response response) {
 

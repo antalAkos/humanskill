@@ -51,6 +51,9 @@ public class Server  {
         get("/mezogazdasag", renderController::renderAgric);
         get("/festo", renderController::renderPainter);
         get("/hegeszto", renderController::renderWelder);
+        get("/asztalos", renderController::renderWindowmaker);
+        get("/villanyszerelo", renderController::renderElectrician);
+        get("/komuves", renderController::renderBricklayer);
         get("/allasok", renderController::renderJobs, new ThymeleafTemplateEngine());
         get("/allasok/:job-category", renderController::renderJobCategory, new ThymeleafTemplateEngine());
         get("/admin", renderController::renderAdmin, new ThymeleafTemplateEngine());
