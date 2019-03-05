@@ -7,7 +7,7 @@
         <div class="header-logo"></div>
         <nav class="menu">
             <ul class="menu-ul" style="display:flex;">
-                <li><a class="firstpage secondpage"  style="font-wheight:bold;font-size:1.2em; cursor:pointer;" href="#top"   th:text="${main}">Main</a></li>
+                <li><a   style="font-wheight:bold;font-size:1.2em; cursor:pointer;" href='/allasok'   th:text="${main}">Main</a></li>
                 <li><a class="firstpage" href="#work" th:text="${recruitment}">Recruitment</a></li>
                 <li><a class="firstpage secondpage" href="#about-us" th:text="${aboutus}">About us</a></li>
                 <li class="in-slider"><a class="secondpage" href="#company" th:text="${orgdev}">Organisational development</a></li>
@@ -29,8 +29,9 @@
         <span>toggle menu</span>
     </button>
     <nav class="mobile-menu">
+        <a href='/allasok' >Allasok</a>
         <ul class="menu-ul">
-            <li><a class="firstpage secondpage" href="#top"    th:text="#{main}">Main</a></li>
+            <li><a href='/allasok'    th:text="#{main}">Main</a></li>
             <li><a class="firstpage" href="#work" th:text="#{recruitment}"></a></li>
             <li><a class="firstpage secondpage" href="#about-us" th:text="#{aboutus}"></a></li>
             <li class="in-slider"><a class="secondpage" href="#company" th:text="#{orgdev}"></a></li>

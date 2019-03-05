@@ -7332,7 +7332,7 @@ function(t) {
                     });
                     var i = t(".menu"),
                         s = i.outerHeight() + 15,
-                        n = i.find("a"),
+                        n = i.find("a[href^='#']"),
                         o = n.map(function() {
                             var e = t(t(this).attr("href"));
                             return e.length ? e : void 0
@@ -7354,7 +7354,7 @@ function(t) {
                         e.preventDefault(), $link = t(this).attr("href"), t("body,html").animate({
                             scrollTop: t($link).offset().top
                         }, 1e3 + Math.abs(t("body").scrollTop() - t($link).offset().top) / 2, "easeInOutQuart")
-                    }), t(".menu, .mobile-menu").find("a").on("click", function(e) {
+                    }), t(".menu, .mobile-menu").find("a[href^='#']").on("click", function(e) {
                         e.preventDefault(), t(".mobile-menu").hide(300), t(".c-hamburger").removeClass("c-hamburger--htla is-active").addClass("c-hamburger--htla");
                         var i = t(this).attr("href");
 

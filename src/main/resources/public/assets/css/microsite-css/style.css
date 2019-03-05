@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .gtco-cover {
-    height: 800px;
+    height: 900px;
   }
 }
 .gtco-cover .display-t,

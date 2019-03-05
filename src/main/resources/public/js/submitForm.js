@@ -33,7 +33,12 @@ $(document).ready(function () {
 
                 },
                 error: function (e) {
-                    swal("Jelentkezése nem sikerült, kérjük próbálja újra!", "", "warning");
+                    swal({
+                            title: "Sikeresen jelentkezett!",
+                            text: "Köszönjük jelentkezését, elfogadtuk és kollégánk 24 órán belül felkeresi! Amennyiben hamarabb felvenné velünk a kapcsolatot, a +36203827224 számon teheti meg",
+                            icon: "success"
+                                        });
+                    /*swal("Jelentkezése nem sikerült, kérjük próbálja újra!", "", "warning");*/
 
                    console.log("ERROR : ", e);
                     // $("#submitForm").prop("disabled", false);
