@@ -91,6 +91,7 @@ public class RenderController {
             //uploadedFile.delete();
         } catch (Exception e) {
             e.printStackTrace();
+            res.body(e.getMessage());
             //throw new RuntimeException(e);
              res.status(500);
 
