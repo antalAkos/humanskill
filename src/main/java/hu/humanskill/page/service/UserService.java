@@ -8,6 +8,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 
 public class UserService {
@@ -28,7 +30,8 @@ public class UserService {
     }
 
     public void createApply() {
-        Apply def = new Apply("name", "email", "666", "/files/upload/ujdomborzatterkep7684779104980445018.pdf");
+        Date date = new Date();
+        Apply def = new Apply("name", "", "email", "666", "/files/upload/ujdomborzatterkep7684779104980445018.pdf", new Timestamp(date.getTime()));
         EntityTransaction transaction = em.getTransaction();
         transaction.begin();
         em.persist(def);

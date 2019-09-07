@@ -5,7 +5,7 @@
     <title>Admin</title>
 </head>
 <body>
-<div>
+<div th:unless="${login}">
     <form action="/login" method="POST">
         <p>User</p>
         <input type="text" name="username"/>
@@ -21,6 +21,7 @@
             <th>Job</th>
             <th >Email</th>
             <th>Phone</th>
+            <th>Created</th>
             <th>CV</th>
             <th>Delete</th>
         </tr>
@@ -29,6 +30,7 @@
             <td th:text="${apply.job}"></td>
             <td th:text="${apply.email}"></td>
             <td th:text="${apply.phone}"></td>
+            <td th:text="${apply.created}"></td>
             <td><div th:if="${#strings.length(apply.filename) > 0}"><a th:href="'/download/' + ${apply.getId()}" >Download CV</a></div></td>
             <td><a th:href="'/delete/'+ ${apply.getId()}">Delete</a></td>
         </tr>

@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import hu.humanskill.page.model.Apply;
 import hu.humanskill.page.service.ApplyService;
 import hu.humanskill.page.service.UserService;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import spark.ModelAndView;
@@ -18,6 +19,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.Timestamp;
 import java.util.*;
 
 
@@ -78,8 +80,9 @@ public class RenderController {
 
             Gson g = new Gson();
             HashMap<String, String> phoneData = g.fromJson(req.body(), HashMap.class);
+            Date time = new Date();
 
-            application = new Apply(req.queryParams("name"), phoneData.get("job"), req.queryParams("email"), phoneData.get("phone"), "");
+            application = new Apply(req.queryParams("name"), phoneData.get("job"), req.queryParams("email"), phoneData.get("phone"), "",  new Timestamp(time.getTime()));
             applyService.save(application);
             res.status(200);
 
@@ -91,9 +94,10 @@ public class RenderController {
             //uploadedFile.delete();
         } catch (Exception e) {
             e.printStackTrace();
-            res.body(e.getMessage());
+            res.body(ExceptionUtils.getStackTrace(e));
             //throw new RuntimeException(e);
              res.status(500);
+             logger.error(ExceptionUtils.getStackTrace(e));
 
         }
          return "";
@@ -155,9 +159,6 @@ public class RenderController {
         params.put("isLogged", request.session().attribute("name")); // ha ez true, van session, ha nem, akkor nincs -
         params.put("login", true);
         params.put("applies", userService.getAll());
-        for (Apply apply: userService.getAll()) {
-            System.out.println(apply.getPhone());
-        }
         return new ModelAndView(params, "admin");
     }
 
@@ -188,11 +189,13 @@ public class RenderController {
 
         Long id = Long.parseLong(request.params(":id"));
         applyService.remove(id);
+
         return renderLogin(request, response);
     }
 
     public String saveCV(Request req, Response res) {
         Apply application;
+        Date time = new Date();
         try {
             req.raw().setAttribute("org.eclipse.jetty.multipartConfig",
                     new MultipartConfigElement("/tmp"));
@@ -207,10 +210,10 @@ public class RenderController {
                     IOUtils.copy(in, outputStream);
                     outputStream.close();
                 }
-                 application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), tempFile.toString());
+                 application = new Apply(req.queryParams("name"), "", req.queryParams("email"), req.queryParams("phone"), tempFile.toString(), new Timestamp(time.getTime()));
                 System.out.println(tempFile.toString());
             } else{
-                application = new Apply(req.queryParams("name"), req.queryParams("email"), req.queryParams("phone"), "");
+                application = new Apply(req.queryParams("name"), "", req.queryParams("email"), req.queryParams("phone"), "", new Timestamp(time.getTime()));
 
             }
 
@@ -247,6 +250,16 @@ public class RenderController {
         HashMap params = new HashMap<>();
         params.put("page", jobCaregory);
         return new ModelAndView(params, "ms-microsite");
+
+    }
+
+    public Object renderButcher(Request request, Response response) {
+        response.redirect("/hentes.html"); return null;
+
+    }
+
+    public Object renderButcher2(Request request, Response response) {
+        response.redirect("/hentes-betanitott.html"); return null;
 
     }
 }

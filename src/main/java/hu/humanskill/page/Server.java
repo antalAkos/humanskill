@@ -20,7 +20,7 @@ public class Server  {
 
     private static final Logger logger = LoggerFactory.getLogger(Server.class);
     private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("humanskill");
-    private static final EntityManager em = emf.createEntityManager();
+    private static EntityManager em = emf.createEntityManager();
     private static Utility utility = new Utility();
     private static UserService userService = new UserService(em, utility );
     private static ApplyService applyService = new ApplyService(em);
@@ -53,6 +53,8 @@ public class Server  {
         get("/hegeszto", renderController::renderWelder);
         get("/asztalos", renderController::renderWindowmaker);
         get("/villanyszerelo", renderController::renderElectrician);
+        get("/hentes-betanitott", renderController::renderButcher2);
+        get("/hentes", renderController::renderButcher);
         get("/komuves", renderController::renderBricklayer);
         get("/allasok", renderController::renderJobs, new ThymeleafTemplateEngine());
         get("/allasok/:job-category", renderController::renderJobCategory, new ThymeleafTemplateEngine());

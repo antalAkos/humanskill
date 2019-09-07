@@ -22,12 +22,17 @@ public class ApplyService {
         entityManager.persist(apply);
         transaction.commit();
 
+
     }
 
     public void remove(Long id) {
-        entityManager.createQuery("delete from Apply p where p.id=:id")
-                .setParameter("id", id)
-                .executeUpdate();
+        Apply a = entityManager.find(Apply.class, id);
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        entityManager.remove(a);
+        transaction.commit();
+
+
 
     }
 
