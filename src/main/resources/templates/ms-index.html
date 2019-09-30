@@ -37,43 +37,93 @@
         <header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(/assets/images/munkaerokozvetites_menu_opt-1.jpg);">
             <div class="overlay"></div>
             <div class="gtco-container">
-                <div class="row">
                     <div class="col-md-12 col-md-offset-0 " id="pageintro">
-                        <div class="display-tc">
-                            <div class="display-tc">
 
-                                <div class="row">
-                                    <div class="col-md-8 text-center gtco-heading col-md-offset-2" style="margin-top: 200px; font-weight:bold; font-size:25px;margin-bottom:0; color:yellow;">
-                                        Mi seg&#237;t&#252;nk megtal&#225;lni &#225;lmai &#225;ll&#225;s&#225;t! Jelentkezzen ma, hogy ak&#225;r m&#225;r holnap munk&#225;ba &#225;llhasson!
-                                    </div>
-                                    <div class="col-md-8 text-center col-md-offset-2">
-                                        <div class="item-1">
-                                            <h2 style="text-transform: uppercase;">Ig&eacute;nyes sz&aacute;ll&aacute;s</h2>
-                                        </div>
-                                        <div class="item-2">
-                                            <h2 style="text-transform: uppercase;">Azonnali kezd&eacute;s </h2>
-                                        </div>
-                                        <div class="item-3">
-                                            <h2 style="text-transform: uppercase;"> Teljes k&ouml;r&#369; &uuml;gyint&eacute;z&eacute;s</h2>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box fadeInUp animated-fast" style="position:relative;top:60px;">
-                                        <p style="margin-bottom:0;">Munk&aacute;val kapcsolatos k&eacute;rd&eacute;se eset&eacute;n k&eacute;rj&uuml;k adja meg telefonsz&aacute;m&aacute;t &eacute;s koll&eacute;g&aacute;nk egyike 24 &oacute;r&aacute;n bel&uuml;l visszah&iacute;vja!</p>
 
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control" id="phone" placeholder="Telefonsz&aacute;m" aria-label="Telefonsz&aacute;m" aria-describedby="basic-addon2"/>
-                                            <div class="input-group-append mt-5">
-                                                <button class="btn btn-danger btn-outline" type="button" id="submitForm" style="color:white; background-color:	#B22222;" >Visszah&iacute;v&aacute;st k&eacute;rek!</button>
-                                                <p class="privacy text-center">Nem adjuk ki telefonsz&aacute;m&aacute;t! Adatv&eacute;delmi t&aacute;j&eacute;koztat&oacute;nk <a href="/files/adatvedelmi_nyilatkozat.PDF">itt tal&aacute;lhat&oacute;.</a>.</p>
+
+                                <div class="display-tc">
+                                    <div th:switch="${status}">
+                                        <div th:case="'success'">
+                                            <div class="row">
+                                            <div class="col-md-8 text-center gtco-heading col-md-offset-2" style="margin-top: 200px; font-weight:bold; font-size:25px;margin-bottom:0; color:darkgreen;">
+                                                K&ouml;sz&ouml;nj&uuml;k jelentkez&eacute;s&eacute;t, elfogadtuk &eacute;s koll&eacute;g&aacute;nk 24 &oacute;r&aacute;n bel&uuml;l felkeresi! Amennyiben hamarabb felvenn&eacute; vel&uuml;nk a kapcsolatot, a +36203827224 sz&aacute;mon teheti meg
+                                            </div>
+                                            <div class="col-md-8 text-center col-md-offset-2">
+                                                <div class="item-1">
+                                                    <h2 style="text-transform: uppercase;">Ig&eacute;nyes sz&aacute;ll&aacute;s</h2>
+                                                </div>
+                                                <div class="item-2">
+                                                    <h2 style="text-transform: uppercase;">Azonnali kezd&eacute;s </h2>
+                                                </div>
+                                                <div class="item-3">
+                                                    <h2 style="text-transform: uppercase;"> Teljes k&ouml;r&#369; &uuml;gyint&eacute;z&eacute;s</h2>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div th:case="'fail'">
+                                            <div class="row">
+                                            <div class="col-md-8 text-center gtco-heading col-md-offset-2" style="margin-top: 200px; font-weight:bold; font-size:25px;margin-bottom:0; color:red;">
+                                                Jelentkez&eacute;se nem siker&uuml;lt, k&eacute;rj&uuml;k pr&oacute;b&aacute;lja &uacute;jra!
+                                            </div>
+                                            <div class="col-md-8 text-center col-md-offset-2">
+                                                <div class="item-1">
+                                                    <h2 style="text-transform: uppercase;">Ig&eacute;nyes sz&aacute;ll&aacute;s</h2>
+                                                </div>
+                                                <div class="item-2">
+                                                    <h2 style="text-transform: uppercase;">Azonnali kezd&eacute;s </h2>
+                                                </div>
+                                                <div class="item-3">
+                                                    <h2 style="text-transform: uppercase;"> Teljes k&ouml;r&#369; &uuml;gyint&eacute;z&eacute;s</h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box fadeInUp animated-fast" style="position:relative;top:60px;">
+                                                <p style="margin-bottom:0;">Munk&aacute;val kapcsolatos k&eacute;rd&eacute;se eset&eacute;n k&eacute;rj&uuml;k adja meg telefonsz&aacute;m&aacute;t &eacute;s koll&eacute;g&aacute;nk egyike 24 &oacute;r&aacute;n bel&uuml;l visszah&iacute;vja!</p>
+
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="phone" placeholder="Telefonsz&aacute;m" aria-label="Telefonsz&aacute;m" aria-describedby="basic-addon2"/>
+                                                    <div class="input-group-append mt-5">
+                                                        <button class="btn btn-danger btn-outline" type="button" id="submitForm" style="color:white; background-color:	#B22222;" >Visszah&iacute;v&aacute;st k&eacute;rek!</button>
+                                                        <p class="privacy text-center">Nem adjuk ki telefonsz&aacute;m&aacute;t! Adatv&eacute;delmi t&aacute;j&eacute;koztat&oacute;nk <a href="/files/adatvedelmi_nyilatkozat.PDF">itt tal&aacute;lhat&oacute;.</a>.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div th:case="'normal'">
+                                            <div class="row">
+                                            <div class="col-md-8 text-center gtco-heading col-md-offset-2" style="margin-top: 200px; font-weight:bold; font-size:25px;margin-bottom:0; color:yellow;">
+                                                Mi seg&#237;t&#252;nk megtal&#225;lni &#225;lmai &#225;ll&#225;s&#225;t! Jelentkezzen ma, hogy ak&#225;r m&#225;r holnap munk&#225;ba &#225;llhasson!
+                                            </div>
+                                            <div class="col-md-8 text-center col-md-offset-2">
+                                                <div class="item-1">
+                                                    <h2 style="text-transform: uppercase;">Ig&eacute;nyes sz&aacute;ll&aacute;s</h2>
+                                                </div>
+                                                <div class="item-2">
+                                                    <h2 style="text-transform: uppercase;">Azonnali kezd&eacute;s </h2>
+                                                </div>
+                                                <div class="item-3">
+                                                    <h2 style="text-transform: uppercase;"> Teljes k&ouml;r&#369; &uuml;gyint&eacute;z&eacute;s</h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box fadeInUp animated-fast" style="position:relative;top:60px;">
+                                                <p style="margin-bottom:0;">Munk&aacute;val kapcsolatos k&eacute;rd&eacute;se eset&eacute;n k&eacute;rj&uuml;k adja meg telefonsz&aacute;m&aacute;t &eacute;s koll&eacute;g&aacute;nk egyike 24 &oacute;r&aacute;n bel&uuml;l visszah&iacute;vja!</p>
+
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="phone" placeholder="Telefonsz&aacute;m" aria-label="Telefonsz&aacute;m" aria-describedby="basic-addon2"/>
+                                                    <div class="input-group-append mt-5">
+                                                        <button class="btn btn-danger btn-outline" type="button" id="submitForm" style="color:white; background-color:	#B22222;" >Visszah&iacute;v&aacute;st k&eacute;rek!</button>
+                                                        <p class="privacy text-center">Nem adjuk ki telefonsz&aacute;m&aacute;t! Adatv&eacute;delmi t&aacute;j&eacute;koztat&oacute;nk <a href="/files/adatvedelmi_nyilatkozat.PDF">itt tal&aacute;lhat&oacute;.</a>.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+
         </header>
 
         <div id="gtco-features-3" >

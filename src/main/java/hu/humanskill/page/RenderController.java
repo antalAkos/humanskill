@@ -242,14 +242,21 @@ public class RenderController {
     public ModelAndView renderJobs(Request request, Response response) {
         HashMap params = new HashMap<>();
         params.put("page", "ms-main");
+        params.put("status", "normal");
         return new ModelAndView(params, "ms-microsite");
     }
 
     public ModelAndView renderJobCategory(Request request, Response response) {
         String jobCaregory = request.params(":job-category");
         HashMap params = new HashMap<>();
-        params.put("page", jobCaregory);
-        return new ModelAndView(params, "ms-microsite");
+        switch (jobCaregory) {
+            case "jelentkezes":
+                return renderSuccessPage(request, response);
+            case "hiba":
+                return renderFailPage(request, response);
+            default:
+                return renderJobs(request, response);
+        }
 
     }
 
@@ -261,5 +268,23 @@ public class RenderController {
     public Object renderButcher2(Request request, Response response) {
         response.redirect("/hentes-betanitott.html"); return null;
 
+    }
+
+    public ModelAndView renderSuccessPage(Request request, Response response) {
+        String jobCaregory = request.params(":job-category");
+        HashMap params = new HashMap<>();
+        jobCaregory = jobCaregory.equals("jelentkezes") ? "ms-microsite":jobCaregory;
+        params.put("page", jobCaregory);
+        params.put("status", "success");
+        return new ModelAndView(params, "ms-microsite");
+    }
+
+    public ModelAndView renderFailPage(Request request, Response response) {
+        String jobCaregory = request.params(":job-category");
+        HashMap params = new HashMap<>();
+        jobCaregory = jobCaregory.equals("hiba") ? "ms-microsite":jobCaregory;
+        params.put("page", jobCaregory);
+        params.put("status", "fail");
+        return new ModelAndView(params, "ms-microsite");
     }
 }

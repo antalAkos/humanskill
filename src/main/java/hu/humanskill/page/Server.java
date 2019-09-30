@@ -58,10 +58,12 @@ public class Server  {
         get("/komuves", renderController::renderBricklayer);
         get("/allasok", renderController::renderJobs, new ThymeleafTemplateEngine());
         get("/allasok/:job-category", renderController::renderJobCategory, new ThymeleafTemplateEngine());
+        get("/allasok/:job-category/jelentkezes", renderController::renderSuccessPage, new ThymeleafTemplateEngine());
+        get("/allasok/:job-category/hiba", renderController::renderFailPage, new ThymeleafTemplateEngine());
         get("/admin", renderController::renderAdmin, new ThymeleafTemplateEngine());
-        get("/:lang", renderController::renderByLanguage, new ThymeleafTemplateEngine());
         get("/download/:id", renderController:: getFile);
         get("/delete/:id", renderController:: delete, new ThymeleafTemplateEngine());
+        get("/:lang", renderController::renderByLanguage, new ThymeleafTemplateEngine());
         post("/addname", (req, res) -> renderController.addNumber(req, res));
         post("/save-cv", (req, res) -> renderController.saveCV(req, res));
         post("/login", renderController :: login, new ThymeleafTemplateEngine());

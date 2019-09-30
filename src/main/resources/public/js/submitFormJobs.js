@@ -1,5 +1,7 @@
 jQuery(document).ready(function () {
 
+
+
     jQuery("#submitForm").on('click', function (event) {
 
         event.preventDefault();
@@ -38,20 +40,14 @@ function clickUp() {
                     cache: false,
                     timeout: 6000,
                     success: function (data) {
-                        swal({
-                            title: "Sikeresen jelentkezett!",
-                            text: "Köszönjük jelentkezését, elfogadtuk és kollégánk 24 órán belül felkeresi! Amennyiben hamarabb felvenné velünk a kapcsolatot, a +36203827224 számon teheti meg",
-                            icon: "success"
-                        });
+                       window.location.href += '/jelentkezes'
 
                     },
                     error: function (e) {
-                    swal({
-                            title: "Sikeresen jelentkezett!",
-                            text: "Köszönjük jelentkezését, elfogadtuk és kollégánk 24 órán belül felkeresi! Amennyiben hamarabb felvenné velünk a kapcsolatot, a +36203827224 számon teheti meg",
-                            icon: "success"
-                        });
+
                         /*swal("Jelentkezése nem sikerült, kérjük próbálja újra!", "", "warning");*/
+                       window.location.href += '/hiba'
+
 
                        console.log("ERROR : ", e);
                         // jQuery("#submitForm").prop("disabled", false);
@@ -59,7 +55,8 @@ function clickUp() {
                     }
                 });
             } else {
-                swal("Jelentkezése nem sikerült, kérjük próbálja újra!", "", "warning");
+                   window.location.href = window.location += '/hiba'
+
             }
 
 }
