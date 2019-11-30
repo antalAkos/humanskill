@@ -255,7 +255,9 @@ public class RenderController {
             case "hiba":
                 return renderFailPage(request, response);
             default:
-                return renderJobs(request, response);
+                params.put("page", jobCaregory);
+                params.put("status", "normal");
+                return new ModelAndView(params, "ms-microsite");
         }
 
     }

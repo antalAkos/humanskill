@@ -55,13 +55,13 @@
     <script src="/js/microsite-js/respond.min.js"></script>
     <![endif]-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-127735387-1"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-127735387-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-127735387-1', { 'anonymize_ip': true });
+        gtag('config', 'UA-127735387-2', { 'anonymize_ip': true });
 	gtag('config', 'AW-783117696');
     </script>
 </head>
@@ -137,14 +137,14 @@
 
      var page = /*[[${page}]]*/ '';
 
-/*]]>*/
+
     var isMain = page !== "ms-main" ? false:true;
     window.onload =function() {
-        if(!isMain) {
+        if(!isMain && (window.location.href.indexOf("jelentkezes") === -1) && (window.location.href.indexOf("hiba") === -1)) {
             window.location.hash="munkaink";
             }
          }
-
+/*]]>*/
 </script>
 
 </body>

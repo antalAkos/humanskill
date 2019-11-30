@@ -1,11 +1,11 @@
 jQuery(document).ready(function () {
 
 
-
     jQuery("#submitForm").on('click', function (event) {
+        var job = window.location.pathname;
 
         event.preventDefault();
-        clickUp();
+        clickUp(job);
 
     });
 
@@ -18,7 +18,8 @@ jQuery(document).ready(function () {
 
 });
 
-function clickUp() {
+function clickUp(job) {
+    var url = window.location.href.replace(location.hash,"");
     if( jQuery("#phone").val().length > 6) {
                 // Get form
                 let form = jQuery('#submitCV')[0];
@@ -28,7 +29,7 @@ function clickUp() {
 
                 // disabled the submit button
                 //jQuery("#submitForm").prop("disabled", true);
-                data = JSON.stringify({"phone":jQuery("#phone").val()});
+                data = JSON.stringify({"phone":jQuery("#phone").val(), "job" : job });
 
                 jQuery.ajax({
                     type: "POST",
@@ -40,13 +41,13 @@ function clickUp() {
                     cache: false,
                     timeout: 6000,
                     success: function (data) {
-                       window.location.href += '/jelentkezes'
+                       window.location.href = url + '/jelentkezes'
 
                     },
                     error: function (e) {
 
                         /*swal("Jelentkezése nem sikerült, kérjük próbálja újra!", "", "warning");*/
-                       window.location.href += '/hiba'
+                       window.location.href = url + '/hiba'
 
 
                        console.log("ERROR : ", e);
@@ -55,7 +56,7 @@ function clickUp() {
                     }
                 });
             } else {
-                   window.location.href = window.location += '/hiba'
+                   window.location.href = url +  '/hiba'
 
             }
 
