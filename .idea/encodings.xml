@@ -2,6 +2,10 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/public/assets/images/apolo.jpg" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/public/assets/images/bontas.jpg" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/public/assets/images/raktaros.jpg" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/public/assets/images/sofor.jpg" charset="ISO-8859-1" />
     <file url="PROJECT" charset="ISO-8859-1" />
   </component>
 </project>
